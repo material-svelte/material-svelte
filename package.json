@@ -17,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/material-svelte/material-svelte/issues"
   },
-  "homepage": "https://github.com/material-svelte/material-svelte#readme"
+  "homepage": "https://github.com/material-svelte/material-svelte#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^12.0.1",
+    "@commitlint/config-conventional": "^12.0.1",
+    "commitlint-plugin-scope-empty-exceptions": "workspace:*",
+    "commitlint-plugin-workspace-scopes": "workspace:*",
+    "husky": "4"
+  }
 }
