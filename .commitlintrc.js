@@ -13,6 +13,7 @@ module.exports = {
         'fix',
         'perf',
         'refactor',
+        'release',
         'repo',
         'revert',
       ],
@@ -21,7 +22,13 @@ module.exports = {
     'scope-enum': [
       2,
       'always',
-      ['.gitignore', 'commitlint', 'package.json', 'pnpm-workspace.yaml'],
+      [
+        '.gitignore',
+        'commitlint',
+        'package.json',
+        'pnpm-workspace.yaml',
+        'semantic-release',
+      ],
     ],
   },
   plugins: ['scope-empty-exceptions', 'workspace-scopes'],
