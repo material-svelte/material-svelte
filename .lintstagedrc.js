@@ -1,3 +1,3 @@
 module.exports = {
-  '*': 'true',
+  '*': 'prettier --plugin-search-dir=. --ignore-unknown --write',
 };

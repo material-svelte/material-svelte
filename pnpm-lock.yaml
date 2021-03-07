@@ -12,6 +12,7 @@ importers:
       husky: 4.3.8
       lint-staged: 10.5.4
       multi-semantic-release: 2.8.0
+      prettier: 2.2.1
     specifiers:
       '@commitlint/cli': ^12.0.1
       '@commitlint/config-conventional': ^12.0.1
@@ -24,6 +25,7 @@ importers:
       husky: '4'
       lint-staged: ^10.5.4
       multi-semantic-release: ^2.8.0
+      prettier: ^2.2.1
   tools/commitlint-plugin-scope-empty-exceptions:
     dependencies:
       '@commitlint/ensure': 12.0.1
@@ -2313,6 +2315,13 @@ packages:
     dev: true
     resolution:
       integrity: sha512-gQR3WpIgNIKwBMVLkpMUeR3e1/E1y42bqDQZfql+kDeXd8COYfM8PQA4X6y7a8u9Ua9FHmsrrmirW2vHs45hWg==
+  /prettier/2.2.1:
+    dev: true
+    engines:
+      node: '>=10.13.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-PqyhM2yCjg/oKkFPtTGUojv7gnZAoG80ttl45O6x2Ug/rMJw4wcc9k6aaf2hibP7BGVCCM33gZoGjyvt9mm16Q==
   /process-nextick-args/2.0.1:
     dev: true
     resolution:

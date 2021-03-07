@@ -4,7 +4,9 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "preinstall": "npx only-allow pnpm"
+    "preinstall": "npx only-allow pnpm",
+    "format": "prettier --plugin-search-dir=. --check .",
+    "format:fix": "prettier --plugin-search-dir=. --write ."
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,7 @@
     "husky": "4",
     "lint-staged": "^10.5.4",
     "multi-semantic-release": "^2.8.0",
+    "prettier": "^2.2.1",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/git": "^9.0.0",
     "@semantic-release/github": "^7.2.0",
