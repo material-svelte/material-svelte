@@ -30,6 +30,7 @@ module.exports = {
         'pnpm-workspace.yaml',
         'prettier',
         'semantic-release',
+        'stylelint',
       ],
     ],
   },
