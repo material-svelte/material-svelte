@@ -27,6 +27,7 @@ module.exports = {
         'commitlint',
         'package.json',
         'pnpm-workspace.yaml',
+        'prettier',
         'semantic-release',
       ],
     ],
