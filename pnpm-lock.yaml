@@ -14,6 +14,8 @@ importers:
       multi-semantic-release: 2.8.0
       prettier: 2.2.1
       prettier-plugin-package: 1.3.0_prettier@2.2.1
+      prettier-plugin-svelte: 2.2.0_prettier@2.2.1+svelte@3.35.0
+      svelte: 3.35.0
     specifiers:
       '@commitlint/cli': ^12.0.1
       '@commitlint/config-conventional': ^12.0.1
@@ -28,6 +30,8 @@ importers:
       multi-semantic-release: ^2.8.0
       prettier: ^2.2.1
       prettier-plugin-package: ^1.3.0
+      prettier-plugin-svelte: ^2.2.0
+      svelte: ^3.35.0
   tools/commitlint-plugin-scope-empty-exceptions:
     dependencies:
       '@commitlint/ensure': 12.0.1
@@ -2327,6 +2331,16 @@ packages:
       prettier: ^2.0.0
     resolution:
       integrity: sha512-KPNHR/Jm2zTevBp1SnjzMnooO1BOQW2bixVbOp8flOJoW+dxdDwEncObfsKZdkjwrv6AIH4oWqm5EO/etDmK9Q==
+  /prettier-plugin-svelte/2.2.0_prettier@2.2.1+svelte@3.35.0:
+    dependencies:
+      prettier: 2.2.1
+      svelte: 3.35.0
+    dev: true
+    peerDependencies:
+      prettier: ^1.16.4 || ^2.0.0
+      svelte: ^3.2.0
+    resolution:
+      integrity: sha512-Xdmqgr71tAuMqqzNCK52/v94g/Yv7V7lz+nmbO9NEA+9ol15VV3uUHOfydMNOo3SWvFaVlBcp947ebEaMWqVfQ==
   /prettier/2.2.1:
     dev: true
     engines:
@@ -2825,6 +2839,12 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-zoE5/e+dnEijk6ASB6/qrK+oYdm2do1hjoLWrqUC/8WEIW1gbxFcKuBof7sW8ArN6e+AYvsE8HBGiVRWL/F5CA==
+  /svelte/3.35.0:
+    dev: true
+    engines:
+      node: '>= 8'
+    resolution:
+      integrity: sha512-gknlZkR2sXheu/X+B7dDImwANVvK1R0QGQLd8CNIfxxGPeXBmePnxfzb6fWwTQRsYQG7lYkZXvpXJvxvpsoB7g==
   /temp-dir/2.0.0:
     dev: true
     engines:

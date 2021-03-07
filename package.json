@@ -33,6 +33,8 @@
     "lint-staged": "^10.5.4",
     "multi-semantic-release": "^2.8.0",
     "prettier": "^2.2.1",
-    "prettier-plugin-package": "^1.3.0"
+    "prettier-plugin-package": "^1.3.0",
+    "prettier-plugin-svelte": "^2.2.0",
+    "svelte": "^3.35.0"
   }
 }
