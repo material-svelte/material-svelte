@@ -15,6 +15,7 @@ importers:
       eslint-plugin-import: 2.22.1_eslint@7.21.0
       eslint-plugin-node: 11.1.0_eslint@7.21.0
       eslint-plugin-promise: 4.3.1
+      eslint-plugin-svelte3: 3.1.2_eslint@7.21.0+svelte@3.35.0
       husky: 4.3.8
       lint-staged: 10.5.4
       multi-semantic-release: 2.8.0
@@ -37,6 +38,7 @@ importers:
       eslint-plugin-import: ^2.22.1
       eslint-plugin-node: ^11.1.0
       eslint-plugin-promise: ^4.3.1
+      eslint-plugin-svelte3: ^3.1.2
       husky: '4'
       lint-staged: ^10.5.4
       multi-semantic-release: ^2.8.0
@@ -1333,6 +1335,18 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-bY2sGqyptzFBDLh/GMbAxfdJC+b0f23ME63FOE4+Jao0oZ3E1LEwFtWJX/1pGMJLiTtrSSern2CRM/g+dfc0eQ==
+  /eslint-plugin-svelte3/3.1.2_eslint@7.21.0+svelte@3.35.0:
+    dependencies:
+      eslint: 7.21.0
+      svelte: 3.35.0
+    dev: true
+    engines:
+      node: '>=10'
+    peerDependencies:
+      eslint: '>=6.0.0'
+      svelte: ^3.2.0
+    resolution:
+      integrity: sha512-+aGgYFC/yjhGXmBevzwICFVif8tu++C9/lRg8cE6TTS45Hw8qZ6t5wItSXVNPqnxJ212ik+bad1F0Y9A3Swo0Q==
   /eslint-scope/5.1.1:
     dependencies:
       esrecurse: 4.3.0
