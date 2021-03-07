@@ -16,6 +16,10 @@
   "scripts": {
     "format": "prettier --plugin-search-dir=. --check .",
     "format:fix": "prettier --plugin-search-dir=. --write .",
+    "lint": "pnpm lint:js",
+    "lint:fix": "pnpm lint:js:fix",
+    "lint:js": "eslint --ext .js .",
+    "lint:js:fix": "eslint --ext .js --fix .",
     "preinstall": "npx only-allow pnpm",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -29,6 +33,12 @@
     "@semantic-release/npm": "^7.0.10",
     "commitlint-plugin-scope-empty-exceptions": "workspace:*",
     "commitlint-plugin-workspace-scopes": "workspace:*",
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
     "husky": "4",
     "lint-staged": "^10.5.4",
     "multi-semantic-release": "^2.8.0",
