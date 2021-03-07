@@ -3,6 +3,7 @@ module.exports = {
   // same applies for --plugin-search-dir in package.json
   // active PR: https://github.com/prettier/prettier/pull/9167
   pluginSearchDirs: ['.'],
+  plugins: [require('prettier-plugin-package')],
   // prettier
   singleQuote: true,
 };
