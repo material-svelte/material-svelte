@@ -1,0 +1,21 @@
+{
+  "name": "material-svelte-website",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">= 12.17.0"
+  },
+  "scripts": {
+    "build": "svelte-kit build",
+    "dev": "svelte-kit dev",
+    "start": "svelte-kit start"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-node": "^1.0.0-next.5",
+    "@sveltejs/adapter-static": "^1.0.0-next.2",
+    "@sveltejs/kit": "^1.0.0-next.39",
+    "svelte": "^3.35.0",
+    "vite": "^2.0.5"
+  }
+}

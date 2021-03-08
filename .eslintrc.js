@@ -20,6 +20,11 @@ module.exports = {
     {
       files: ['*.svelte'],
       processor: 'svelte3/svelte3',
+      rules: {
+        // TODO figure out how to get this working without ignoring.
+        // currently required for sveltekit
+        'import/no-unresolved': ['error', { ignore: ['^\\$'] }],
+      },
     },
   ],
 };
