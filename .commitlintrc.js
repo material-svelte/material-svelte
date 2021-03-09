@@ -25,6 +25,7 @@ module.exports = {
       [
         '.gitignore',
         'commitlint',
+        'eslint',
         'package.json',
         'pnpm-workspace.yaml',
         'prettier',
