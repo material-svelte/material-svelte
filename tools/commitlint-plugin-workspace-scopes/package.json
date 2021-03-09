@@ -1,0 +1,33 @@
+{
+  "name": "commitlint-plugin-workspace-scopes",
+  "version": "0.0.0",
+  "description": "A commitlint rule to discover workspace packages as scopes.",
+  "homepage": "https://github.com/material-svelte/material-svelte/tree/main/tools/commitlint-plugin-workspace-scopes#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/material-svelte/material-svelte",
+    "directory": "tools/commitlint-plugin-workspace-scopes"
+  },
+  "author": "",
+  "license": "MIT",
+  "keywords": [
+    "commitlint",
+    "commitlintplugin",
+    "pnpm",
+    "yarn",
+    "npm",
+    "bolt",
+    "monorepo",
+    "workspace",
+    "workspaces"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@commitlint/ensure": "^12.0.1",
+    "@commitlint/message": "^12.0.1",
+    "@manypkg/get-packages": "^1.1.1"
+  }
+}
