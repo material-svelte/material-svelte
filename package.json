@@ -1,33 +1,57 @@
 {
   "name": "material-svelte-monorepo",
   "version": "0.0.0",
+  "private": true,
   "description": "",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "preinstall": "npx only-allow pnpm"
-  },
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/material-svelte/material-svelte.git"
   },
-  "private": true,
-  "keywords": [],
   "author": "",
-  "license": "MIT",
+  "homepage": "https://github.com/material-svelte/material-svelte#readme",
   "bugs": {
     "url": "https://github.com/material-svelte/material-svelte/issues"
   },
-  "homepage": "https://github.com/material-svelte/material-svelte#readme",
+  "scripts": {
+    "format": "prettier --plugin-search-dir=. --check .",
+    "format:fix": "prettier --plugin-search-dir=. --write .",
+    "lint": "pnpm lint:js && pnpm lint:css",
+    "lint:css": "stylelint --allow-empty-input **/*.{css,scss}",
+    "lint:css:fix": "stylelint --allow-empty-input --fix **/*.{css,scss}",
+    "lint:fix": "pnpm lint:js:fix && pnpm lint:css:fix",
+    "lint:js": "eslint --ext .js,.svelte .",
+    "lint:js:fix": "eslint --ext .js,.svelte --fix .",
+    "preinstall": "npx only-allow pnpm",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
   "devDependencies": {
     "@commitlint/cli": "^12.0.1",
     "@commitlint/config-conventional": "^12.0.1",
-    "commitlint-plugin-scope-empty-exceptions": "workspace:*",
-    "commitlint-plugin-workspace-scopes": "workspace:*",
-    "husky": "4",
-    "multi-semantic-release": "^2.8.0",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/git": "^9.0.0",
     "@semantic-release/github": "^7.2.0",
-    "@semantic-release/npm": "^7.0.10"
+    "@semantic-release/npm": "^7.0.10",
+    "commitlint-plugin-scope-empty-exceptions": "workspace:*",
+    "commitlint-plugin-workspace-scopes": "workspace:*",
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-svelte3": "^3.1.2",
+    "husky": "4",
+    "lint-staged": "^10.5.4",
+    "multi-semantic-release": "^2.8.0",
+    "prettier": "^2.2.1",
+    "prettier-plugin-package": "^1.3.0",
+    "prettier-plugin-svelte": "^2.2.0",
+    "stylelint": "^13.12.0",
+    "stylelint-config-prettier": "^8.0.2",
+    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-config-standard": "^21.0.0",
+    "svelte": "^3.35.0"
   }
 }
