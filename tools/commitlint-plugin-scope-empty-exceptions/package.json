@@ -2,22 +2,22 @@
   "name": "commitlint-plugin-scope-empty-exceptions",
   "version": "0.0.0",
   "description": "A commitlint plugin to support exceptions in scope-empty-rules.",
-  "homepage": "https://github.com/material-svelte/material-svelte/tree/main/tools/commitlint-plugin-scope-empty-exceptions#readme",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/material-svelte/material-svelte",
     "directory": "tools/commitlint-plugin-scope-empty-exceptions"
   },
   "author": "",
-  "license": "MIT",
-  "keywords": [
-    "commitlint",
-    "commitlintplugin"
-  ],
+  "homepage": "https://github.com/material-svelte/material-svelte/tree/main/tools/commitlint-plugin-scope-empty-exceptions#readme",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [
+    "commitlint",
+    "commitlintplugin"
+  ],
   "dependencies": {
     "@commitlint/ensure": "^12.0.1",
     "@commitlint/message": "^12.0.1"

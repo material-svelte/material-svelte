@@ -8,8 +8,8 @@ module.exports = {
       if (!parsed.scope) {
         return [true, ''];
       }
-      let packages = getPackages(parsed);
-      let scopes = value.concat(packages);
+      const packages = getPackages(parsed);
+      const scopes = value.concat(packages);
       const negated = when === 'never';
       const result = ensure.enum(parsed.scope, scopes);
       return [
@@ -26,6 +26,6 @@ module.exports = {
 
 function getPackages(context) {
   const cwd = context.cwd || process.cwd();
-  let packages = getPackagesSync(cwd);
+  const packages = getPackagesSync(cwd);
   return packages.packages.map((p) => p.packageJson.name);
 }
