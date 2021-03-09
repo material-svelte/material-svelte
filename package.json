@@ -23,6 +23,7 @@
     "lint:js": "eslint --ext .js,.svelte .",
     "lint:js:fix": "eslint --ext .js,.svelte --fix .",
     "preinstall": "npx only-allow pnpm",
+    "storybook": "pnpm start --filter material-svelte-storybook",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
