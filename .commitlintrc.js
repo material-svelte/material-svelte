@@ -24,6 +24,7 @@ module.exports = {
       'always',
       [
         '.gitignore',
+        'codeowners',
         'commitlint',
         'eslint',
         'lint',
