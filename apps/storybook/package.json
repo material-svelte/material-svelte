@@ -1,0 +1,25 @@
+{
+  "name": "material-svelte-storybook",
+  "version": "0.0.0",
+  "private": true,
+  "description": "",
+  "license": "MIT",
+  "author": "",
+  "scripts": {
+    "build": "build-storybook -c .storybook -o build",
+    "start": "start-storybook -p 6006",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "@babel/core": "^7.13.8",
+    "@storybook/addon-actions": "^6.1.20",
+    "@storybook/addon-essentials": "^6.1.20",
+    "@storybook/addon-links": "^6.1.20",
+    "@storybook/addon-svelte-csf": "^1.0.0",
+    "@storybook/svelte": "^6.1.20",
+    "babel-loader": "^8.2.2",
+    "svelte": "^3.34.0",
+    "svelte-loader": "^3.0.0"
+  }
+}
