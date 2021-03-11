@@ -1,6 +1,6 @@
 {
   "name": "commitlint-plugin-workspace-scopes",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "A commitlint rule to discover workspace packages as scopes.",
   "license": "MIT",
   "repository": {
