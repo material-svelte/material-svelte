@@ -1,3 +1,5 @@
+const svelteOptions = require('./svelte.config');
+
 module.exports = {
   stories: [
     '../stories/**/*.stories.mdx',
@@ -6,8 +8,18 @@ module.exports = {
     '../../../components/**/stories/*.stories.svelte',
   ],
   addons: [
-    '@storybook/addon-links',
+    '@storybook/addon-actions',
     '@storybook/addon-essentials',
+    '@storybook/addon-links',
     '@storybook/addon-svelte-csf',
+    {
+      name: '@storybook/addon-postcss',
+      options: {
+        postcssLoaderOptions: {
+          implementation: require('postcss'),
+        },
+      },
+    },
   ],
+  svelteOptions,
 };
