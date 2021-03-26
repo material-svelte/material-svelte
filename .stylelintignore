@@ -1,0 +1,4 @@
+.svelte
+build
+dist
+node_modules
