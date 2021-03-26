@@ -1,0 +1,29 @@
+{
+  "name": "material-svelte-example-sveltekit",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">= 12.17.0"
+  },
+  "scripts": {
+    "build": "svelte-kit build",
+    "dev": "svelte-kit dev",
+    "start": "svelte-kit start"
+  },
+  "dependencies": {
+    "@material-svelte/button": "workspace:*",
+    "@material-svelte/icon": "workspace:*"
+  },
+  "devDependencies": {
+    "@material-svelte/postcss-plugin": "workspace:*",
+    "@mdi/js": "^5.9.55",
+    "@sveltejs/adapter-node": "next",
+    "@sveltejs/kit": "next",
+    "svelte": "^3.35.0",
+    "svelte-preprocess": "^4.7.0",
+    "tslib": "^2.1.0",
+    "typescript": "^4.2.3",
+    "vite": "^2.1.3"
+  }
+}
