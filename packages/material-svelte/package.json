@@ -1,0 +1,13 @@
+{
+  "name": "material-svelte",
+  "version": "0.0.0",
+  "description": "",
+  "license": "MIT",
+  "author": "",
+  "main": "src/index.js",
+  "keywords": [],
+  "devDependencies": {
+    "@material-svelte/button": "workspace:*",
+    "@material-svelte/icon": "workspace:*"
+  }
+}

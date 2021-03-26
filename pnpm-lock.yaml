@@ -305,6 +305,13 @@ importers:
       svelte-preprocess: ^4.7.0
       typescript: ^4.2.3
       vite: ^2.1.3
+  packages/material-svelte:
+    devDependencies:
+      '@material-svelte/button': link:../../components/button
+      '@material-svelte/icon': link:../../components/icon
+    specifiers:
+      '@material-svelte/button': workspace:*
+      '@material-svelte/icon': workspace:*
   tools/commitlint-plugin-scope-empty-exceptions:
     dependencies:
       '@commitlint/ensure': 12.0.1

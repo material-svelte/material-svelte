@@ -19,6 +19,10 @@ module.exports = {
         'prettier',
       ],
       plugins: ['import'],
+      rules: {
+        // TODO figure out why this is not working
+        'import/no-unresolved': 'off',
+      },
     },
     {
       files: ['*.svelte'],
