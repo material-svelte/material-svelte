@@ -11,9 +11,6 @@
   "author": "",
   "homepage": "https://github.com/material-svelte/material-svelte/tree/main/tools/commitlint-plugin-workspace-scopes#readme",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [
     "commitlint",
     "commitlintplugin",
