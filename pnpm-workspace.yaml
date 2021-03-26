@@ -3,3 +3,4 @@ packages:
   - 'components/**'
   - 'packages/**'
   - 'tools/**'
+  - 'examples/**'
