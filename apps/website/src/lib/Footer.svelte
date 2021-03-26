@@ -9,9 +9,9 @@
 
 <style>
   footer {
-    padding: 0;
     margin: 0;
-    width: 100%;
+    padding: 0;
     text-align: center;
+    width: 100%;
   }
 </style>
