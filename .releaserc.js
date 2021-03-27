@@ -19,8 +19,9 @@ module.exports = {
     [
       '@semantic-release/git',
       {
+        assets: ['CHANGELOG.md'],
         message:
-          'release(<%= _.replace(nextRelease.gitTag, /@.*$/g, "") %>): <%= nextRelease.version %> [skip ci]',
+          'release(<%= _.replace(nextRelease.gitTag, /@[^@]*$/g, "") %>): <%= nextRelease.version %> [skip ci]',
       },
     ],
   ],
