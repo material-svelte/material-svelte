@@ -20,7 +20,7 @@ module.exports = {
       '@semantic-release/git',
       {
         message:
-          'release(<%= _.replace(nextRelease.gitTag, /@.*$/g, "") %>): <%= nextRelease.version %> [skip ci]',
+          'release(<%= _.replace(nextRelease.gitTag, /@[^@]*$/g, "") %>): <%= nextRelease.version %> [skip ci]',
       },
     ],
   ],
