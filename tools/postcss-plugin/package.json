@@ -1,6 +1,6 @@
 {
   "name": "@material-svelte/postcss-plugin",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "publishConfig": {
     "access": "public"
   },
@@ -13,7 +13,7 @@
     "postcss": "^8.2.8"
   },
   "dependencies": {
-    "@material-svelte/postcss-mixins": "workspace:*",
+    "@material-svelte/postcss-mixins": "1.0.0",
     "autoprefixer": "^10.2.5",
     "postcss-hexrgba": "github:hudochenkov/postcss-hexrgba#migrate-to-postcss-8",
     "postcss-import": "^14.0.0",
