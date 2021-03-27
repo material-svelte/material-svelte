@@ -43,4 +43,4 @@ jobs:
           GIT_AUTHOR_EMAIL: ${{ secrets.BOT_EMAIL }}
           GIT_COMMITTER_NAME: ${{ secrets.BOT_USERNAME }}
           GIT_COMMITTER_EMAIL: ${{ secrets.BOT_EMAIL }}
-        run: pnpx --no-install multi-semantic-release --ignore-packages apps/website,apps/storybook
+        run: pnpx --no-install multi-semantic-release --ignore-packages "apps/**,examples/**"
