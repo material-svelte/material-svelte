@@ -7,19 +7,31 @@
   "author": "",
   "scripts": {
     "build": "build-storybook -c .storybook -o build",
-    "start": "start-storybook -p 6006",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "start-storybook -p 6006"
   },
   "keywords": [],
   "devDependencies": {
-    "@babel/core": "^7.13.8",
-    "@storybook/addon-actions": "^6.1.20",
-    "@storybook/addon-essentials": "^6.1.20",
-    "@storybook/addon-links": "^6.1.20",
+    "@babel/core": "^7.13.13",
+    "@material-svelte/button": "workspace:*",
+    "@material-svelte/icon": "workspace:*",
+    "@mdi/js": "^5.9.55",
+    "@mdx-js/react": "^1.6.22",
+    "@storybook/addon-actions": "^6.2.0-rc.10",
+    "@storybook/addon-docs": "^6.2.0-rc.10",
+    "@storybook/addon-essentials": "^6.2.0-rc.10",
+    "@storybook/addon-links": "^6.2.0-rc.10",
+    "@storybook/addon-postcss": "^2.0.0",
     "@storybook/addon-svelte-csf": "^1.0.0",
-    "@storybook/svelte": "^6.1.20",
+    "@storybook/svelte": "^6.2.0-rc.10",
     "babel-loader": "^8.2.2",
-    "svelte": "^3.34.0",
-    "svelte-loader": "^3.0.0"
+    "postcss": "^8.2.8",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "sass": "^1.32.8",
+    "storybook": "^6.2.0-rc.10",
+    "svelte": "^3.35.0",
+    "svelte-loader": "^3.0.0",
+    "svelte-preprocess": "^4.7.0",
+    "typescript": "^4.2.3"
   }
 }

@@ -1,5 +1,5 @@
-<script>
-  import Footer from '$components/Footer.svelte';
+<script lang="ts">
+  import Footer from '$lib/Footer.svelte';
 </script>
 
 <main>
@@ -14,8 +14,8 @@
   }
 
   main {
-    text-align: center;
-    padding: 1em;
     margin: 0 auto;
+    padding: 1em;
+    text-align: center;
   }
 </style>

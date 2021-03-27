@@ -1,2 +1,5 @@
-node_modules
+.svelte
 build
+dist
+node_modules
+coverage

@@ -1,0 +1,27 @@
+{
+  "name": "@material-svelte/postcss-plugin",
+  "version": "0.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "",
+  "license": "MIT",
+  "author": "",
+  "main": "src/index.js",
+  "keywords": [],
+  "peerDependencies": {
+    "postcss": "^8.2.8"
+  },
+  "dependencies": {
+    "@material-svelte/postcss-mixins": "workspace:*",
+    "autoprefixer": "^10.2.5",
+    "postcss-hexrgba": "github:hudochenkov/postcss-hexrgba#migrate-to-postcss-8",
+    "postcss-import": "^14.0.0",
+    "postcss-mixins": "^7.0.3",
+    "postcss-nested": "^5.0.5",
+    "postcss-simple-vars": "^6.0.3"
+  },
+  "devDependencies": {
+    "postcss": "^8.2.8"
+  }
+}

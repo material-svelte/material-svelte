@@ -1,0 +1,12 @@
+{
+  "name": "@material-svelte/postcss-mixins",
+  "version": "0.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "",
+  "license": "MIT",
+  "author": "",
+  "main": "src/index.js",
+  "keywords": []
+}

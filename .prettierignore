@@ -1,7 +1,9 @@
 .eslintignore
 .gitignore
 .prettierignore
-node_modules
+.svelte
 build
+dist
+node_modules
 pnpm-lock.yaml
 CHANGELOG.md
