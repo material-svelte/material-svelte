@@ -1,0 +1,25 @@
+{
+  "name": "@material-svelte/create-component",
+  "version": "0.0.0-semantic-release",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "",
+  "license": "MIT",
+  "author": "",
+  "main": "index.js",
+  "bin": {
+    "create-component": "index.js"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "files": [
+    "index.js",
+    "template"
+  ],
+  "keywords": [],
+  "dependencies": {
+    "enquirer": "^2.3.6"
+  }
+}
