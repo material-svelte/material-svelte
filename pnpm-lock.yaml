@@ -328,6 +328,11 @@ importers:
       '@commitlint/ensure': ^12.0.1
       '@commitlint/message': ^12.0.1
       '@manypkg/get-packages': ^1.1.1
+  tools/create-component:
+    dependencies:
+      enquirer: 2.3.6
+    specifiers:
+      enquirer: ^2.3.6
   tools/postcss-mixins:
     specifiers: {}
   tools/postcss-plugin:
@@ -4514,7 +4519,6 @@ packages:
     resolution:
       integrity: sha512-hHUXGagefjN2iRrID63xckIvotOXOojhQKWIPUZ4mNUZ9nLZW+7FMNoE1lOkEhNWYsx/7ysGIuJYCiMAA9FnrA==
   /ansi-colors/4.1.1:
-    dev: true
     engines:
       node: '>=6'
     resolution:
@@ -6879,7 +6883,6 @@ packages:
   /enquirer/2.3.6:
     dependencies:
       ansi-colors: 4.1.1
-    dev: true
     engines:
       node: '>=8.6'
     resolution:
