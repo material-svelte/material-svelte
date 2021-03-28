@@ -6,7 +6,7 @@
   "author": "",
   "main": "src/index.js",
   "keywords": [],
-  "devDependencies": {
+  "dependencies": {
     "@material-svelte/button": "workspace:*",
     "@material-svelte/icon": "workspace:*"
   }
