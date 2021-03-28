@@ -33,6 +33,7 @@ module.exports = {
         'prettier',
         'semantic-release',
         'stylelint',
+        'repo-wide',
       ],
     ],
   },

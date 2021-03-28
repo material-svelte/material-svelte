@@ -180,7 +180,7 @@ importers:
       vite-web-test-runner-plugin: 0.0.1
   components/icon:
     dependencies:
-      cuid: 2.1.8
+      uuid: 8.3.2
     devDependencies:
       '@mdi/js': 5.9.55
       '@sveltejs/vite-plugin-svelte': 1.0.0-next.5_svelte@3.35.0+vite@2.1.3
@@ -206,7 +206,6 @@ importers:
       '@types/mocha': ^8.2.2
       '@web/test-runner': ^0.12.17
       chai: ^4.3.4
-      cuid: ^2.1.8
       postcss: ^8.2.8
       postcss-load-config: ^3.0.1
       svelte: ^3.35.0
@@ -214,6 +213,7 @@ importers:
       svelte-htm: ^1.1.1
       svelte-preprocess: ^4.7.0
       typescript: ^4.2.3
+      uuid: ^8.3.2
       vite: ^2.1.3
       vite-web-test-runner-plugin: 0.0.1
   examples/snowpack:
@@ -306,7 +306,7 @@ importers:
       typescript: ^4.2.3
       vite: ^2.1.3
   packages/material-svelte:
-    devDependencies:
+    dependencies:
       '@material-svelte/button': link:../../components/button
       '@material-svelte/icon': link:../../components/icon
     specifiers:
@@ -6299,10 +6299,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-KxnUB0ZMlnUWCsx2Z8MUsr6qV6ja1w9ArPErJaJaF8a5SOWoHLIszeCTKGRGRgtLgYrs1E8CHkNSP1VZTTPc9g==
-  /cuid/2.1.8:
-    dev: false
-    resolution:
-      integrity: sha512-xiEMER6E7TlTPnDxrM4eRiC6TRgjNX9xzEZ5U/Se2YJKr7Mq4pJn/2XEHjl3STcSh96GmkHPcBXLES8M29wyyg==
   /cyclist/1.0.1:
     dev: true
     resolution:
@@ -15336,7 +15332,6 @@ packages:
     resolution:
       integrity: sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==
   /uuid/8.3.2:
-    dev: true
     hasBin: true
     resolution:
       integrity: sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==

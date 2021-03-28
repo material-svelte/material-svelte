@@ -1,5 +1,5 @@
 <script lang="ts">
-  import cuid from 'cuid';
+  import { v4 as uuid } from 'uuid';
 
   // svg-path to render
   export let path: string;
@@ -23,7 +23,7 @@
 
   let clipId;
   if (clip) {
-    clipId = cuid();
+    clipId = uuid();
     styles.push(`--clip-path: url(#${clipId})`);
   }
 </script>
