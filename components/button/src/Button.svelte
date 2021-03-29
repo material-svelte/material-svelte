@@ -11,7 +11,7 @@
   // color of button to render
   export let color = '#6200ee';
   // disable elevation (applies to variants: `contained`, `fab`)
-  export let disableElevation = false;
+  export let unelevated = false;
   // whether to render the button full-width (applies to all buttons that contain content in default-slot)
   export let fullWidth = false;
   // whether to render a `fab`-variant button as `mini`
@@ -28,7 +28,7 @@
   class:fab={variant === 'fab'}
   class:mini
   class:disabled
-  class:elevated={!disableElevation}
+  class:unelevated
   class:full-width={fullWidth}
   class:has-content={$$slots.default}
   class:has-icon={$$slots.icon}
@@ -182,11 +182,11 @@
       background-color: var(--button-color);
       color: #fff;
 
-      &.elevated {
+      &:not(.unelevated) {
         @mixin elevation 4;
       }
 
-      &.elevated:active {
+      &:not(.unelevated):active {
         @mixin elevation 8;
       }
 
