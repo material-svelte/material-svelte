@@ -2,7 +2,7 @@
   import { ripple } from '@material-svelte/svelte-actions';
   import Typography from '@material-svelte/typography';
 
-  type ButtonVariant = 'contained' | 'outlined' | 'text' | 'fab';
+  type ButtonVariant = 'contained' | 'outlined' | 'text' | 'fab' | 'menu';
   // variable to bind the button DOM-node to
   export let buttonElement: HTMLElement | null = null;
   // variant of button to render
@@ -27,6 +27,7 @@
   class:outlined={variant === 'outlined'}
   class:text={variant === 'text'}
   class:fab={variant === 'fab'}
+  class:menu={variant === 'menu'}
   class:mini
   class:disabled
   class:unelevated
@@ -166,6 +167,22 @@
         padding: 0 16px;
         width: 56px;
       }
+    }
+  }
+
+  button.menu {
+    background-color: transparent;
+    border-radius: 50%;
+    color: #fff;
+    height: 48px;
+    padding: 12px;
+    width: 48px;
+
+    > .icon {
+      color: var(--button-color);
+      filter: invert(1) grayscale(1) contrast(20);
+      height: 24px;
+      width: 24px;
     }
   }
 
