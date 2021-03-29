@@ -1,5 +1,6 @@
 <script lang="ts">
   import { ripple } from '@material-svelte/svelte-actions';
+  import Typography from '@material-svelte/typography';
 
   type ButtonVariant = 'contained' | 'outlined' | 'text' | 'fab';
   // variable to bind the button DOM-node to
@@ -41,7 +42,7 @@
   {/if}
   {#if $$slots.default}
     <span class="content">
-      <slot />
+      <Typography variant="button"><slot /></Typography>
     </span>
   {/if}
 </button>
@@ -52,10 +53,6 @@
     --background-color-disabled: rgba(#000, 0.26);
     --border-radius: 4px;
     --color-disabled: rgba(#000, 0.26);
-    --font-size: 14px;
-    --font-weight: 500;
-    --letter-spacing: 1.25px;
-    --font-family: roboto, sans-serif;
     --transition-duration: 280ms;
     --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -64,12 +61,8 @@
     border-style: none;
     cursor: pointer;
     display: inline-flex;
-    font-family: var(--font-family);
-    font-size: var(--font-size);
-    font-weight: var(--font-weight);
     height: 36px;
     justify-content: center;
-    letter-spacing: var(--letter-spacing);
     outline: 0;
     position: relative;
     text-transform: uppercase;

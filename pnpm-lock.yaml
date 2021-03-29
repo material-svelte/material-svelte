@@ -145,6 +145,7 @@ importers:
   components/button:
     dependencies:
       '@material-svelte/svelte-actions': link:../../tools/svelte-actions
+      '@material-svelte/typography': link:../typography
     devDependencies:
       '@material-svelte/icon': link:../icon
       '@mdi/js': 5.9.55
@@ -166,6 +167,7 @@ importers:
     specifiers:
       '@material-svelte/icon': workspace:*
       '@material-svelte/svelte-actions': workspace:*
+      '@material-svelte/typography': workspace:*
       '@mdi/js': ^5.9.55
       '@sveltejs/vite-plugin-svelte': ^1.0.0-next.5
       '@testing-library/svelte': ^3.0.3

@@ -25,7 +25,8 @@
     "material-svelte"
   ],
   "dependencies": {
-    "@material-svelte/svelte-actions": "workspace:*"
+    "@material-svelte/svelte-actions": "workspace:*",
+    "@material-svelte/typography": "workspace:*"
   },
   "devDependencies": {
     "@material-svelte/icon": "workspace:*",
