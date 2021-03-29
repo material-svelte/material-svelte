@@ -4,6 +4,10 @@
   import Icon from '@material-svelte/icon';
 </script>
 
+<svelte:head>
+  <link href="https://unpkg.com/ress/dist/ress.min.css" rel="stylesheet" />
+</svelte:head>
+
 <div style="display: flex; margin: 16px 0;">
   <Button variant="contained">Click Me</Button>
   <Button variant="outlined">Click Me</Button>
