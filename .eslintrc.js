@@ -25,6 +25,12 @@ module.exports = {
       },
     },
     {
+      files: ['*.test.js'],
+      rules: {
+        'no-unused-expressions': 'off',
+      },
+    },
+    {
       files: ['*.svelte'],
       extends: [
         'eslint:recommended',
