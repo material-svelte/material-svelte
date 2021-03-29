@@ -1,16 +1,10 @@
 <script lang="ts">
   import { ripple } from '@material-svelte/svelte-actions';
 
-  const enum ButtonVariant {
-    Contained = 'contained',
-    Outlined = 'outlined',
-    Text = 'text',
-    FAB = 'fab',
-  }
+  type ButtonVariant = 'contained' | 'outlined' | 'text' | 'fab';
   // variable to bind the button DOM-node to
   export let buttonElement: HTMLElement | null = null;
   // variant of button to render
-  // export let variant: ButtonVariant = ButtonVariant.Contained;
   export let variant: ButtonVariant = 'contained';
   // whether the button is disabled
   export let disabled = false;
@@ -28,10 +22,10 @@
   bind:this={buttonElement}
   on:click
   use:ripple
-  class:contained={variant === ButtonVariant.Contained}
-  class:outlined={variant === ButtonVariant.Outlined}
-  class:text={variant === ButtonVariant.Text}
-  class:fab={variant === ButtonVariant.FAB}
+  class:contained={variant === 'contained'}
+  class:outlined={variant === 'outlined'}
+  class:text={variant === 'text'}
+  class:fab={variant === 'fab'}
   class:mini
   class:disabled
   class:elevated={!disableElevation}
