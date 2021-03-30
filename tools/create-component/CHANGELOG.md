@@ -1,3 +1,10 @@
+# @material-svelte/create-component [1.1.0](https://github.com/material-svelte/material-svelte/compare/@material-svelte/create-component@1.0.1...@material-svelte/create-component@1.1.0) (2021-03-30)
+
+
+### Features
+
+* **@material-svelte/create-component:** integrate chai-dom ([d4a04c6](https://github.com/material-svelte/material-svelte/commit/d4a04c686e12fe166c7b64ec8ad70e418d5e9225))
+
 ## @material-svelte/create-component [1.0.1](https://github.com/material-svelte/material-svelte/compare/@material-svelte/create-component@1.0.0...@material-svelte/create-component@1.0.1) (2021-03-28)
 
 
