@@ -1,11 +1,11 @@
 {
-  "name": "@material-svelte/icon",
+  "name": "@material-svelte/typography",
   "version": "0.0.0-semantic-release",
   "publishConfig": {
     "access": "public"
   },
-  "main": "dist/icon.umd.js",
-  "module": "dist/icon.es.js",
+  "main": "dist/typography.umd.js",
+  "module": "dist/typography.es.js",
   "scripts": {
     "build": "vite build",
     "dev": "vite",
@@ -18,17 +18,14 @@
     "dist",
     "src"
   ],
-  "dependencies": {
-    "uuid": "^8.3.2"
-  },
   "devDependencies": {
-    "@mdi/js": "^5.9.55",
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.5",
     "@testing-library/svelte": "^3.0.3",
     "@types/chai": "^4.2.15",
     "@types/mocha": "^8.2.2",
     "@web/test-runner": "^0.12.17",
     "chai": "^4.3.4",
+    "chai-dom": "^1.9.0",
     "postcss": "^8.2.8",
     "postcss-load-config": "^3.0.1",
     "svelte": "^3.35.0",

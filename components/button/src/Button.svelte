@@ -1,23 +1,18 @@
 <script lang="ts">
   import { ripple } from '@material-svelte/svelte-actions';
+  import Typography from '@material-svelte/typography';
 
-  const enum ButtonVariant {
-    Contained = 'contained',
-    Outlined = 'outlined',
-    Text = 'text',
-    FAB = 'fab',
-  }
+  type ButtonVariant = 'contained' | 'outlined' | 'text' | 'fab' | 'menu';
   // variable to bind the button DOM-node to
   export let buttonElement: HTMLElement | null = null;
   // variant of button to render
-  // export let variant: ButtonVariant = ButtonVariant.Contained;
   export let variant: ButtonVariant = 'contained';
   // whether the button is disabled
   export let disabled = false;
   // color of button to render
   export let color = '#6200ee';
   // disable elevation (applies to variants: `contained`, `fab`)
-  export let disableElevation = false;
+  export let unelevated = false;
   // whether to render the button full-width (applies to all buttons that contain content in default-slot)
   export let fullWidth = false;
   // whether to render a `fab`-variant button as `mini`
@@ -28,13 +23,14 @@
   bind:this={buttonElement}
   on:click
   use:ripple
-  class:contained={variant === ButtonVariant.Contained}
-  class:outlined={variant === ButtonVariant.Outlined}
-  class:text={variant === ButtonVariant.Text}
-  class:fab={variant === ButtonVariant.FAB}
+  class:contained={variant === 'contained'}
+  class:outlined={variant === 'outlined'}
+  class:text={variant === 'text'}
+  class:fab={variant === 'fab'}
+  class:menu={variant === 'menu'}
   class:mini
   class:disabled
-  class:elevated={!disableElevation}
+  class:unelevated
   class:full-width={fullWidth}
   class:has-content={$$slots.default}
   class:has-icon={$$slots.icon}
@@ -47,7 +43,7 @@
   {/if}
   {#if $$slots.default}
     <span class="content">
-      <slot />
+      <Typography variant="button"><slot /></Typography>
     </span>
   {/if}
 </button>
@@ -58,10 +54,6 @@
     --background-color-disabled: rgba(#000, 0.26);
     --border-radius: 4px;
     --color-disabled: rgba(#000, 0.26);
-    --font-size: 14px;
-    --font-weight: 500;
-    --letter-spacing: 1.25px;
-    --font-family: roboto, sans-serif;
     --transition-duration: 280ms;
     --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -70,12 +62,8 @@
     border-style: none;
     cursor: pointer;
     display: inline-flex;
-    font-family: var(--font-family);
-    font-size: var(--font-size);
-    font-weight: var(--font-weight);
     height: 36px;
     justify-content: center;
-    letter-spacing: var(--letter-spacing);
     outline: 0;
     position: relative;
     text-transform: uppercase;
@@ -182,17 +170,33 @@
     }
   }
 
+  button.menu {
+    background-color: transparent;
+    border-radius: 50%;
+    color: #fff;
+    height: 48px;
+    padding: 12px;
+    width: 48px;
+
+    > .icon {
+      color: var(--button-color);
+      filter: invert(1) grayscale(1) contrast(20);
+      height: 24px;
+      width: 24px;
+    }
+  }
+
   button.contained,
   button.fab {
     &:not(.disabled) {
       background-color: var(--button-color);
       color: #fff;
 
-      &.elevated {
+      &:not(.unelevated) {
         @mixin elevation 4;
       }
 
-      &.elevated:active {
+      &:not(.unelevated):active {
         @mixin elevation 8;
       }
 

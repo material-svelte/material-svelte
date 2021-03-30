@@ -8,6 +8,8 @@
   "keywords": [],
   "dependencies": {
     "@material-svelte/button": "workspace:*",
-    "@material-svelte/icon": "workspace:*"
+    "@material-svelte/icon": "workspace:*",
+    "@material-svelte/top-app-bar": "workspace:*",
+    "@material-svelte/typography": "workspace:*"
   }
 }
