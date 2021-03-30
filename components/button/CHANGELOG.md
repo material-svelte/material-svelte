@@ -1,3 +1,24 @@
+# @material-svelte/button [1.1.0](https://github.com/material-svelte/material-svelte/compare/@material-svelte/button@1.0.1...@material-svelte/button@1.1.0) (2021-03-30)
+
+
+### Bug Fixes
+
+* **@material-svelte/button:** rename disableElevation -> unelevated ([511f966](https://github.com/material-svelte/material-svelte/commit/511f966726416da4bf2092c4cc7401a023987420))
+
+
+### Features
+
+* **@material-svelte/button:** add menu-variant ([6f620d1](https://github.com/material-svelte/material-svelte/commit/6f620d10aab358feab93c62cb8c10439cf2f5c08))
+* **@material-svelte/button:** integrate @material-svelte/typography ([fddc0c6](https://github.com/material-svelte/material-svelte/commit/fddc0c6bbe7643020b8c164ac600364c80f0e917))
+
+
+
+
+
+### Dependencies
+
+* **@material-svelte/typography:** upgraded to 1.0.0
+
 ## @material-svelte/button [1.0.1](https://github.com/material-svelte/material-svelte/compare/@material-svelte/button@1.0.0...@material-svelte/button@1.0.1) (2021-03-28)
 
 
