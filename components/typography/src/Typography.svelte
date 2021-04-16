@@ -66,8 +66,15 @@
 {/if}
 
 <style lang="postcss">
-  .h1 {
+  @define-mixin common {
     font-family: var(--font-family);
+    overflow: inherit;
+    text-overflow: inherit;
+  }
+
+  .h1 {
+    @mixin common;
+
     font-size: 96px;
 
     /* light 96 -1.5 */
@@ -75,7 +82,8 @@
     letter-spacing: -1.5px;
   }
   .h2 {
-    font-family: var(--font-family);
+    @mixin common;
+
     font-size: 60px;
 
     /* light 60 -0.5 */
@@ -83,7 +91,8 @@
     letter-spacing: -0.5px;
   }
   .h3 {
-    font-family: var(--font-family);
+    @mixin common;
+
     font-size: 48px;
 
     /* normal 48px 0px */
@@ -91,7 +100,8 @@
     letter-spacing: 0;
   }
   .h4 {
-    font-family: var(--font-family);
+    @mixin common;
+
     font-size: 34px;
 
     /* normal 34px 0.25 */
@@ -99,7 +109,8 @@
     letter-spacing: 0.25px;
   }
   .h5 {
-    font-family: var(--font-family);
+    @mixin common;
+
     font-size: 24px;
 
     /* normal 24 0 */
@@ -107,7 +118,8 @@
     letter-spacing: 0;
   }
   .h6 {
-    font-family: var(--font-family);
+    @mixin common;
+
     font-size: 20px;
 
     /* medium 20 0.15 */
@@ -115,7 +127,8 @@
     letter-spacing: 0.15px;
   }
   .subtitle1 {
-    font-family: var(--font-family);
+    @mixin common;
+
     font-size: 16px;
 
     /* normal 16 0.15 */
@@ -123,7 +136,8 @@
     letter-spacing: 0.15px;
   }
   .subtitle2 {
-    font-family: var(--font-family);
+    @mixin common;
+
     font-size: 14px;
 
     /* medium 14 0.1 */
@@ -131,7 +145,8 @@
     letter-spacing: 0.1px;
   }
   .body1 {
-    font-family: var(--font-family);
+    @mixin common;
+
     font-size: 16px;
 
     /* normal 16 0.5 */
@@ -139,7 +154,8 @@
     letter-spacing: 0.5px;
   }
   .body2 {
-    font-family: var(--font-family);
+    @mixin common;
+
     font-size: 14px;
 
     /* normal 14 0.25 */
@@ -147,7 +163,8 @@
     letter-spacing: 0.25px;
   }
   .button {
-    font-family: var(--font-family);
+    @mixin common;
+
     font-size: 14px;
 
     /* medium 14 1.25 uppercase */
@@ -156,7 +173,8 @@
     text-transform: uppercase;
   }
   .caption {
-    font-family: var(--font-family);
+    @mixin common;
+
     font-size: 12px;
 
     /* normal 12 0.4 */
@@ -164,7 +182,8 @@
     letter-spacing: 0.4px;
   }
   .overline {
-    font-family: var(--font-family);
+    @mixin common;
+
     font-size: 10px;
 
     /* normal 10 1.5 uppercase */

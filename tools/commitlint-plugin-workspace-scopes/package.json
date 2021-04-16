@@ -23,8 +23,8 @@
     "workspaces"
   ],
   "dependencies": {
-    "@commitlint/ensure": "^12.0.1",
-    "@commitlint/message": "^12.0.1",
+    "@commitlint/ensure": "^12.1.1",
+    "@commitlint/message": "^12.1.1",
     "@manypkg/get-packages": "^1.1.1"
   }
 }

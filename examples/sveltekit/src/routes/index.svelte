@@ -1,7 +1,7 @@
 <script lang="ts">
   import Counter from '$lib/Counter.svelte';
-  import Button from '@material-svelte/button';
-  import Icon from '@material-svelte/icon';
+  import { Button } from '@material-svelte/button';
+  import { Icon } from '@material-svelte/icon';
   import { mdiHome } from '@mdi/js';
 </script>
 

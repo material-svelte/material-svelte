@@ -1,7 +1,6 @@
 <script>
   import { Meta, Story } from '@storybook/addon-svelte-csf';
-
-  import Typography from '@material-svelte/typography';
+  import { Typography } from '@material-svelte/typography';
 
   const variants = [
     'h1',
@@ -22,6 +21,11 @@
   const meta = {
     title: 'Components/Typography',
     component: Typography,
+    parameters: {
+      options: { showPanel: false },
+      actions: { disabled: true },
+      controls: { disabled: true },
+    },
     argTypes: {
       variant: {
         table: {
@@ -42,6 +46,18 @@
 
 <Meta {...meta} />
 
-<Story name="Example" let:variant args={{ variant: 'h1' }}>
-  <Typography {variant}>{variant}</Typography>
+<Story name="All">
+  <Typography variant="h1">H1</Typography>
+  <Typography variant="h2">H2</Typography>
+  <Typography variant="h3">H3</Typography>
+  <Typography variant="h4">H4</Typography>
+  <Typography variant="h5">H5</Typography>
+  <Typography variant="h6">H7</Typography>
+  <Typography variant="subtitle1">subtitle1</Typography>
+  <Typography variant="subtitle2">subtitle2</Typography>
+  <Typography variant="body1">body1</Typography>
+  <Typography variant="body2">body2</Typography>
+  <Typography variant="button">button</Typography>
+  <Typography variant="caption">caption</Typography>
+  <Typography variant="overline">overline</Typography>
 </Story>

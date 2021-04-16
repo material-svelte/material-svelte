@@ -16,7 +16,7 @@
     "commitlintplugin"
   ],
   "dependencies": {
-    "@commitlint/ensure": "^12.0.1",
-    "@commitlint/message": "^12.0.1"
+    "@commitlint/ensure": "^12.1.1",
+    "@commitlint/message": "^12.1.1"
   }
 }

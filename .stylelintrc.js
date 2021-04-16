@@ -24,5 +24,11 @@ module.exports = {
     // and: https://github.com/stylelint/stylelint/issues/2600#issuecomment-304978387
     // TODO build a stylelint pattern for postcss-mixins
     'scss/at-mixin-pattern': null,
+    'scss/at-rule-no-unknown': [
+      true,
+      {
+        ignoreAtRules: ['define-mixin'],
+      },
+    ],
   },
 };

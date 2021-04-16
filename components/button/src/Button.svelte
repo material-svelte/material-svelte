@@ -1,22 +1,28 @@
 <script lang="ts">
   import { ripple } from '@material-svelte/svelte-actions';
-  import Typography from '@material-svelte/typography';
+  import { Typography } from '@material-svelte/typography';
 
-  type ButtonVariant = 'contained' | 'outlined' | 'text' | 'fab' | 'menu';
+  type ButtonVariant = 'contained' | 'outlined' | 'text' | 'fab' | 'icon';
+
+  // TODO do we need this? isnt it possible to just expose `bind:this`
   // variable to bind the button DOM-node to
   export let buttonElement: HTMLElement | null = null;
   // variant of button to render
   export let variant: ButtonVariant = 'contained';
+  // font-color of button to render
+  export let fontColor = '#fff';
+  // background-color of button to render
+  export let backgroundColor = '#6200ee';
   // whether the button is disabled
   export let disabled = false;
-  // color of button to render
-  export let color = '#6200ee';
   // disable elevation (applies to variants: `contained`, `fab`)
   export let unelevated = false;
   // whether to render the button full-width (applies to all buttons that contain content in default-slot)
   export let fullWidth = false;
   // whether to render a `fab`-variant button as `mini`
   export let mini = false;
+  // whether to render the button as round
+  export let round = false;
 </script>
 
 <button
@@ -27,14 +33,15 @@
   class:outlined={variant === 'outlined'}
   class:text={variant === 'text'}
   class:fab={variant === 'fab'}
-  class:menu={variant === 'menu'}
+  class:icon={variant === 'icon'}
   class:mini
+  class:round
   class:disabled
   class:unelevated
   class:full-width={fullWidth}
   class:has-content={$$slots.default}
   class:has-icon={$$slots.icon}
-  style="--button-color: {color};"
+  style="--font-color: {fontColor}; --background-color: {backgroundColor};"
 >
   {#if $$slots.icon}
     <span class="icon">
@@ -62,7 +69,6 @@
     border-style: none;
     cursor: pointer;
     display: inline-flex;
-    height: 36px;
     justify-content: center;
     outline: 0;
     position: relative;
@@ -114,9 +120,13 @@
     &.has-content {
       min-width: 64px;
     }
+
+    &.round {
+      border-radius: 50%;
+    }
   }
 
-  button.has-icon {
+  button:not(.icon).has-icon {
     &.has-content {
       padding-left: 12px !important;
     }
@@ -170,26 +180,34 @@
     }
   }
 
-  button.menu {
-    background-color: transparent;
-    border-radius: 50%;
-    color: #fff;
-    height: 48px;
-    padding: 12px;
-    width: 48px;
+  button.icon {
+    box-sizing: content-box;
+    position: relative;
 
     > .icon {
-      color: var(--button-color);
-      filter: invert(1) grayscale(1) contrast(20);
+      height: inherit;
+      width: inherit;
+    }
+
+    &:not(.autosize) {
       height: 24px;
+      margin: -12px;
+      padding: 12px;
       width: 24px;
+    }
+
+    &.autosize {
+      height: inherit;
+      margin: -50%;
+      padding: 50%;
+      width: inherit;
     }
   }
 
   button.contained,
   button.fab {
     &:not(.disabled) {
-      background-color: var(--button-color);
+      background-color: var(--background-color);
       color: #fff;
 
       &:not(.unelevated) {
@@ -198,18 +216,6 @@
 
       &:not(.unelevated):active {
         @mixin elevation 8;
-      }
-
-      > .content {
-        background-clip: text;
-        background-color: inherit;
-        color: transparent;
-        filter: invert(1) grayscale(1) contrast(20);
-      }
-
-      > .icon {
-        color: var(--button-color);
-        filter: invert(1) grayscale(1) contrast(20);
       }
     }
 
@@ -239,13 +245,15 @@
     background-color: transparent;
 
     &:not(.disabled) {
-      color: var(--button-color);
+      color: var(--background-color);
     }
   }
 
   button.contained,
   button.outlined,
   button.text {
+    height: 36px;
+
     &:not(.has-content).has-icon {
       padding: 0 9px;
     }

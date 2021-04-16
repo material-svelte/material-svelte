@@ -1,0 +1,38 @@
+{
+  "name": "material-svelte-example",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">= 12.17.0"
+  },
+  "scripts": {
+    "build": "svelte-kit build",
+    "dev": "svelte-kit dev",
+    "start": "svelte-kit start"
+  },
+  "dependencies": {
+    "@material-svelte/button": "workspace:*",
+    "@material-svelte/checkbox": "workspace:*",
+    "@material-svelte/icon": "workspace:*",
+    "@material-svelte/layout": "workspace:*",
+    "@material-svelte/list": "workspace:*",
+    "@material-svelte/navigation-drawer": "workspace:*",
+    "@material-svelte/svelte-actions": "workspace:*",
+    "@material-svelte/top-app-bar": "workspace:*",
+    "@material-svelte/typography": "workspace:*",
+    "uid": "^2.0.0"
+  },
+  "devDependencies": {
+    "@material-svelte/postcss-plugin": "workspace:*",
+    "@mdi/js": "^5.9.55",
+    "@sveltejs/adapter-static": "^1.0.0-next.4",
+    "@sveltejs/kit": "^1.0.0-next.76",
+    "ress": "^3.0.0",
+    "svelte": "^3.37.0",
+    "svelte-preprocess": "^4.7.0",
+    "tslib": "^2.2.0",
+    "typescript": "^4.2.4",
+    "vite": "^2.1.5"
+  }
+}

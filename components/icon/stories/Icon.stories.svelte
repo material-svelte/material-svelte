@@ -1,74 +1,71 @@
 <script>
   import { Meta, Story } from '@storybook/addon-svelte-csf';
   import { mdiHome, mdiCar, mdiBus, mdiAirplane } from '@mdi/js';
-
-  import Icon from '@material-svelte/icon';
+  import { Icon } from '@material-svelte/icon';
 
   const meta = {
     title: 'Components/Icon',
     component: Icon,
+    parameters: {
+      options: { showPanel: true },
+    },
     // NOTE inferring of args from types is not supported yet thus we have to be more verbose
     argTypes: {
       path: {
         table: {
-          type: { summary: 'string | null' },
+          type: { summary: 'string' },
         },
         control: {
           type: 'select',
           options: { mdiHome, mdiCar, mdiBus, mdiAirplane },
         },
       },
-      size: {
+      label: {
         table: {
           type: { summary: 'string | null' },
         },
         control: 'text',
       },
-      label: {
-        table: { summary: 'string | null' },
-        control: 'text',
-      },
-      color: {
-        table: { summary: 'string | null' },
+      fillColor: {
         control: 'color',
       },
     },
+  };
+
+  const disableAddons = {
+    options: { showPanel: false },
+    controls: { disabled: true },
+    actions: { disabled: true },
   };
 </script>
 
 <Meta {...meta} />
 
-<Story
-  name="Static size"
-  let:size
-  let:args
-  args={{ size: '24px', path: mdiHome }}
->
-  <Icon {size} {...args} />
+<Story name="Playground" let:args args={{ path: mdiHome }}>
+  <Icon {...args} />
 </Story>
 
-<Story name="Auto size" let:args args={{ path: mdiHome }}>
-  <div style=" background: #ccc;height: 50px; width: 50px;">
-    <Icon {...args} />
+<Story name="Fixed size" parameters={disableAddons}>
+  <Icon width="24px" height="24px" path={mdiHome} />
+</Story>
+
+<Story name="Auto size" parameters={disableAddons}>
+  <div style="background-color: #ccc; height: 50px;width: 50px;">
+    <Icon path={mdiHome} />
   </div>
 </Story>
 
-<Story
-  name="Static Color"
-  let:color
-  let:args
-  args={{ color: '#f00', size: '50px', path: mdiHome }}
->
-  <Icon {color} {...args} />
+<Story name="Static Color" parameters={disableAddons}>
+  <Icon fillColor="#f00" path={mdiHome} width="50px" height="50px" />
 </Story>
 
-<Story name="Inherit Color" let:args args={{ size: '50px', path: mdiHome }}>
-  <div style="background: #ccc; color: #f00;">
-    <Icon {...args} />
+<Story name="Inherit Color" parameters={disableAddons}>
+  <div style="background-color: #ccc; color: #f00;">
+    <Icon path={mdiHome} width="50px" height="50px" />
     <span>text color</span>
   </div>
-  <div style="background: #eee; color: #00f;">
-    <Icon {...args} />
+  <div style="background-color: #ddd; color: #00f;">
+    <Icon path={mdiHome} width="50px" height="50px" />
     <span>text color</span>
   </div>
 </Story>

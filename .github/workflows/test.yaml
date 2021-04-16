@@ -26,4 +26,4 @@ jobs:
             - recursive: true
               args: [--frozen-lockfile, --strict-peer-dependencies]
       - name: Run tests
-        run: pnpm --recursive test
+        run: pnpm --recursive --workspace-concurrency 1 test
