@@ -14,5 +14,6 @@ export {
   ListDivider,
   ListSubheader,
 } from '@material-svelte/list';
+export { NavigationDrawer } from '@material-svelte/navigation-drawer';
 export { TopAppBar } from '@material-svelte/top-app-bar';
 export { Typography } from '@material-svelte/typography';

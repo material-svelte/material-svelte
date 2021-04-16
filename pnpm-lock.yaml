@@ -77,6 +77,7 @@ importers:
       '@material-svelte/checkbox': link:../../components/checkbox
       '@material-svelte/icon': link:../../components/icon
       '@material-svelte/list': link:../../components/list
+      '@material-svelte/navigation-drawer': link:../../components/navigation-drawer
       '@material-svelte/top-app-bar': link:../../components/top-app-bar
       '@material-svelte/typography': link:../../components/typography
       '@mdi/js': 5.9.55
@@ -105,6 +106,7 @@ importers:
       '@material-svelte/checkbox': workspace:*
       '@material-svelte/icon': workspace:*
       '@material-svelte/list': workspace:*
+      '@material-svelte/navigation-drawer': workspace:*
       '@material-svelte/top-app-bar': workspace:*
       '@material-svelte/typography': workspace:*
       '@mdi/js': ^5.9.55
@@ -316,6 +318,45 @@ importers:
       typescript: ^4.2.4
       vite: ^2.1.5
       vite-web-test-runner-plugin: ^0.0.2
+  components/navigation-drawer:
+    devDependencies:
+      '@material-svelte/button': link:../button
+      '@material-svelte/list': link:../list
+      '@sveltejs/vite-plugin-svelte': 1.0.0-next.7_svelte@3.37.0+vite@2.1.5
+      '@testing-library/svelte': 3.0.3_svelte@3.37.0
+      '@types/chai': 4.2.16
+      '@types/mocha': 8.2.2
+      '@web/test-runner': 0.12.19
+      chai: 4.3.4
+      chai-dom: 1.9.0_chai@4.3.4
+      postcss: 8.2.10
+      postcss-load-config: 3.0.1
+      svelte: 3.37.0
+      svelte-hmr: 0.14.0_svelte@3.37.0
+      svelte-htm: 1.1.1_svelte@3.37.0
+      svelte-preprocess: 4.7.0_ff7486d6e5a845ff361d36f415eaf31c
+      typescript: 4.2.4
+      vite: 2.1.5
+      vite-web-test-runner-plugin: 0.0.2
+    specifiers:
+      '@material-svelte/button': workspace:*
+      '@material-svelte/list': workspace:*
+      '@sveltejs/vite-plugin-svelte': ^1.0.0-next.7
+      '@testing-library/svelte': ^3.0.3
+      '@types/chai': ^4.2.16
+      '@types/mocha': ^8.2.2
+      '@web/test-runner': ^0.12.19
+      chai: ^4.3.4
+      chai-dom: ^1.9.0
+      postcss: ^8.2.10
+      postcss-load-config: ^3.0.1
+      svelte: ^3.37.0
+      svelte-hmr: ^0.14.0
+      svelte-htm: ^1.1.1
+      svelte-preprocess: ^4.7.0
+      typescript: ^4.2.4
+      vite: ^2.1.5
+      vite-web-test-runner-plugin: ^0.0.2
   components/top-app-bar:
     devDependencies:
       '@material-svelte/button': link:../button
@@ -487,6 +528,7 @@ importers:
       '@material-svelte/checkbox': link:../../components/checkbox
       '@material-svelte/icon': link:../../components/icon
       '@material-svelte/list': link:../../components/list
+      '@material-svelte/navigation-drawer': link:../../components/navigation-drawer
       '@material-svelte/top-app-bar': link:../../components/top-app-bar
       '@material-svelte/typography': link:../../components/typography
     specifiers:
@@ -494,6 +536,7 @@ importers:
       '@material-svelte/checkbox': workspace:*
       '@material-svelte/icon': workspace:*
       '@material-svelte/list': workspace:*
+      '@material-svelte/navigation-drawer': workspace:*
       '@material-svelte/top-app-bar': workspace:*
       '@material-svelte/typography': workspace:*
   tools/commitlint-plugin-scope-empty-exceptions:
