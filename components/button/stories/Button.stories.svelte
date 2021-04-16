@@ -8,6 +8,9 @@
   const meta = {
     title: 'Components/Button',
     component: Button,
+    parameters: {
+      options: { showPanel: true },
+    },
     // NOTE inferring of args from types is not supported yet thus we have to be more verbose
     argTypes: {
       variant: {
@@ -21,155 +24,175 @@
           options: ['contained', 'outlined', 'text', 'fab'],
         },
       },
-      color: { control: 'color' },
+      fontColor: { control: 'color' },
+      backgroundColor: { control: 'color' },
       buttonElement: { control: null },
     },
+  };
+
+  const disableAddons = {
+    options: { showPanel: false },
+    controls: { disabled: true },
+    actions: { disabled: true },
   };
 </script>
 
 <Meta {...meta} />
 
-<Story name="All" let:args>
+<Story name="Playground" let:args>
+  <Button {...args}>button</Button>
+</Story>
+
+<Story name="All" parameters={disableAddons}>
   <div style="display: flex; margin: 16px 0;">
-    <Button {...args} variant="contained">Click Me</Button>
-    <Button {...args} variant="outlined">Click Me</Button>
-    <Button {...args} variant="text">Click Me</Button>
+    <Button variant="contained">button</Button>
+    <Button variant="outlined">button</Button>
+    <Button variant="text">button</Button>
   </div>
   <div style="display: flex; margin: 16px 0;">
-    <Button {...args} variant="contained">
+    <Button variant="contained">
       <Icon slot="icon" path={mdiHome} />
     </Button>
-    <Button {...args} variant="outlined">
+    <Button variant="outlined">
       <Icon slot="icon" path={mdiHome} />
     </Button>
-    <Button {...args} variant="text">
+    <Button variant="text">
       <Icon slot="icon" path={mdiHome} />
-    </Button>
-  </div>
-  <div style="display: flex; margin: 16px 0;">
-    <Button {...args} variant="contained">
-      <Icon slot="icon" path={mdiHome} />
-      Click Me
-    </Button>
-    <Button {...args} variant="outlined">
-      <Icon slot="icon" path={mdiHome} />
-      Click Me
-    </Button>
-    <Button {...args} variant="text">
-      <Icon slot="icon" path={mdiHome} />
-      Click Me
     </Button>
   </div>
   <div style="display: flex; margin: 16px 0;">
-    <Button {...args} variant="fab" />
-    <Button {...args} variant="fab" mini />
-    <Button {...args} variant="fab">Click Me</Button>
+    <Button variant="contained">
+      <Icon slot="icon" path={mdiHome} />
+      button
+    </Button>
+    <Button variant="outlined">
+      <Icon slot="icon" path={mdiHome} />
+      button
+    </Button>
+    <Button variant="text">
+      <Icon slot="icon" path={mdiHome} />
+      button
+    </Button>
   </div>
   <div style="display: flex; margin: 16px 0;">
-    <Button {...args} variant="fab">
+    <Button variant="fab" />
+    <Button variant="fab" mini />
+    <Button variant="fab">button</Button>
+  </div>
+  <div style="display: flex; margin: 16px 0;">
+    <Button variant="fab">
       <Icon slot="icon" path={mdiHome} />
     </Button>
-    <Button {...args} variant="fab" mini>
+    <Button variant="fab" mini>
       <Icon slot="icon" path={mdiHome} />
     </Button>
-    <Button {...args} variant="fab">
+    <Button variant="fab">
       <Icon slot="icon" path={mdiHome} />
-      Click Me
+      button
     </Button>
   </div>
-</Story>
-
-<Story name="Contained" let:args>
-  <Button {...args}>Click Me</Button>
-</Story>
-
-<Story name="Contained with Icon" let:args>
-  <Button {...args}>
-    <Icon slot="icon" path={mdiHome} />
-    Click Me
-  </Button>
-</Story>
-
-<Story name="Outlined" let:args>
-  <Button {...args} variant="outlined">Click Me</Button>
-</Story>
-
-<Story name="Outlined with Icon" let:args>
-  <Button {...args} variant="outlined">
-    <Icon slot="icon" path={mdiHome} />
-    Click Me
-  </Button>
-</Story>
-
-<Story name="Text" let:args>
-  <Button {...args} variant="text">Click Me</Button>
-</Story>
-
-<Story name="Text with Icon" let:args>
-  <Button {...args} variant="text">
-    <Icon slot="icon" path={mdiHome} />
-    Click Me
-  </Button>
-</Story>
-
-<Story name="Fab" let:args>
-  <Button {...args} variant="fab">
+  <Button variant="icon">
     <Icon slot="icon" path={mdiHome} />
   </Button>
 </Story>
 
-<Story name="Fab - mini" let:args>
-  <Button {...args} variant="fab" mini>
+<Story name="Contained" parameters={disableAddons}>
+  <Button>button</Button>
+</Story>
+
+<Story name="Contained with Icon" parameters={disableAddons}>
+  <Button>
+    <Icon slot="icon" path={mdiHome} />
+    button
+  </Button>
+</Story>
+
+<Story name="Outlined" parameters={disableAddons}>
+  <Button variant="outlined">button</Button>
+</Story>
+
+<Story name="Outlined with Icon" parameters={disableAddons}>
+  <Button variant="outlined">
+    <Icon slot="icon" path={mdiHome} />
+    button
+  </Button>
+</Story>
+
+<Story name="Text" parameters={disableAddons}>
+  <Button variant="text">button</Button>
+</Story>
+
+<Story name="Text with Icon" parameters={disableAddons}>
+  <Button variant="text">
+    <Icon slot="icon" path={mdiHome} />
+    button
+  </Button>
+</Story>
+
+<Story name="Fab" parameters={disableAddons}>
+  <Button variant="fab">
     <Icon slot="icon" path={mdiHome} />
   </Button>
 </Story>
 
-<Story name="Fab - extended" let:args>
-  <Button {...args} variant="fab">
+<Story name="Fab - mini" parameters={disableAddons}>
+  <Button variant="fab" mini>
     <Icon slot="icon" path={mdiHome} />
-    Click Me
   </Button>
 </Story>
 
-<Story name="Icon only" let:args>
+<Story name="Fab - extended" parameters={disableAddons}>
+  <Button variant="fab">
+    <Icon slot="icon" path={mdiHome} />
+    button
+  </Button>
+</Story>
+
+<Story name="Icon-variant" parameters={disableAddons}>
+  <Button variant="icon" color="#fff">
+    <Icon slot="icon" path={mdiHome} />
+  </Button>
+</Story>
+
+<Story name="Icon only" parameters={disableAddons}>
   <div style="display: flex">
-    <Button {...args} variant="contained">
+    <Button variant="contained">
       <Icon slot="icon" path={mdiHome} />
     </Button>
-    <Button {...args} variant="outlined">
+    <Button variant="outlined">
       <Icon slot="icon" path={mdiHome} />
     </Button>
-    <Button {...args} variant="text">
+    <Button variant="text">
       <Icon slot="icon" path={mdiHome} />
     </Button>
   </div>
 </Story>
 
-<Story name="Full width" let:args>
-  <Button {...args} variant="contained" fullWidth>Click Me</Button>
+<Story name="Full width" parameters={disableAddons}>
+  <Button variant="contained" fullWidth>button</Button>
   <br />
-  <Button {...args} variant="outlined" fullWidth>Click Me</Button>
+  <Button variant="outlined" fullWidth>button</Button>
   <br />
-  <Button {...args} variant="text" fullWidth>Click Me</Button>
+  <Button variant="text" fullWidth>button</Button>
 </Story>
 
-<Story name="Full width with Icon" let:args>
-  <Button {...args} variant="contained" fullWidth>
+<Story name="Full width with Icon" parameters={disableAddons}>
+  <Button variant="contained" fullWidth>
     <Icon slot="icon" path={mdiHome} />
-    Click Me
+    button
   </Button>
   <br />
-  <Button {...args} variant="outlined" fullWidth>
+  <Button variant="outlined" fullWidth>
     <Icon slot="icon" path={mdiHome} />
-    Click Me
+    button
   </Button>
   <br />
-  <Button {...args} variant="text" fullWidth>
+  <Button variant="text" fullWidth>
     <Icon slot="icon" path={mdiHome} />
-    Click Me
+    button
   </Button>
 </Story>
 
-<Story name="on:click" let:args>
-  <Button {...args} on:click={action('clicked')}>Click Me</Button>
+<Story name="on:click" parameters={{ controls: { disabled: true } }}>
+  <Button on:click={action('clicked')}>click me</Button>
 </Story>
