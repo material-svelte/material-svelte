@@ -41,17 +41,15 @@
 <style lang="postcss">
   header {
     align-items: center;
+    align-items: flex-start;
     background-color: var(--background-color);
     color: var(--font-color);
     display: flex;
-
-    > .icon,
-    > .title,
-    > .actions {
-      padding: 8px 12px;
-    }
+    padding-left: 16px;
+    padding-right: 16px;
 
     > .title {
+      align-self: flex-end;
       flex-grow: 1;
       padding-left: 20px;
     }
@@ -67,23 +65,24 @@
 
   header.regular {
     height: 64px;
+    padding-bottom: 20px;
+    padding-top: 20px;
   }
 
   header.dense {
     height: 48px;
+    padding-bottom: 12px;
+    padding-top: 12px;
   }
 
   header.prominent {
-    align-items: flex-start;
     height: 128px;
     padding-bottom: 12px;
-
-    > .title {
-      align-self: flex-end;
-    }
+    padding-top: 20px;
   }
 
   header.prominent.dense {
     height: 96px;
+    padding-top: 12px;
   }
 </style>
