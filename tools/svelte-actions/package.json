@@ -8,8 +8,5 @@
   "license": "MIT",
   "author": "",
   "main": "src/index.js",
-  "keywords": [],
-  "dependencies": {
-    "ripplet.js": "^0.5.4"
-  }
+  "keywords": []
 }

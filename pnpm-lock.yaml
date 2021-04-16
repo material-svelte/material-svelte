@@ -444,10 +444,7 @@ importers:
       postcss-nested: ^5.0.5
       postcss-simple-vars: ^6.0.3
   tools/svelte-actions:
-    dependencies:
-      ripplet.js: 0.5.4
-    specifiers:
-      ripplet.js: ^0.5.4
+    specifiers: {}
 lockfileVersion: 5.2
 packages:
   /@babel/code-frame/7.10.4:
@@ -14854,10 +14851,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-ii4iagi25WusVoiC4B4lq7pbXfAp3D9v5CwfkY33vffw2+pkDjY1D8GaN7spsxvCSx8dkPqOZCEZyfxcmJG2IA==
-  /ripplet.js/0.5.4:
-    dev: false
-    resolution:
-      integrity: sha512-G6lWtTd6Y2zrVTKpNnuCxGPtK/PIOORwxNv0bGIBhuyxDwRjuw2PRtTse0mr9ksy0ej65yVyCLtHuP/huIlStw==
   /rollup-plugin-svelte/7.1.0_svelte@3.37.0:
     dependencies:
       require-relative: 0.8.7
