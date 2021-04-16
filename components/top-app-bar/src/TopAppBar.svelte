@@ -40,6 +40,9 @@
 
 <style lang="postcss">
   header {
+    --transition-duration: 280ms;
+    --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
     align-items: center;
     align-items: flex-start;
     background-color: var(--background-color);
@@ -47,11 +50,28 @@
     display: flex;
     padding-left: 16px;
     padding-right: 16px;
+    transition-duration: var(--transition-duration);
+    transition-property: height, padding-top, padding-bottom;
+    transition-timing-function: var(--transition-timing-function);
+
+    > .icon {
+      opacity: 0;
+      transition-duration: inherit;
+      transition-property: width, opacity, margin-right;
+      transition-timing-function: inherit;
+      width: 0;
+    }
+
+    > .icon:not(:empty) {
+      height: 24px;
+      margin-right: 32px;
+      opacity: 1;
+      width: 24px;
+    }
 
     > .title {
       align-self: flex-end;
       flex-grow: 1;
-      padding-left: 20px;
     }
 
     > .actions {
