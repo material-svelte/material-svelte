@@ -10,6 +10,7 @@
     "@material-svelte/button": "workspace:*",
     "@material-svelte/checkbox": "workspace:*",
     "@material-svelte/icon": "workspace:*",
+    "@material-svelte/list": "workspace:*",
     "@material-svelte/top-app-bar": "workspace:*",
     "@material-svelte/typography": "workspace:*"
   }
