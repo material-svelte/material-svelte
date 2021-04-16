@@ -1,7 +1,6 @@
 <script>
   import { Meta, Story } from '@storybook/addon-svelte-csf';
-
-  import COMPONENT_NAME from '@material-svelte/PACKAGE_NAME';
+  import { COMPONENT_NAME } from '@material-svelte/PACKAGE_NAME';
 
   const meta = {
     title: 'Components/COMPONENT_NAME',
