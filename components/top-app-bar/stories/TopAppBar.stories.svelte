@@ -2,7 +2,7 @@
   import { Meta, Story } from '@storybook/addon-svelte-csf';
   import TopAppBar from '@material-svelte/top-app-bar';
   import Button from '@material-svelte/button';
-  import Icon from '@material-svelte/icon';
+  import { Icon } from '@material-svelte/icon';
   import { Typography } from '@material-svelte/typography';
   import { mdiMenu, mdiShareVariant, mdiMagnify } from '@mdi/js';
 

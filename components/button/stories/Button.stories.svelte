@@ -1,10 +1,10 @@
 <script>
   import { action } from '@storybook/addon-actions';
   import { Meta, Story } from '@storybook/addon-svelte-csf';
+  import { Icon } from '@material-svelte/icon';
   import { mdiHome } from '@mdi/js';
 
   import Button from '@material-svelte/button';
-  import Icon from '@material-svelte/icon';
 
   const meta = {
     title: 'Components/Button',

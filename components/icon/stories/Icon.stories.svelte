@@ -1,8 +1,7 @@
 <script>
   import { Meta, Story } from '@storybook/addon-svelte-csf';
   import { mdiHome, mdiCar, mdiBus, mdiAirplane } from '@mdi/js';
-
-  import Icon from '@material-svelte/icon';
+  import { Icon } from '@material-svelte/icon';
 
   const meta = {
     title: 'Components/Icon',
