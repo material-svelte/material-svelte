@@ -1,12 +1,14 @@
 <script lang="ts">
+  // background-color of bar
+  export let backgroundColor = '#6200ee';
+  // font-color of bar
+  export let fontColor = '#fff';
   // render prominent style
   export let prominent = false;
   // render dense style
   export let dense = false;
   // disable elevation
   export let unelevated = false;
-  // color of bar
-  export let color = '#6200ee';
 </script>
 
 <header
@@ -17,7 +19,7 @@
   class:has-icon={$$slots.icon}
   class:has-title={$$slots.title}
   class:has-actions={$$slots.actions}
-  style="--bar-color: {color}"
+  style="--background-color: {backgroundColor}; --font-color: {fontColor};"
 >
   {#if $$slots.icon}
     <span class="icon">
@@ -38,10 +40,9 @@
 
 <style lang="postcss">
   header {
-    --background-color: var(--bar-color);
-
     align-items: center;
     background-color: var(--background-color);
+    color: var(--font-color);
     display: flex;
 
     > .icon,
@@ -51,10 +52,6 @@
     }
 
     > .title {
-      background-clip: text;
-      background-color: inherit;
-      color: transparent;
-      filter: invert(1) grayscale(1) contrast(20);
       flex-grow: 1;
       padding-left: 20px;
     }
