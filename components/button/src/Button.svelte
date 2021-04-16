@@ -1,6 +1,6 @@
 <script lang="ts">
   import { ripple } from '@material-svelte/svelte-actions';
-  import Typography from '@material-svelte/typography';
+  import { Typography } from '@material-svelte/typography';
 
   type ButtonVariant = 'contained' | 'outlined' | 'text' | 'fab' | 'menu';
   // variable to bind the button DOM-node to

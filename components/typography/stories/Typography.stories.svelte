@@ -1,7 +1,6 @@
 <script>
   import { Meta, Story } from '@storybook/addon-svelte-csf';
-
-  import Typography from '@material-svelte/typography';
+  import { Typography } from '@material-svelte/typography';
 
   const variants = [
     'h1',
