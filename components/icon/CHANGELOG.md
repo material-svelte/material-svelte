@@ -1,3 +1,15 @@
+# @material-svelte/icon [1.1.0](https://github.com/material-svelte/material-svelte/compare/@material-svelte/icon@1.0.1...@material-svelte/icon@1.1.0) (2021-04-16)
+
+
+### Bug Fixes
+
+* **@material-svelte/icon:** add named export ([726c156](https://github.com/material-svelte/material-svelte/commit/726c156c9ce611e18c93a501d4269cf5e07d202f))
+
+
+### Features
+
+* **@material-svelte/icon:** add SvgIcon-component ([70d46a8](https://github.com/material-svelte/material-svelte/commit/70d46a82473089322ca9619bea09b0b68ad9db31))
+
 ## @material-svelte/icon [1.0.1](https://github.com/material-svelte/material-svelte/compare/@material-svelte/icon@1.0.0...@material-svelte/icon@1.0.1) (2021-03-28)
 
 
