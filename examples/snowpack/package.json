@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "build": "snowpack build",
-    "start": "snowpack dev",
-    "test": "web-test-runner \"src/**/*.test.ts\""
+    "start": "snowpack dev"
   },
   "dependencies": {
     "svelte": "^3.37.0"
