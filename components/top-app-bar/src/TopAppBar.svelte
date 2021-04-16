@@ -75,7 +75,11 @@
     }
 
     > .actions {
-      margin-left: auto;
+      display: inline-flex;
+
+      /* TODO this is not safari compatible */
+      gap: 24px;
+      height: 24px;
     }
 
     &:not(.unelevated) {
