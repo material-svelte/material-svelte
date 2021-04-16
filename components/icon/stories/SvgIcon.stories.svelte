@@ -1,11 +1,11 @@
 <script>
   import { Meta, Story } from '@storybook/addon-svelte-csf';
   import { mdiHome, mdiCar, mdiBus, mdiAirplane } from '@mdi/js';
-  import { Icon } from '@material-svelte/icon';
+  import { SvgIcon } from '@material-svelte/icon';
 
   const meta = {
-    title: 'Components/Icon',
-    component: Icon,
+    title: 'Components/SvgIcon',
+    component: SvgIcon,
     parameters: {
       options: { showPanel: true },
     },
@@ -42,30 +42,30 @@
 <Meta {...meta} />
 
 <Story name="Playground" let:args args={{ path: mdiHome }}>
-  <Icon {...args} />
+  <SvgIcon {...args} />
 </Story>
 
 <Story name="Fixed size" parameters={disableAddons}>
-  <Icon width="24px" height="24px" path={mdiHome} />
+  <SvgIcon path={mdiHome} width="24px" height="24px" />
 </Story>
 
 <Story name="Auto size" parameters={disableAddons}>
-  <div style="background-color: #ccc; height: 50px;width: 50px;">
-    <Icon path={mdiHome} />
+  <div style="height: 50px; width: 50px;">
+    <SvgIcon path={mdiHome} />
   </div>
 </Story>
 
 <Story name="Static Color" parameters={disableAddons}>
-  <Icon fillColor="#f00" path={mdiHome} width="50px" height="50px" />
+  <SvgIcon fillColor="#f00" path={mdiHome} width="50px" height="50px" />
 </Story>
 
 <Story name="Inherit Color" parameters={disableAddons}>
   <div style="background-color: #ccc; color: #f00;">
-    <Icon path={mdiHome} width="50px" height="50px" />
+    <SvgIcon path={mdiHome} width="50px" height="50px" />
     <span>text color</span>
   </div>
   <div style="background-color: #ddd; color: #00f;">
-    <Icon path={mdiHome} width="50px" height="50px" />
+    <SvgIcon path={mdiHome} width="50px" height="50px" />
     <span>text color</span>
   </div>
 </Story>
