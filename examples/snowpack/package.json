@@ -8,26 +8,26 @@
     "test": "web-test-runner \"src/**/*.test.ts\""
   },
   "dependencies": {
-    "svelte": "^3.35.0"
+    "svelte": "^3.37.0"
   },
   "devDependencies": {
     "@material-svelte/button": "workspace:*",
     "@material-svelte/icon": "workspace:*",
     "@material-svelte/postcss-plugin": "workspace:*",
     "@mdi/js": "^5.9.55",
-    "@snowpack/plugin-dotenv": "^2.0.5",
-    "@snowpack/plugin-svelte": "^3.6.0",
+    "@snowpack/plugin-dotenv": "^2.1.0",
+    "@snowpack/plugin-svelte": "^3.6.1",
     "@snowpack/plugin-typescript": "^1.2.1",
     "@snowpack/web-test-runner-plugin": "^0.2.2",
     "@testing-library/svelte": "^3.0.3",
-    "@types/chai": "^4.2.15",
+    "@types/chai": "^4.2.16",
     "@types/mocha": "^8.2.2",
     "@types/snowpack-env": "^2.3.3",
-    "@web/test-runner": "^0.12.17",
+    "@web/test-runner": "^0.12.19",
     "chai": "^4.3.4",
-    "snowpack": "^3.1.2",
+    "snowpack": "^3.3.2",
     "svelte-hmr": "^0.14.0",
     "svelte-preprocess": "^4.7.0",
-    "typescript": "^4.2.3"
+    "typescript": "^4.2.4"
   }
 }
