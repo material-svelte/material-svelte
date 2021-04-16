@@ -83,6 +83,7 @@
     }
 
     &:not(.unelevated) {
+      clip-path: inset(0 0 -48px 0);
       @mixin elevation 4;
     }
   }
