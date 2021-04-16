@@ -8,6 +8,7 @@ export {
 } from '@material-svelte/button';
 export { Checkbox } from '@material-svelte/checkbox';
 export { Icon, SvgIcon } from '@material-svelte/icon';
+export { Layout } from '@material-svelte/layout';
 export {
   List,
   ListItem,
