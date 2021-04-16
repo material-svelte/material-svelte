@@ -1,3 +1,11 @@
+## @material-svelte/create-component [1.1.1](https://github.com/material-svelte/material-svelte/compare/@material-svelte/create-component@1.1.0...@material-svelte/create-component@1.1.1) (2021-04-16)
+
+
+### Bug Fixes
+
+* **@material-svelte/create-component:** always create named export ([2bcdf36](https://github.com/material-svelte/material-svelte/commit/2bcdf36cf42c16575e446d8f1c6c2513325d3534))
+* **@material-svelte/create-component:** create playground- and example-stories ([2ceabc2](https://github.com/material-svelte/material-svelte/commit/2ceabc29bf17c7716b718aa92722367099f77432))
+
 # @material-svelte/create-component [1.1.0](https://github.com/material-svelte/material-svelte/compare/@material-svelte/create-component@1.0.1...@material-svelte/create-component@1.1.0) (2021-03-30)
 
 
