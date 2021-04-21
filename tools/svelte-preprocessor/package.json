@@ -1,0 +1,12 @@
+{
+  "name": "@material-svelte/svelte-preprocessor",
+  "version": "0.0.0-semantic-release",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "",
+  "license": "MIT",
+  "author": "",
+  "main": "src/index.js",
+  "keywords": []
+}
