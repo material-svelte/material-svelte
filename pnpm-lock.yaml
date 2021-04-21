@@ -76,6 +76,7 @@ importers:
 
   apps/example:
     specifiers:
+      '@material-svelte/breakpoint': workspace:*
       '@material-svelte/breakpoint-tools': workspace:*
       '@material-svelte/button': workspace:*
       '@material-svelte/checkbox': workspace:*
@@ -99,6 +100,7 @@ importers:
       uid: ^2.0.0
       vite: ^2.1.5
     dependencies:
+      '@material-svelte/breakpoint': link:../../components/breakpoint
       '@material-svelte/breakpoint-tools': link:../../tools/breakpoint-tools
       '@material-svelte/button': link:../../components/button
       '@material-svelte/checkbox': link:../../components/checkbox

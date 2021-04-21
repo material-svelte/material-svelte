@@ -12,6 +12,7 @@
     "start": "svelte-kit start"
   },
   "dependencies": {
+    "@material-svelte/breakpoint": "workspace:*",
     "@material-svelte/breakpoint-tools": "workspace:*",
     "@material-svelte/button": "workspace:*",
     "@material-svelte/checkbox": "workspace:*",
