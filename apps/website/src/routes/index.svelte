@@ -1,19 +1,25 @@
-<h1>Under construction</h1>
+<div>
+  <img src="/logo.svg" alt="Material Svelte logo" />
+  <h1>under construction</h1>
+</div>
 
 <style>
-  h1 {
-    color: #ff3e00;
-    font-size: 4rem;
-    font-weight: 100;
-    line-height: 1.1;
-    margin: 4rem auto;
-    max-width: 14rem;
-    text-transform: uppercase;
+  div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
 
-  @media (min-width: 480px) {
-    h1 {
-      max-width: none;
-    }
+  img {
+    width: 180px;
+  }
+
+  h1 {
+    color: #ff3e00;
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1.1;
+    margin: 3rem auto;
+    text-transform: uppercase;
   }
 </style>
