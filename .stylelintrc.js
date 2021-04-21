@@ -27,7 +27,7 @@ module.exports = {
     'scss/at-rule-no-unknown': [
       true,
       {
-        ignoreAtRules: ['define-mixin'],
+        ignoreAtRules: ['define-mixin', 'breakpoint'],
       },
     ],
   },

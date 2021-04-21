@@ -7,8 +7,10 @@
   "main": "src/index.js",
   "keywords": [],
   "dependencies": {
+    "@material-svelte/breakpoint": "workspace:*",
     "@material-svelte/button": "workspace:*",
     "@material-svelte/checkbox": "workspace:*",
+    "@material-svelte/grid": "workspace:*",
     "@material-svelte/icon": "workspace:*",
     "@material-svelte/layout": "workspace:*",
     "@material-svelte/list": "workspace:*",

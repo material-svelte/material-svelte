@@ -13,8 +13,10 @@
     "postcss": "^8.2.8"
   },
   "dependencies": {
+    "@material-svelte/breakpoint-tools": "workspace:*",
     "@material-svelte/postcss-mixins": "workspace:*",
     "autoprefixer": "^10.2.5",
+    "cosmiconfig": "^7.0.0",
     "postcss-hexrgba": "github:hudochenkov/postcss-hexrgba#migrate-to-postcss-8",
     "postcss-import": "^14.0.1",
     "postcss-mixins": "^7.0.3",
