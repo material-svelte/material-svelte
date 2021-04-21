@@ -27,6 +27,7 @@ module.exports = () => {
       mixins: require('@material-svelte/postcss-mixins')(options),
     }),
     require('postcss-nested'),
+    require('postcss-for'),
     require('postcss-simple-vars'),
     require('postcss-hexrgba'),
     require('autoprefixer'),
