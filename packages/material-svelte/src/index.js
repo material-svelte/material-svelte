@@ -8,6 +8,7 @@ export {
   TextButton,
 } from '@material-svelte/button';
 export { Checkbox } from '@material-svelte/checkbox';
+export { Grid, GridItem } from '@material-svelte/grid';
 export { Icon, SvgIcon } from '@material-svelte/icon';
 export { Layout } from '@material-svelte/layout';
 export {
