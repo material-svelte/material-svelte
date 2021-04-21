@@ -21,6 +21,7 @@ module.exports = () => {
   const options = getConfig();
   const plugins = [
     require('./custom-properties')(options),
+    require('./breakpoint')(options),
     require('postcss-import'),
     require('postcss-mixins')({
       mixins: require('@material-svelte/postcss-mixins')(options),
