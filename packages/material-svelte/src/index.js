@@ -1,3 +1,4 @@
+export { Breakpoint } from '@material-svelte/breakpoint';
 export {
   Button,
   ContainedButton,
