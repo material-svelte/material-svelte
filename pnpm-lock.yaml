@@ -80,6 +80,7 @@ importers:
       '@material-svelte/breakpoint-tools': workspace:*
       '@material-svelte/button': workspace:*
       '@material-svelte/checkbox': workspace:*
+      '@material-svelte/grid': workspace:*
       '@material-svelte/icon': workspace:*
       '@material-svelte/layout': workspace:*
       '@material-svelte/list': workspace:*
@@ -104,6 +105,7 @@ importers:
       '@material-svelte/breakpoint-tools': link:../../tools/breakpoint-tools
       '@material-svelte/button': link:../../components/button
       '@material-svelte/checkbox': link:../../components/checkbox
+      '@material-svelte/grid': link:../../components/grid
       '@material-svelte/icon': link:../../components/icon
       '@material-svelte/layout': link:../../components/layout
       '@material-svelte/list': link:../../components/list

@@ -96,6 +96,7 @@
       <ListItem href="breakpoint" selected={$page.path === '/breakpoint'}>
         Breakpoint
       </ListItem>
+      <ListItem href="grid" selected={$page.path === '/grid'}>Grid</ListItem>
       {#each Array(20) as _, i}
         <ListItem>{i}</ListItem>
       {/each}
