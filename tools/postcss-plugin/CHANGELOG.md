@@ -1,3 +1,10 @@
+# @material-svelte/postcss-plugin [1.2.0](https://github.com/material-svelte/material-svelte/compare/@material-svelte/postcss-plugin@1.1.0...@material-svelte/postcss-plugin@1.2.0) (2021-04-21)
+
+
+### Features
+
+* **@material-svelte/postcss-plugin:** include postcss-for ([e600454](https://github.com/material-svelte/material-svelte/commit/e600454ec6af8a72d1da852ac83a2cf953602615))
+
 # @material-svelte/postcss-plugin [1.1.0](https://github.com/material-svelte/material-svelte/compare/@material-svelte/postcss-plugin@1.0.0...@material-svelte/postcss-plugin@1.1.0) (2021-04-21)
 
 
