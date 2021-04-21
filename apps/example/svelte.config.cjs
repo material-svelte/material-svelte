@@ -1,15 +1,19 @@
 const sveltePreprocess = require('svelte-preprocess');
 const static = require('@sveltejs/adapter-static');
 const pkg = require('./package.json');
-const materialSvelte = require('@material-svelte/postcss-plugin');
+const materialPreprocess = require('@material-svelte/svelte-preprocessor');
+const materialPostcss = require('@material-svelte/postcss-plugin');
 
 /** @type {import('@sveltejs/kit').Config} */
 module.exports = {
-  preprocess: sveltePreprocess({
-    postcss: {
-      plugins: [materialSvelte()],
-    },
-  }),
+  preprocess: [
+    materialPreprocess(),
+    sveltePreprocess({
+      postcss: {
+        plugins: [materialPostcss()],
+      },
+    }),
+  ],
   kit: {
     adapter: static(),
 
