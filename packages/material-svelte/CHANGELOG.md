@@ -1,3 +1,19 @@
+# material-svelte [1.4.0](https://github.com/material-svelte/material-svelte/compare/material-svelte@1.3.0...material-svelte@1.4.0) (2021-04-21)
+
+
+### Features
+
+* **@material-svelte/paper:** initial implementation ([e03ce5a](https://github.com/material-svelte/material-svelte/commit/e03ce5a2cb7ed6c947123db1e9bab8beb0b9cc07))
+
+
+
+
+
+### Dependencies
+
+* **@material-svelte/breakpoint:** upgraded to 1.0.1
+* **@material-svelte/paper:** upgraded to 1.0.0
+
 # material-svelte [1.3.0](https://github.com/material-svelte/material-svelte/compare/material-svelte@1.2.0...material-svelte@1.3.0) (2021-04-21)
 
 
