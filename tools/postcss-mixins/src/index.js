@@ -1,5 +1,5 @@
-const elevation = require('./elevation');
-
-module.exports = {
-  elevation,
+module.exports = (options = {}) => {
+  return {
+    elevation: require('./elevation')(options),
+  };
 };

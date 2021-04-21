@@ -117,7 +117,7 @@ function elevationBoxShadow(zValue, color = baselineColor, opacityBoost = 0) {
   return `${umbra}, ${penumbra}, ${ambient}`;
 }
 
-function elevation(mixin, level) {
+function elevation(options, mixin, level) {
   try {
     return {
       'box-shadow': elevationBoxShadow(level),
@@ -127,4 +127,8 @@ function elevation(mixin, level) {
   }
 }
 
-module.exports = elevation;
+module.exports = (options = {}) => {
+  return (mixin, level) => {
+    return elevation(options, mixin, level);
+  };
+};
