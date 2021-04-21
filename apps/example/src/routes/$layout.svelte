@@ -63,6 +63,10 @@
   });
 </script>
 
+<svelte:head>
+  <title>{$title}</title>
+</svelte:head>
+
 <Layout clippedNavigation={$layoutClippedNavigation}>
   <TopAppBar slot="header" prominent={$barProminent} dense={$barDense}>
     <svelte:fragment slot="icon">
