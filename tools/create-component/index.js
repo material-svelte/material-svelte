@@ -68,7 +68,19 @@ async function init() {
   }
   console.log(`  pnpm install`);
   console.log(`  pnpm dev`);
-  console.log(`\nDon't forget to add devDependency to storybook:\n`);
+  console.log(
+    `\nDon't forget to add dependency to 'packages/material-svelte/package.json':\n`
+  );
+  console.log(`  "@material-svelte/${packageName}": "workspace:*"`);
+  console.log(
+    `\nDon't forget to add export to 'packages/material-svelte/src/index.js':\n`
+  );
+  console.log(
+    `  export { ${componentName} } from '@material-svelte/${packageName}';`
+  );
+  console.log(
+    `\nDon't forget to add devDependency to 'apps/storybook/package.json':\n`
+  );
   console.log(`  "@material-svelte/${packageName}": "workspace:*"`);
   console.log();
 }
