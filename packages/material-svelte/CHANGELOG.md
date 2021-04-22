@@ -1,3 +1,24 @@
+# material-svelte [1.5.0](https://github.com/material-svelte/material-svelte/compare/material-svelte@1.4.0...material-svelte@1.5.0) (2021-04-22)
+
+
+### Features
+
+* **@material-svelte/switch:** initial implementation ([57755f5](https://github.com/material-svelte/material-svelte/commit/57755f515e01e1ccc33bbf3fa209090ac2f5c247))
+
+
+
+
+
+### Dependencies
+
+* **@material-svelte/breakpoint:** upgraded to 1.0.2
+* **@material-svelte/button:** upgraded to 1.2.1
+* **@material-svelte/checkbox:** upgraded to 1.0.1
+* **@material-svelte/list:** upgraded to 1.0.1
+* **@material-svelte/navigation-drawer:** upgraded to 1.0.1
+* **@material-svelte/switch:** upgraded to 1.0.0
+* **@material-svelte/top-app-bar:** upgraded to 1.0.2
+
 # material-svelte [1.4.0](https://github.com/material-svelte/material-svelte/compare/material-svelte@1.3.0...material-svelte@1.4.0) (2021-04-21)
 
 
