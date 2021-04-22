@@ -1,3 +1,10 @@
+## @material-svelte/create-component [1.1.2](https://github.com/material-svelte/material-svelte/compare/@material-svelte/create-component@1.1.1...@material-svelte/create-component@1.1.2) (2021-04-22)
+
+
+### Bug Fixes
+
+* **@material-svelte/create-component:** improve instructions in output ([9061a72](https://github.com/material-svelte/material-svelte/commit/9061a728e881783988085ad2b8ae286fbfd40352))
+
 ## @material-svelte/create-component [1.1.1](https://github.com/material-svelte/material-svelte/compare/@material-svelte/create-component@1.1.0...@material-svelte/create-component@1.1.1) (2021-04-16)
 
 
