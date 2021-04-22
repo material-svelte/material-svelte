@@ -1,3 +1,10 @@
+# @material-svelte/postcss-plugin [1.3.0](https://github.com/material-svelte/material-svelte/compare/@material-svelte/postcss-plugin@1.2.0...@material-svelte/postcss-plugin@1.3.0) (2021-04-22)
+
+
+### Features
+
+* **@material-svelte/postcss-plugin:** integrate postcss-easings ([29e6009](https://github.com/material-svelte/material-svelte/commit/29e600928f8d836604c8f112a6bca1e937395f58))
+
 # @material-svelte/postcss-plugin [1.2.0](https://github.com/material-svelte/material-svelte/compare/@material-svelte/postcss-plugin@1.1.0...@material-svelte/postcss-plugin@1.2.0) (2021-04-21)
 
 
