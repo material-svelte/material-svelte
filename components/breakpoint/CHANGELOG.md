@@ -1,3 +1,13 @@
+## @material-svelte/breakpoint [1.0.2](https://github.com/material-svelte/material-svelte/compare/@material-svelte/breakpoint@1.0.1...@material-svelte/breakpoint@1.0.2) (2021-04-22)
+
+
+
+
+
+### Dependencies
+
+* **@material-svelte/postcss-plugin:** upgraded to 1.3.0
+
 ## @material-svelte/breakpoint [1.0.1](https://github.com/material-svelte/material-svelte/compare/@material-svelte/breakpoint@1.0.0...@material-svelte/breakpoint@1.0.1) (2021-04-21)
 
 
