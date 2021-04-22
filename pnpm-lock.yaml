@@ -213,7 +213,7 @@ importers:
     devDependencies:
       '@sveltejs/adapter-node': 1.0.0-next.16
       '@sveltejs/adapter-static': 1.0.0-next.4
-      '@sveltejs/kit': 1.0.0-next.84_svelte@3.37.0+vite@2.1.5
+      '@sveltejs/kit': 1.0.0-next.85_svelte@3.37.0+vite@2.1.5
       postcss: 8.2.10
       svelte: 3.37.0
       svelte-preprocess: 4.7.0_4459c0d51e55f30ed0a441cf9b362a0d
@@ -732,7 +732,7 @@ importers:
       '@material-svelte/postcss-plugin': link:../../tools/postcss-plugin
       '@mdi/js': 5.9.55
       '@sveltejs/adapter-node': 1.0.0-next.16
-      '@sveltejs/kit': 1.0.0-next.84_svelte@3.37.0+vite@2.1.5
+      '@sveltejs/kit': 1.0.0-next.85_svelte@3.37.0+vite@2.1.5
       svelte: 3.37.0
       svelte-preprocess: 4.7.0_svelte@3.37.0+typescript@4.2.4
       tslib: 2.2.0
@@ -831,6 +831,7 @@ importers:
       autoprefixer: ^10.2.5
       cosmiconfig: ^7.0.0
       postcss: ^8.2.10
+      postcss-easings: ^3.0.1
       postcss-for: ^2.1.1
       postcss-hexrgba: github:hudochenkov/postcss-hexrgba#migrate-to-postcss-8
       postcss-import: ^14.0.1
@@ -842,6 +843,7 @@ importers:
       '@material-svelte/postcss-mixins': link:../postcss-mixins
       autoprefixer: 10.2.5_postcss@8.2.10
       cosmiconfig: 7.0.0
+      postcss-easings: 3.0.1_postcss@8.2.10
       postcss-for: 2.1.1
       postcss-hexrgba: github.com/hudochenkov/postcss-hexrgba/17522c4bc49af32c38469c3cb65e55b6aa369ea1_postcss@8.2.10
       postcss-import: 14.0.1_postcss@8.2.10
@@ -4867,8 +4869,8 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.84_svelte@3.37.0+vite@2.1.5:
-    resolution: {integrity: sha512-v3XsG2Gvl4Fo7j5Uqmeq7NxpdzL6ODi9fV7eQhVNF2/J1Dko2ptG786jC3ynuCR7vrp67Mv+1MgraqGwIBETAQ==}
+  /@sveltejs/kit/1.0.0-next.85_svelte@3.37.0+vite@2.1.5:
+    resolution: {integrity: sha512-hurjQxSObSDqX9RgKFBPRuDfCnGlEy8hg24g6SezV1grUV+qJ5JTNPxwQw75nOS11z67ZaHWwglw64OvqSBLgA==}
     engines: {node: '>= 12.17.0'}
     hasBin: true
     peerDependencies:
@@ -13431,6 +13433,16 @@ packages:
       slash: 3.0.0
       yargs: 16.2.0
     dev: true
+
+  /postcss-easings/3.0.1_postcss@8.2.10:
+    resolution: {integrity: sha512-n3bG/X3iB0m8d845vhFg/62/ECeT8jY8gE8F2A41z8Mty41spYA4vzMLezha7icVjtGjqlxgO3QE+uOzpDqeww==}
+    engines: {node: '>=10.0'}
+    peerDependencies:
+      postcss: ^8.1.0
+    dependencies:
+      postcss: 8.2.10
+      postcss-value-parser: 4.1.0
+    dev: false
 
   /postcss-flexbugs-fixes/4.2.1:
     resolution: {integrity: sha512-9SiofaZ9CWpQWxOwRh1b/r85KD5y7GgvsNt1056k6OYLvWUun0czCvogfJgylC22uJTwW1KzY3Gz65NZRlvoiQ==}
