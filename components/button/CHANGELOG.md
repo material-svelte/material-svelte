@@ -1,3 +1,18 @@
+## @material-svelte/button [1.2.1](https://github.com/material-svelte/material-svelte/compare/@material-svelte/button@1.2.0...@material-svelte/button@1.2.1) (2021-04-22)
+
+
+### Bug Fixes
+
+* **@material-svelte/button:** add hover-transition ([22a286f](https://github.com/material-svelte/material-svelte/commit/22a286f134797672cb83355d8dbae363789f4242))
+
+
+
+
+
+### Dependencies
+
+* **@material-svelte/svelte-actions:** upgraded to 1.2.0
+
 # @material-svelte/button [1.2.0](https://github.com/material-svelte/material-svelte/compare/@material-svelte/button@1.1.0...@material-svelte/button@1.2.0) (2021-04-16)
 
 
