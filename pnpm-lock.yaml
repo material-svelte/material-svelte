@@ -88,6 +88,7 @@ importers:
       '@material-svelte/postcss-plugin': workspace:*
       '@material-svelte/svelte-actions': workspace:*
       '@material-svelte/svelte-preprocessor': workspace:*
+      '@material-svelte/switch': workspace:*
       '@material-svelte/top-app-bar': workspace:*
       '@material-svelte/typography': workspace:*
       '@mdi/js': ^5.9.55
@@ -111,6 +112,7 @@ importers:
       '@material-svelte/list': link:../../components/list
       '@material-svelte/navigation-drawer': link:../../components/navigation-drawer
       '@material-svelte/svelte-actions': link:../../tools/svelte-actions
+      '@material-svelte/switch': link:../../components/switch
       '@material-svelte/top-app-bar': link:../../components/top-app-bar
       '@material-svelte/typography': link:../../components/typography
       uid: 2.0.0

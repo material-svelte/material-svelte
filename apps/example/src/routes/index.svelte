@@ -7,6 +7,7 @@
     ListDivider,
     ListSubheader,
   } from '@material-svelte/list';
+  import { Switch } from '@material-svelte/switch';
 
   let listSelection: string[];
 
@@ -31,7 +32,7 @@
     }}
   >
     prominent
-    <Checkbox slot="meta" bind:checked={$barProminent} />
+    <Switch slot="meta" bind:checked={$barProminent} />
   </ListItem>
   <ListItem
     on:click={() => {
@@ -39,10 +40,18 @@
     }}
   >
     dense
-    <Checkbox slot="meta" bind:checked={$barDense} />
+    <Switch slot="meta" bind:checked={$barDense} />
   </ListItem>
   <ListDivider />
   <ListSubheader>NavigationDrawer options</ListSubheader>
+  <ListItem
+    on:click={() => {
+      $drawerOpen = !$drawerOpen;
+    }}
+  >
+    open
+    <Checkbox slot="meta" bind:checked={$drawerOpen} />
+  </ListItem>
   <ListItem
     on:click={() => {
       $drawerOpen = !$drawerOpen;
