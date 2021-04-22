@@ -88,6 +88,9 @@
       opacity: 0;
       position: absolute;
       top: 0;
+      transition-duration: var(--transition-duration);
+      transition-property: opacity;
+      transition-timing-function: var(--transition-timing-function);
       width: 100%;
     }
 

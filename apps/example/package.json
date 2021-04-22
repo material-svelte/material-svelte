@@ -22,6 +22,7 @@
     "@material-svelte/list": "workspace:*",
     "@material-svelte/navigation-drawer": "workspace:*",
     "@material-svelte/svelte-actions": "workspace:*",
+    "@material-svelte/switch": "workspace:*",
     "@material-svelte/top-app-bar": "workspace:*",
     "@material-svelte/typography": "workspace:*",
     "uid": "^2.0.0"

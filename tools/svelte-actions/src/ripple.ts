@@ -6,6 +6,7 @@ interface RippleOptions {
   stopTimingFunction?: string;
   centered?: boolean;
   abortAnimation?: boolean;
+  triggerOnParent?: boolean;
 }
 
 const RippleDefaults: RippleOptions = {
@@ -16,10 +17,12 @@ const RippleDefaults: RippleOptions = {
   stopTimingFunction: 'ease-in-out',
   centered: false,
   abortAnimation: true,
+  triggerOnParent: false,
 };
 
 class Ripple {
   private element: HTMLElement;
+  private triggerElement: HTMLElement;
   private options: RippleOptions;
   private animationElement: HTMLElement;
 
@@ -27,8 +30,13 @@ class Ripple {
     this.element = element;
     this.options = { ...RippleDefaults, ...options };
     this.injectContainerStyle();
+    if (this.options.triggerOnParent) {
+      this.triggerElement = this.element.parentElement;
+    } else {
+      this.triggerElement = this.element;
+    }
     this.element.classList.add('ripple-container');
-    this.element.addEventListener(
+    this.triggerElement.addEventListener(
       'pointerdown',
       this.startAnimation.bind(this)
     );
@@ -36,7 +44,7 @@ class Ripple {
 
   public destroy() {
     this.element.classList.remove('ripple-container');
-    this.element.removeEventListener('pointerdown', this.startAnimation);
+    this.triggerElement.removeEventListener('pointerdown', this.startAnimation);
   }
 
   private startAnimation(event: PointerEvent) {
@@ -46,12 +54,12 @@ class Ripple {
     }
     this.createAnimationElement(event);
     const stop = () => {
-      this.element.removeEventListener('pointerup', stop);
-      this.element.removeEventListener('pointerleave', stop);
+      this.triggerElement.removeEventListener('pointerup', stop);
+      this.triggerElement.removeEventListener('pointerleave', stop);
       this.stopAnimation(this.animationElement);
     };
-    this.element.addEventListener('pointerup', stop);
-    this.element.addEventListener('pointerleave', stop);
+    this.triggerElement.addEventListener('pointerup', stop);
+    this.triggerElement.addEventListener('pointerleave', stop);
   }
 
   private stopAnimation(animationElement: HTMLElement) {

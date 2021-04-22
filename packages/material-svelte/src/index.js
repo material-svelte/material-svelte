@@ -19,5 +19,6 @@ export {
 } from '@material-svelte/list';
 export { NavigationDrawer } from '@material-svelte/navigation-drawer';
 export { Paper } from '@material-svelte/paper';
+export { Switch } from '@material-svelte/switch';
 export { TopAppBar } from '@material-svelte/top-app-bar';
 export { Typography } from '@material-svelte/typography';

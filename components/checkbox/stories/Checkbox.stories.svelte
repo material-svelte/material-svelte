@@ -1,4 +1,5 @@
 <script>
+  import { action } from '@storybook/addon-actions';
   import { Meta, Story } from '@storybook/addon-svelte-csf';
   import { Checkbox } from '@material-svelte/checkbox';
   import { mdiStar, mdiStarOutline, mdiHeart, mdiHeartOutline } from '@mdi/js';
@@ -102,4 +103,8 @@
 <Story name="Custom icons" parameters={disableAddons}>
   <Checkbox checkedIcon={mdiStar} uncheckedIcon={mdiStarOutline} />
   <Checkbox checkedIcon={mdiHeart} uncheckedIcon={mdiHeartOutline} />
+</Story>
+
+<Story name="on:change" parameters={{ controls: { disabled: true } }}>
+  <Checkbox on:change={action('changed')} />
 </Story>

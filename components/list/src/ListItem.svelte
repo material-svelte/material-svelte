@@ -285,7 +285,7 @@
     display: block;
     height: 24px;
     margin-left: 16px;
-    width: 24px;
+    min-width: 24px;
   }
 
   li.one-line {

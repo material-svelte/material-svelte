@@ -83,8 +83,6 @@
     height: 24px;
     margin: -12px;
     padding: 12px;
-
-    /* display: inline-flex; */
     position: relative;
     width: 24px;
   }
@@ -115,6 +113,9 @@
     background-color: currentColor;
     border-radius: inherit;
     content: '';
+    transition-duration: 280ms;
+    transition-property: opacity;
+    transition-timing-function: ease-out-quart;
   }
 
   input {
