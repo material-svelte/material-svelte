@@ -1,3 +1,10 @@
+# @material-svelte/svelte-actions [1.2.0](https://github.com/material-svelte/material-svelte/compare/@material-svelte/svelte-actions@1.1.0...@material-svelte/svelte-actions@1.2.0) (2021-04-22)
+
+
+### Features
+
+* **@material-svelte/svelte-actions:** ripple - support triggering on parent ([a5f8df8](https://github.com/material-svelte/material-svelte/commit/a5f8df81638661c96b8f34092d920a2c6b676693))
+
 # @material-svelte/svelte-actions [1.1.0](https://github.com/material-svelte/material-svelte/compare/@material-svelte/svelte-actions@1.0.0...@material-svelte/svelte-actions@1.1.0) (2021-04-16)
 
 
