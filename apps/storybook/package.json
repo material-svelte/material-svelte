@@ -23,6 +23,7 @@
     "@material-svelte/navigation-drawer": "workspace:*",
     "@material-svelte/paper": "workspace:*",
     "@material-svelte/svelte-preprocessor": "workspace:*",
+    "@material-svelte/switch": "workspace:*",
     "@material-svelte/top-app-bar": "workspace:*",
     "@material-svelte/typography": "workspace:*",
     "@mdi/js": "^5.9.55",
