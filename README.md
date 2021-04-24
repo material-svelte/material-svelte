@@ -17,6 +17,12 @@
 
 ### Vercel
 
-[![Powered by Vercel](apps/website/static/powered-by-vercel.svg)](https://vercel.com?utm_source=material-svelte&utm_campaign=oss)
+<a href="https://vercel.com?utm_source=material-svelte&utm_campaign=oss"><img src="https://github.com/material-svelte/material-svelte/blob/main/apps/website/static/powered-by-vercel.svg" height="40" alt="vercel logo"></a>
 
-Thanks to Vercel sponsoring this project by allowing it to be deployed for free
+Thanks to [Vercel](https://vercel.com?utm_source=material-svelte&utm_campaign=oss) for sponsoring this project by allowing it to run deployments for free
+
+### happo.io
+
+<a href="https://happo.io?utm_source=material-svelte&utm_campaign=oss"><img src="https://github.com/material-svelte/material-svelte/blob/main/apps/website/static/happo-io-logo.svg" height="40" alt="happo.io logo"></a>
+
+Thanks to [happo.io](https://happo.io?utm_source=material-svelte&utm_campaign=oss) for sponsoring this project by allowing it to run cross-platform, cross-browser screenshot-testing for free
