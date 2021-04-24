@@ -7,6 +7,8 @@
   "author": "",
   "scripts": {
     "build": "build-storybook -c .storybook -o build",
+    "happo": "happo",
+    "happo-ci-github-actions": "happo-ci-github-actions",
     "start": "start-storybook -p 6006"
   },
   "keywords": [],
@@ -36,6 +38,8 @@
     "@storybook/addon-svelte-csf": "^1.0.0",
     "@storybook/svelte": "^6.2.8",
     "babel-loader": "^8.2.2",
+    "happo-plugin-storybook": "^2.7.0",
+    "happo.io": "^6.4.0",
     "material-svelte": "workspace:*",
     "postcss": "^8.2.10",
     "react": "^17.0.2",

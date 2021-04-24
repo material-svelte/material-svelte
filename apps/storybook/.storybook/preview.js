@@ -1,5 +1,6 @@
 const materialConfig = require('../material.config.cjs');
 const { BreakpointSlicer } = require('@material-svelte/breakpoint-tools');
+import 'happo-plugin-storybook/register';
 
 const slicer = new BreakpointSlicer(materialConfig.breakpoints);
 let viewports = {};
