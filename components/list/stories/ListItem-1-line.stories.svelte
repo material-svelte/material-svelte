@@ -7,14 +7,12 @@
     mdiCheckboxBlankOutline,
     mdiAccountCircle,
   } from '@mdi/js';
+  import thumbnail from '../../../branding/logo_512.png';
 
   const meta = {
     title: 'Components/ListItem',
     component: ListItem,
   };
-
-  const stockPhoto =
-    'https://images.unsplash.com/photo-1601703149866-a33416ff836f?fit=crop&w=200';
 </script>
 
 <Meta {...meta} />
@@ -73,15 +71,15 @@
   </style>
   <List>
     <ListItem visualVariant="thumbnail">
-      <img slot="visual" src={stockPhoto} alt="stockphoto" />
+      <img slot="visual" src={thumbnail} alt="thumbnail" />
       Primary Text
     </ListItem>
     <ListItem visualVariant="thumbnail">
-      <img slot="visual" src={stockPhoto} alt="stockphoto" />
+      <img slot="visual" src={thumbnail} alt="thumbnail" />
       Primary Text
     </ListItem>
     <ListItem visualVariant="thumbnail">
-      <img slot="visual" src={stockPhoto} alt="stockphoto" />
+      <img slot="visual" src={thumbnail} alt="thumbnail" />
       Primary Text
     </ListItem>
   </List>
@@ -97,15 +95,15 @@
   </style>
   <List>
     <ListItem visualVariant="thumbnail-large">
-      <img slot="visual" src={stockPhoto} alt="stockphoto" />
+      <img slot="visual" src={thumbnail} alt="thumbnail" />
       Primary Text
     </ListItem>
     <ListItem visualVariant="thumbnail-large">
-      <img slot="visual" src={stockPhoto} alt="stockphoto" />
+      <img slot="visual" src={thumbnail} alt="thumbnail" />
       Primary Text
     </ListItem>
     <ListItem visualVariant="thumbnail-large">
-      <img slot="visual" src={stockPhoto} alt="stockphoto" />
+      <img slot="visual" src={thumbnail} alt="thumbnail" />
       Primary Text
     </ListItem>
   </List>
