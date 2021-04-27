@@ -96,6 +96,9 @@
         Breakpoint
       </ListItem>
       <ListItem href="/grid" selected={$page.path === '/grid'}>Grid</ListItem>
+      <ListItem href="/rail" selected={$page.path.startsWith('/rail')}>
+        NavigationRail
+      </ListItem>
       {#each Array(20) as _, i}
         <ListItem>{i}</ListItem>
       {/each}
