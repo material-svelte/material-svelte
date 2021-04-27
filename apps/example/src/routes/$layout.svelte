@@ -101,21 +101,11 @@
       {/each}
     </List>
   </NavigationDrawer>
-  <main>
-    <slot />
-  </main>
+  <slot />
 </Layout>
 
 <style>
   :global(body) {
     height: 100vh;
-  }
-
-  main {
-    /* overflow: auto; */
-
-    /* overflow: hidden; */
-
-    /* height: 100%; */
   }
 </style>
