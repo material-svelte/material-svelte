@@ -23,6 +23,7 @@
     "@material-svelte/layout": "workspace:*",
     "@material-svelte/list": "workspace:*",
     "@material-svelte/navigation-drawer": "workspace:*",
+    "@material-svelte/navigation-rail": "workspace:*",
     "@material-svelte/paper": "workspace:*",
     "@material-svelte/svelte-preprocessor": "workspace:*",
     "@material-svelte/switch": "workspace:*",
