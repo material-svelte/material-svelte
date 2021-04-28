@@ -664,6 +664,7 @@ importers:
 
   components/tooltip:
     specifiers:
+      '@material-svelte/svelte-type-generator': workspace:*
       '@material-svelte/typography': workspace:*
       '@popperjs/core': ^2.9.2
       '@sveltejs/vite-plugin-svelte': ^1.0.0-next.7
@@ -685,6 +686,7 @@ importers:
     dependencies:
       '@popperjs/core': 2.9.2
     devDependencies:
+      '@material-svelte/svelte-type-generator': link:../../tools/svelte-type-generator
       '@material-svelte/typography': link:../typography
       '@sveltejs/vite-plugin-svelte': 1.0.0-next.7_svelte@3.37.0+vite@2.1.5
       '@testing-library/svelte': 3.0.3_svelte@3.37.0

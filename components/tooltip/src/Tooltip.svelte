@@ -4,12 +4,13 @@
 <script lang="ts">
   import { Typography } from '@material-svelte/typography';
 
+  /** text of tooltip */
   export let text: string;
+  /** whether to draw an arrow */
   export let arrow = false;
-
-  // element passed to popper
+  /** html-element passed to popper */
   export let popperElement: HTMLElement;
-  // modifiers passed to popper
+  /** modifiers passed to popper */
   export const popperModifiers = !arrow
     ? []
     : [
