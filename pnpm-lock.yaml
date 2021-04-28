@@ -622,6 +622,7 @@ importers:
   components/switch:
     specifiers:
       '@material-svelte/svelte-actions': workspace:*
+      '@material-svelte/svelte-type-generator': workspace:*
       '@sveltejs/vite-plugin-svelte': ^1.0.0-next.7
       '@testing-library/svelte': ^3.0.3
       '@types/chai': ^4.2.16
@@ -643,6 +644,7 @@ importers:
       uid: 2.0.0
     devDependencies:
       '@material-svelte/svelte-actions': link:../../tools/svelte-actions
+      '@material-svelte/svelte-type-generator': link:../../tools/svelte-type-generator
       '@sveltejs/vite-plugin-svelte': 1.0.0-next.7_svelte@3.37.0+vite@2.1.5
       '@testing-library/svelte': 3.0.3_svelte@3.37.0
       '@types/chai': 4.2.16

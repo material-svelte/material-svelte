@@ -2,20 +2,18 @@
   import { uid } from 'uid';
   import { ripple } from '@material-svelte/svelte-actions';
 
-  // whether the switch is checked
-  export let checked = false;
-  // whether the switch is disabled
-  export let disabled = false;
-  // value of the switch
+  /** id of the switch. auto-generated if not specified */
+  export let id: string = uid();
+  /** value of the switch */
   export let value: string | null = null;
-  // id of the switch. auto-generated if not specified
-  export let id: string | null = null;
-  // color when checked
+  /** whether the switch is checked */
+  export let checked = false;
+  /** whether the switch is disabled */
+  export let disabled = false;
+  /** color when checked */
   export let checkedColor = '#6200ee';
-  // color when unchecked
+  /** color when unchecked */
   export let uncheckedColor = '#fff';
-
-  id = id || uid();
 </script>
 
 <div
