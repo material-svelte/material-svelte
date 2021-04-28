@@ -326,6 +326,7 @@ importers:
     specifiers:
       '@material-svelte/icon': workspace:*
       '@material-svelte/svelte-actions': workspace:*
+      '@material-svelte/svelte-type-generator': workspace:*
       '@mdi/js': ^5.9.55
       '@sveltejs/vite-plugin-svelte': ^1.0.0-next.7
       '@testing-library/svelte': ^3.0.3
@@ -348,6 +349,7 @@ importers:
       '@material-svelte/svelte-actions': link:../../tools/svelte-actions
     devDependencies:
       '@material-svelte/icon': link:../icon
+      '@material-svelte/svelte-type-generator': link:../../tools/svelte-type-generator
       '@mdi/js': 5.9.55
       '@sveltejs/vite-plugin-svelte': 1.0.0-next.7_svelte@3.37.0+vite@2.1.5
       '@testing-library/svelte': 3.0.3_svelte@3.37.0
