@@ -1,15 +1,16 @@
 <script lang="ts">
   import SvgIcon from './SvgIcon.svelte';
-  // svg-path of icon
+
+  /** svg-path of icon */
   export let path: string;
-  // accessible name of icon
-  export let label: string | null = null;
-  // width of icon
+  /** width of icon */
   export let width = '100%';
-  // height of icon
+  /** height of icon */
   export let height = '100%';
-  // color of icon
+  /** color of icon */
   export let fillColor = 'currentColor';
+  /** accessible name of icon */
+  export let label: string | null = null;
 </script>
 
 <i>
