@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
 
+  /** whether the navigation should be clipped underneath the header */
   export let clippedNavigation = false;
 
   let navigation: HTMLElement;
