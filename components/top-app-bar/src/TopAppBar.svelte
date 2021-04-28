@@ -1,13 +1,13 @@
 <script lang="ts">
-  // background-color of bar
+  /** background-color of bar */
   export let backgroundColor = '#6200ee';
-  // font-color of bar
+  /** font-color of bar */
   export let fontColor = '#fff';
-  // render prominent style
+  /** render prominent style */
   export let prominent = false;
-  // render dense style
+  /** render dense style */
   export let dense = false;
-  // disable elevation
+  /** disable elevation */
   export let unelevated = false;
 </script>
 
