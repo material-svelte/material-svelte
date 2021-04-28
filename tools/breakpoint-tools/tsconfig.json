@@ -1,20 +1,21 @@
 {
-  "include": ["src/**/*"],
-  "exclude": ["node_modules/*", "public/*"],
   "compilerOptions": {
-    "target": "ESNEXT",
-    "lib": ["ESNEXT", "dom"],
-    "module": "ESNEXT",
+    "target": "esnext",
+    "lib": ["esnext", "dom"],
+    "module": "esnext",
     "moduleResolution": "node",
-
+    "allowJs": true,
+    "checkJs": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "declarationDir": "./dist",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
     "strictNullChecks": true
-  }
+  },
+  "include": ["src/**/*"]
 }
