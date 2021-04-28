@@ -1,8 +1,5 @@
-<script lang="ts">
-  // TODO could get rid of the whole if/else stuff if this PR gets accepted:
-  // https://github.com/sveltejs/svelte/pull/5481
-
-  type TypographyVariant =
+<script context="module" lang="ts">
+  export type TypographyVariant =
     | 'h1'
     | 'h2'
     | 'h3'
@@ -16,15 +13,17 @@
     | 'button'
     | 'caption'
     | 'overline';
+</script>
 
-  // variant to render
+<script lang="ts">
+  // TODO could get rid of the whole if/else stuff if this PR gets accepted:
+  // https://github.com/sveltejs/svelte/pull/5481
+  /** variant of typography */
   export let variant: TypographyVariant;
-  // use markup of different variant
-  export let component: TypographyVariant | null = null;
-  // font-family to render
+  /** use markup of different variant */
+  export let component: TypographyVariant = variant;
+  /** font-family for typography */
   export let fontFamily = 'roboto, sans-serif';
-
-  component = component || variant;
 
   const tagMap = {
     h1: 'h1',
