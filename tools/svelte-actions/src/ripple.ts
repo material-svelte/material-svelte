@@ -1,20 +1,28 @@
 interface RippleOptions {
+  /** color of ripple */
   color?: string;
-  startDuration?: string;
-  startTimingFunction?: string;
-  stopDuration?: string;
-  stopTimingFunction?: string;
+  /** duration of enter-animation (in ms) */
+  enterDuration?: string;
+  /** timing-function of enter-animation */
+  enterTimingFunction?: string;
+  /** duration of leave-animation (in ms) */
+  leaveDuration?: string;
+  /** timing-function of leave-animation */
+  leaveTimingFunction?: string;
+  /** whether ripple should be centered */
   centered?: boolean;
+  /** whether running animation should be canceled when a new one begins */
   abortAnimation?: boolean;
+  /** whether to trigger on parent-element */
   triggerOnParent?: boolean;
 }
 
 const RippleDefaults: RippleOptions = {
   color: 'rgba(0, 0, 0, 0.1)',
-  startDuration: '400ms',
-  startTimingFunction: 'linear',
-  stopDuration: '1000ms',
-  stopTimingFunction: 'ease-in-out',
+  enterDuration: '400ms',
+  enterTimingFunction: 'linear',
+  leaveDuration: '1000ms',
+  leaveTimingFunction: 'ease-in-out',
   centered: false,
   abortAnimation: true,
   triggerOnParent: false,
@@ -24,14 +32,14 @@ class Ripple {
   private element: HTMLElement;
   private triggerElement: HTMLElement;
   private options: RippleOptions;
-  private animationElement: HTMLElement;
+  private animationElement: HTMLElement | undefined = undefined;
 
   constructor(element: HTMLElement, options: RippleOptions) {
     this.element = element;
     this.options = { ...RippleDefaults, ...options };
     this.injectContainerStyle();
     if (this.options.triggerOnParent) {
-      this.triggerElement = this.element.parentElement;
+      this.triggerElement = this.element.parentElement || this.element;
     } else {
       this.triggerElement = this.element;
     }
@@ -56,7 +64,9 @@ class Ripple {
     const stop = () => {
       this.triggerElement.removeEventListener('pointerup', stop);
       this.triggerElement.removeEventListener('pointerleave', stop);
-      this.stopAnimation(this.animationElement);
+      if (this.animationElement) {
+        this.stopAnimation(this.animationElement);
+      }
     };
     this.triggerElement.addEventListener('pointerup', stop);
     this.triggerElement.addEventListener('pointerleave', stop);
@@ -72,29 +82,31 @@ class Ripple {
   }
 
   private abortAnimation() {
-    this.animationElement.remove();
+    if (this.animationElement) {
+      this.animationElement.remove();
+    }
   }
 
   private createAnimationElement(event: PointerEvent) {
     this.animationElement = document.createElement('div');
     this.animationElement.classList.add('ripple');
     this.element.appendChild(this.animationElement);
-    const startTransition = `${this.options.startDuration} ${this.options.startTimingFunction} 0s`;
-    const stopTransition = `${this.options.stopDuration} ${this.options.stopTimingFunction} 0s`;
+    const enterTransition = `${this.options.enterDuration} ${this.options.enterTimingFunction} 0s`;
+    const leaveTransition = `${this.options.leaveDuration} ${this.options.leaveTimingFunction} 0s`;
     const style = this.animationElement.style;
     style.position = 'absolute';
     style.width = style.maxWidth = style.paddingBottom = '0%';
     style.height = '0';
     style.transform = 'translate(-50%, -50%)';
     style.borderRadius = '50%';
-    style.backgroundColor = this.options.color;
+    style.backgroundColor = `${this.options.color}`;
     style.opacity = '1';
     style.pointerEvents = 'none';
     style.transition =
-      `width ${startTransition},` +
-      `max-width ${startTransition},` +
-      `padding-bottom ${startTransition},` +
-      `opacity ${stopTransition}`;
+      `width ${enterTransition},` +
+      `max-width ${enterTransition},` +
+      `padding-bottom ${enterTransition},` +
+      `opacity ${leaveTransition}`;
 
     const { clientX: x, clientY: y } = event;
     const {
