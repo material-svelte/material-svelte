@@ -1,9 +1,9 @@
 <script lang="ts">
-  // render NavigationDrawer in open state
+  /** whether NavigationDrawer is open */
   export let open = false;
-  // render NavigationDrawer as modal
+  /** whether NavigationDrawer is modal */
   export let modal = false;
-  // enable elevation (does not apply to modal)
+  /** whether NavigationDrawer is elevated */
   export let elevated = false;
 </script>
 

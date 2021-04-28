@@ -543,6 +543,7 @@ importers:
     specifiers:
       '@material-svelte/button': workspace:*
       '@material-svelte/list': workspace:*
+      '@material-svelte/svelte-type-generator': workspace:*
       '@sveltejs/vite-plugin-svelte': ^1.0.0-next.7
       '@testing-library/svelte': ^3.0.3
       '@types/chai': ^4.2.16
@@ -562,6 +563,7 @@ importers:
     devDependencies:
       '@material-svelte/button': link:../button
       '@material-svelte/list': link:../list
+      '@material-svelte/svelte-type-generator': link:../../tools/svelte-type-generator
       '@sveltejs/vite-plugin-svelte': 1.0.0-next.7_svelte@3.37.0+vite@2.1.5
       '@testing-library/svelte': 3.0.3_svelte@3.37.0
       '@types/chai': 4.2.16
