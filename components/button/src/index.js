@@ -1,4 +1,3 @@
-export { default } from './Button.svelte';
 export { default as Button } from './Button.svelte';
 export { default as ContainedButton } from './ContainedButton.svelte';
 export { default as FloatingActionButton } from './FloatingActionButton.svelte';

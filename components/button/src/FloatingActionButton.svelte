@@ -1,16 +1,17 @@
 <script lang="ts">
   import Button from './Button.svelte';
-  // variable to bind the button DOM-node to
-  export let buttonElement: HTMLElement | null = null;
-  // font-color of button to render
+
+  /** variable to bind button-element to */
+  export let buttonElement: HTMLButtonElement | null = null;
+  /** The buttons font-color */
   export let fontColor = '#fff';
-  // background-color of button to render
+  /** The buttons background-color */
   export let backgroundColor = '#6200ee';
-  // whether the button is disabled
+  /** whether the button is disabled */
   export let disabled = false;
-  // disable elevation (applies to variants: `contained`, `fab`)
+  /** whether the buttons elevation is disabled */
   export let unelevated = false;
-  // whether to render a `fab`-variant button as `mini`
+  /** whether a button is mini */
   export let mini = false;
 
   const props = {

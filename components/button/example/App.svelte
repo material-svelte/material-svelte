@@ -1,7 +1,7 @@
 <script>
+  import { Icon } from '@material-svelte/icon';
   import { mdiHome } from '@mdi/js';
   import Button from '../src/Button.svelte';
-  import Icon from '@material-svelte/icon';
 </script>
 
 <svelte:head>
