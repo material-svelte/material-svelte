@@ -1,10 +1,13 @@
+<script context="module" lang="ts">
+  export type PaperVariant = 'elevated' | 'outlined';
+</script>
+
 <script lang="ts">
-  type PaperVariant = 'elevated' | 'outlined';
-  // variant of paper to render
+  /** variant of paper */
   export let variant: PaperVariant = 'elevated';
-  // elevation of paper (applies for elevated-variant only)
+  /** elevation of paper (applies for elevated-variant only) */
   export let elevation = 1;
-  // whether to render border-radius
+  /** whether to render border-radius */
   export let square = false;
 </script>
 
