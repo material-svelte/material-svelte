@@ -1,12 +1,16 @@
+<script context="module" lang="ts">
+  export type GridItemSize = 'auto' | number | null;
+</script>
+
 <script lang="ts">
   import { getContext } from 'svelte';
   import { key as contextKey } from './context';
   import { BreakpointSlicer } from '@material-svelte/breakpoint-tools';
   import config from '$material-svelte-config';
 
-  type ItemSize = number | 'auto' | null;
-
-  export let size: ItemSize = null;
+  /** size of grid-item */
+  export let size: GridItemSize = null;
+  /** whether another grid will be nested in this grid-item */
   export let nested = false;
 
   const { columnsStore, guttersStore } = getContext(contextKey);
@@ -18,7 +22,7 @@
 
   const slicer = new BreakpointSlicer(config.breakpoints);
   let defaultSize = size;
-  const sizes = {};
+  const sizes: { [key: string]: GridItemSize } = {};
   slicer.forEach((slice) => {
     const sliceSize = $$restProps[slice.name] || null;
     if ((defaultSize === null || defaultSize === 'auto') && sliceSize) {
