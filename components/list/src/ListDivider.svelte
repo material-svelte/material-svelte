@@ -1,6 +1,9 @@
-<script lang="ts">
-  type ListDividerVariant = 'full' | 'middle' | 'inset';
+<script context="module" lang="ts">
+  export type ListDividerVariant = 'full' | 'middle' | 'inset';
+</script>
 
+<script lang="ts">
+  /** variant of divider */
   export let variant: ListDividerVariant = 'full';
 </script>
 

@@ -495,6 +495,7 @@ importers:
       '@material-svelte/checkbox': workspace:*
       '@material-svelte/icon': workspace:*
       '@material-svelte/svelte-actions': workspace:*
+      '@material-svelte/svelte-type-generator': workspace:*
       '@material-svelte/typography': workspace:*
       '@mdi/js': ^5.9.55
       '@sveltejs/vite-plugin-svelte': ^1.0.0-next.7
@@ -518,6 +519,7 @@ importers:
       '@material-svelte/checkbox': link:../checkbox
       '@material-svelte/icon': link:../icon
       '@material-svelte/svelte-actions': link:../../tools/svelte-actions
+      '@material-svelte/svelte-type-generator': link:../../tools/svelte-type-generator
       '@material-svelte/typography': link:../typography
       '@mdi/js': 5.9.55
       '@sveltejs/vite-plugin-svelte': 1.0.0-next.7_svelte@3.37.0+vite@2.1.5

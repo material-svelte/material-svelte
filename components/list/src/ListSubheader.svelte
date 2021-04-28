@@ -1,8 +1,11 @@
+<script context="module" lang="ts">
+  export type ListSubheaderVariant = 'regular' | 'inset';
+</script>
+
 <script lang="ts">
   import { Typography } from '@material-svelte/typography';
 
-  type ListSubheaderVariant = 'regular' | 'inset';
-
+  /** variant of subheader */
   export let variant: ListSubheaderVariant = 'regular';
 </script>
 
