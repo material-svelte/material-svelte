@@ -1,3 +1,18 @@
+# @material-svelte/typography [1.1.0](https://github.com/material-svelte/material-svelte/compare/@material-svelte/typography@1.0.1...@material-svelte/typography@1.1.0) (2021-04-29)
+
+
+### Features
+
+* **@material-svelte/typography:** integrate type-generation ([dd2ca7d](https://github.com/material-svelte/material-svelte/commit/dd2ca7db6a88bd83a4d83ba19e7d839258fdd647))
+
+
+
+
+
+### Dependencies
+
+* **@material-svelte/svelte-type-generator:** upgraded to 1.0.0
+
 ## @material-svelte/typography [1.0.1](https://github.com/material-svelte/material-svelte/compare/@material-svelte/typography@1.0.0...@material-svelte/typography@1.0.1) (2021-04-16)
 
 
