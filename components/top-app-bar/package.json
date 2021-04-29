@@ -7,7 +7,8 @@
   "main": "dist/top-app-bar.umd.js",
   "module": "dist/top-app-bar.es.js",
   "scripts": {
-    "build": "vite build",
+    "build": "vite build && pnpm build:types",
+    "build:types": "svelte-type-generator",
     "dev": "vite",
     "prepublishOnly": "pnpm build",
     "serve": "vite preview",
@@ -21,6 +22,7 @@
   "devDependencies": {
     "@material-svelte/button": "workspace:*",
     "@material-svelte/icon": "workspace:*",
+    "@material-svelte/svelte-type-generator": "workspace:*",
     "@material-svelte/typography": "workspace:*",
     "@mdi/js": "^5.9.55",
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.7",
@@ -39,5 +41,6 @@
     "vite": "^2.1.5",
     "vite-web-test-runner-plugin": "^0.0.2"
   },
+  "types": "dist/types",
   "svelte": "src/index.js"
 }

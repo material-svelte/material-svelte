@@ -1,27 +1,33 @@
+<script context="module" lang="ts">
+  export type ButtonVariant =
+    | 'contained'
+    | 'outlined'
+    | 'text'
+    | 'fab'
+    | 'icon';
+</script>
+
 <script lang="ts">
   import { ripple } from '@material-svelte/svelte-actions';
   import { Typography } from '@material-svelte/typography';
 
-  type ButtonVariant = 'contained' | 'outlined' | 'text' | 'fab' | 'icon';
-
-  // TODO do we need this? isnt it possible to just expose `bind:this`
-  // variable to bind the button DOM-node to
-  export let buttonElement: HTMLElement | null = null;
-  // variant of button to render
+  /** variable to bind button-element to */
+  export let buttonElement: HTMLButtonElement | null = null;
+  /** The button variant */
   export let variant: ButtonVariant = 'contained';
-  // font-color of button to render
+  /** The buttons font-color */
   export let fontColor = '#fff';
-  // background-color of button to render
+  /** The buttons background-color */
   export let backgroundColor = '#6200ee';
-  // whether the button is disabled
+  /** whether the button is disabled */
   export let disabled = false;
-  // disable elevation (applies to variants: `contained`, `fab`)
+  /** whether the buttons elevation is disabled */
   export let unelevated = false;
-  // whether to render the button full-width (applies to all buttons that contain content in default-slot)
+  /** whether the button should be full-width */
   export let fullWidth = false;
-  // whether to render a `fab`-variant button as `mini`
+  /** whether a fab-button is mini */
   export let mini = false;
-  // whether to render the button as round
+  /** whether the button is round */
   export let round = false;
 </script>
 

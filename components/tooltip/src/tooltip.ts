@@ -4,12 +4,19 @@ import type { Instance as PopperInstance, Placement } from '@popperjs/core';
 import TooltipComponent from './Tooltip.svelte';
 
 interface TooltipOptions {
+  /** whether to render an arrow */
   arrow?: boolean;
+  /** which component to render the tooltip with */
   component?: SvelteComponent;
+  /** duration to wait before rendering the tooltip (in ms) */
   enterDelay?: number;
+  /** duration to wait before removing the tooltip (in ms) */
   leaveDelay?: number;
+  /** placement of the tooltip */
   placement?: Placement;
+  /** additional props to pass to component */
   props?: { [key: string]: any };
+  /** text of tooltip */
   text?: string;
 }
 

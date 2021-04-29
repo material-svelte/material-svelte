@@ -3,15 +3,15 @@
   import { writable } from 'svelte/store';
   import { key as contextKey } from './context';
 
-  // whether the list can be interacted with
+  /** whether the list can be interacted with */
   export let disabled = false;
-  // whether list-items are selectable
+  /** whether list-items are selectable */
   export let selectable = false;
-  // whether multiple list-items can be selected
+  /** whether multiple list-items are selectable */
   export let multiple = false;
-  // render list-items in navigation-style
+  /** whether to render list-items in navigation-style */
   export let navigation = false;
-  // array with selected ids
+  /** array with selected ids */
   export let selection: string[] = [];
 
   let element: HTMLUListElement;

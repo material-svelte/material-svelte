@@ -1,31 +1,33 @@
+<script context="module" lang="ts">
+  export type ListItemVisualVariant =
+    | 'icon'
+    | 'avatar'
+    | 'thumbnail'
+    | 'thumbnail-large';
+  export type ListItemMetaVariant = 'icon' | 'text';
+</script>
+
 <script lang="ts">
   import { onMount, hasContext, getContext } from 'svelte';
   import { Typography } from '@material-svelte/typography';
   import { ripple } from '@material-svelte/svelte-actions';
   import { key as contextKey } from './context';
 
-  type ListItemVisualVariant =
-    | 'icon'
-    | 'avatar'
-    | 'thumbnail'
-    | 'thumbnail-large';
-  type ListItemMetaVariant = 'icon' | 'text';
-
-  // id of the list-item. auto-generated if not specified
+  /** id of the list-item. auto-generated if not specified */
   export let id: string | null = null;
-  // whether the list-item is selected
+  /** whether the list-item is selected */
   export let selected = false;
-  // whether the list-item is disabled
+  /** whether the list-item is disabled */
   export let disabled = false;
-  // render the list-item in navigation-style (inherits from List if not specified)
+  /** render the list-item in navigation-style (inherits from List if not specified) */
   export let navigation: boolean | null = null;
-  // render the list-item as <a href> if specified
+  /** render the list-item as <a href> if specified */
   export let href: string | null = null;
-  // render the list-item in n-lines-style (auto-determined if not specified)
+  /** render the list-item in n-lines-style (auto-determined if not specified) */
   export let lines: number | null = null;
-  // variant of visual-slot
+  /** variant of visual-slot */
   export let visualVariant: ListItemVisualVariant = 'icon';
-  // variant of meta-slot
+  /** variant of meta-slot */
   export let metaVariant: ListItemMetaVariant = 'icon';
 
   if (lines === null) {
@@ -82,7 +84,7 @@
   class:has-meta={$$slots.meta}
   class:meta-icon={$$slots.meta && metaVariant === 'icon'}
   class:meta-text={$$slots.meta && metaVariant === 'text'}
-  class:link={href !== null}
+  class:link={href}
   class:selected
   class:disabled
   class:navigation
@@ -90,7 +92,7 @@
   on:click
   use:ripple
 >
-  {#if href !== null}
+  {#if href}
     <a {href}>
       {#if $$slots.visual}
         <span class="visual">

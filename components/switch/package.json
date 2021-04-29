@@ -7,7 +7,8 @@
   "main": "dist/switch.umd.js",
   "module": "dist/switch.es.js",
   "scripts": {
-    "build": "vite build",
+    "build": "vite build && pnpm build:types",
+    "build:types": "svelte-type-generator",
     "dev": "vite",
     "prepublishOnly": "pnpm build",
     "serve": "vite preview",
@@ -23,6 +24,7 @@
   },
   "devDependencies": {
     "@material-svelte/svelte-actions": "workspace:*",
+    "@material-svelte/svelte-type-generator": "workspace:*",
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.7",
     "@testing-library/svelte": "^3.0.3",
     "@types/chai": "^4.2.16",
@@ -40,5 +42,6 @@
     "vite": "^2.1.5",
     "vite-web-test-runner-plugin": "^0.0.2"
   },
+  "types": "dist/types",
   "svelte": "src/index.js"
 }

@@ -8,30 +8,28 @@
     mdiMinusBox,
   } from '@mdi/js';
 
-  // whether the checkbox is checked
+  /** whether the checkbox is checked */
   export let checked: boolean | null = null;
-  // whether the checkbox is indeterminate
+  /** whether the checkbox is indeterminate */
   export let indeterminate = false;
-  // whether the checkbox is disabled
+  /** whether the checkbox is disabled */
   export let disabled = false;
-  // value of the checkbox
+  /** value of the checkbox */
   export let value: string | null = null;
-  // id of the checkbox. auto-generated if not specified
-  export let id: string | null = null;
-  // color when checked
+  /** id of the checkbox. auto-generated if not specified */
+  export let id: string = uid();
+  /** color when checked */
   export let checkedColor = 'currentColor';
-  // color when unchecked
+  /** color when unchecked */
   export let uncheckedColor = 'currentColor';
-  // color when indeterminate
+  /** color when indeterminate */
   export let indeterminateColor = 'currentColor';
-  // icon for checked state
+  /** icon for checked state */
   export let checkedIcon: string = mdiCheckboxMarked;
-  // icon for unchecked state
+  /** icon for unchecked state */
   export let uncheckedIcon: string = mdiCheckboxBlankOutline;
-  // icon for indeterminate state
+  /** icon for indeterminate state */
   export let indeterminateIcon: string = mdiMinusBox;
-
-  id = id || uid();
 
   let iconPath: string;
   let iconColor: string;

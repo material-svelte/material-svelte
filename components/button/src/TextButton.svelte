@@ -1,12 +1,13 @@
 <script lang="ts">
   import Button from './Button.svelte';
-  // variable to bind the button DOM-node to
-  export let buttonElement: HTMLElement | null = null;
-  // color of button to render
+
+  /** variable to bind button-element to */
+  export let buttonElement: HTMLButtonElement | null = null;
+  /** The buttons color */
   export let color = '#6200ee';
-  // whether the button is disabled
+  /** whether the button is disabled */
   export let disabled = false;
-  // whether to render the button full-width
+  /** whether the button should be full-width */
   export let fullWidth = false;
 
   const props = {
