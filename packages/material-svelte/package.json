@@ -5,6 +5,10 @@
   "license": "MIT",
   "author": "",
   "main": "src/index.js",
+  "scripts": {
+    "build": "cpy src/index.js dist --rename index.d.ts",
+    "prepublishOnly": "pnpm build"
+  },
   "keywords": [],
   "dependencies": {
     "@material-svelte/breakpoint": "workspace:*",
@@ -19,5 +23,9 @@
     "@material-svelte/switch": "workspace:*",
     "@material-svelte/top-app-bar": "workspace:*",
     "@material-svelte/typography": "workspace:*"
-  }
+  },
+  "devDependencies": {
+    "cpy-cli": "^3.1.1"
+  },
+  "types": "dist/index.d.ts"
 }
