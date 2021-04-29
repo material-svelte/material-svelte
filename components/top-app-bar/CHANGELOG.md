@@ -1,3 +1,21 @@
+# @material-svelte/top-app-bar [1.1.0](https://github.com/material-svelte/material-svelte/compare/@material-svelte/top-app-bar@1.0.2...@material-svelte/top-app-bar@1.1.0) (2021-04-29)
+
+
+### Features
+
+* **@material-svelte/top-app-bar:** integrate type-generation ([7ad5437](https://github.com/material-svelte/material-svelte/commit/7ad5437c27b9a51a9079adb461b7a8342124d236))
+
+
+
+
+
+### Dependencies
+
+* **@material-svelte/button:** upgraded to 1.3.0
+* **@material-svelte/icon:** upgraded to 1.2.0
+* **@material-svelte/svelte-type-generator:** upgraded to 1.0.0
+* **@material-svelte/typography:** upgraded to 1.1.0
+
 ## @material-svelte/top-app-bar [1.0.2](https://github.com/material-svelte/material-svelte/compare/@material-svelte/top-app-bar@1.0.1...@material-svelte/top-app-bar@1.0.2) (2021-04-22)
 
 
