@@ -75,9 +75,7 @@ async function init() {
   console.log(
     `\nDon't forget to add export to 'packages/material-svelte/src/index.js':\n`
   );
-  console.log(
-    `  export { ${componentName} } from '@material-svelte/${packageName}';`
-  );
+  console.log(`  export * from '@material-svelte/${packageName}';`);
   console.log(
     `\nDon't forget to add devDependency to 'apps/storybook/package.json':\n`
   );
