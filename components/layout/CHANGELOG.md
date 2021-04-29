@@ -1,3 +1,18 @@
+# @material-svelte/layout [1.1.0](https://github.com/material-svelte/material-svelte/compare/@material-svelte/layout@1.0.0...@material-svelte/layout@1.1.0) (2021-04-29)
+
+
+### Features
+
+* **@material-svelte/layout:** integrate type-generation ([0e10eb8](https://github.com/material-svelte/material-svelte/commit/0e10eb8e4f9be8ca7dccfeea75f9459678a1c872))
+
+
+
+
+
+### Dependencies
+
+* **@material-svelte/svelte-type-generator:** upgraded to 1.0.0
+
 # @material-svelte/layout 1.0.0 (2021-04-16)
 
 
