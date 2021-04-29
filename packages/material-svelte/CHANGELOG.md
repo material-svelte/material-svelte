@@ -1,3 +1,18 @@
+# material-svelte [1.6.0](https://github.com/material-svelte/material-svelte/compare/material-svelte@1.5.2...material-svelte@1.6.0) (2021-04-29)
+
+
+### Features
+
+* **@material-svelte/navigation-rail:** initial implementation ([584bcdd](https://github.com/material-svelte/material-svelte/commit/584bcdd24a5f5a831dca8316456f35e1824b6940))
+
+
+
+
+
+### Dependencies
+
+* **@material-svelte/navigation-rail:** upgraded to 1.0.0
+
 ## material-svelte [1.5.2](https://github.com/material-svelte/material-svelte/compare/material-svelte@1.5.1...material-svelte@1.5.2) (2021-04-29)
 
 
