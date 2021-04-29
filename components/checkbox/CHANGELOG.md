@@ -1,3 +1,20 @@
+# @material-svelte/checkbox [1.1.0](https://github.com/material-svelte/material-svelte/compare/@material-svelte/checkbox@1.0.1...@material-svelte/checkbox@1.1.0) (2021-04-29)
+
+
+### Features
+
+* **@material-svelte/checkbox:** integrate type-generation ([c531e5b](https://github.com/material-svelte/material-svelte/commit/c531e5b1f3c8910cda59051cbe4da33b229c2039))
+
+
+
+
+
+### Dependencies
+
+* **@material-svelte/svelte-actions:** upgraded to 1.3.0
+* **@material-svelte/icon:** upgraded to 1.2.0
+* **@material-svelte/svelte-type-generator:** upgraded to 1.0.0
+
 ## @material-svelte/checkbox [1.0.1](https://github.com/material-svelte/material-svelte/compare/@material-svelte/checkbox@1.0.0...@material-svelte/checkbox@1.0.1) (2021-04-22)
 
 
