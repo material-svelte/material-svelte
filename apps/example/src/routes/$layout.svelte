@@ -91,32 +91,24 @@
     modal={$drawerModal}
   >
     <List navigation>
-      <ListItem href="." selected={$page.path === '/'}>Home</ListItem>
-      <ListItem href="test" selected={$page.path === '/test'}>Test</ListItem>
-      <ListItem href="breakpoint" selected={$page.path === '/breakpoint'}>
+      <ListItem href="/" selected={$page.path === '/'}>Home</ListItem>
+      <ListItem href="/breakpoint" selected={$page.path === '/breakpoint'}>
         Breakpoint
       </ListItem>
-      <ListItem href="grid" selected={$page.path === '/grid'}>Grid</ListItem>
+      <ListItem href="/grid" selected={$page.path === '/grid'}>Grid</ListItem>
+      <ListItem href="/rail" selected={$page.path.startsWith('/rail')}>
+        NavigationRail
+      </ListItem>
       {#each Array(20) as _, i}
         <ListItem>{i}</ListItem>
       {/each}
     </List>
   </NavigationDrawer>
-  <main>
-    <slot />
-  </main>
+  <slot />
 </Layout>
 
 <style>
   :global(body) {
     height: 100vh;
-  }
-
-  main {
-    /* overflow: auto; */
-
-    /* overflow: hidden; */
-
-    /* height: 100%; */
   }
 </style>

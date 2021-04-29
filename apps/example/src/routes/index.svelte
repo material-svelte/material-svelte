@@ -54,14 +54,6 @@
   </ListItem>
   <ListItem
     on:click={() => {
-      $drawerOpen = !$drawerOpen;
-    }}
-  >
-    open
-    <Checkbox slot="meta" bind:checked={$drawerOpen} />
-  </ListItem>
-  <ListItem
-    on:click={() => {
       $drawerModal = !$drawerModal;
     }}
   >

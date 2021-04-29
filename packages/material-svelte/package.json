@@ -19,6 +19,7 @@
     "@material-svelte/layout": "workspace:*",
     "@material-svelte/list": "workspace:*",
     "@material-svelte/navigation-drawer": "workspace:*",
+    "@material-svelte/navigation-rail": "workspace:*",
     "@material-svelte/paper": "workspace:*",
     "@material-svelte/switch": "workspace:*",
     "@material-svelte/top-app-bar": "workspace:*",
