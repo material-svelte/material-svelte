@@ -1,3 +1,10 @@
+# @material-svelte/breakpoint-tools [1.1.0](https://github.com/material-svelte/material-svelte/compare/@material-svelte/breakpoint-tools@1.0.0...@material-svelte/breakpoint-tools@1.1.0) (2021-04-29)
+
+
+### Features
+
+* **@material-svelte/breakpoint-tools:** integrate type-generation ([f06310b](https://github.com/material-svelte/material-svelte/commit/f06310b354e3b1e258bc67912bbad221f411813e))
+
 # @material-svelte/breakpoint-tools 1.0.0 (2021-04-21)
 
 
