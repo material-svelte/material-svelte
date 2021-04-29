@@ -1,3 +1,10 @@
+# @material-svelte/create-component [1.2.0](https://github.com/material-svelte/material-svelte/compare/@material-svelte/create-component@1.1.2...@material-svelte/create-component@1.2.0) (2021-04-29)
+
+
+### Features
+
+* **@material-svelte/create-component:** integrate type-generator ([06010ce](https://github.com/material-svelte/material-svelte/commit/06010ce9de26a96792616cc8f71883ebed371ff9))
+
 ## @material-svelte/create-component [1.1.2](https://github.com/material-svelte/material-svelte/compare/@material-svelte/create-component@1.1.1...@material-svelte/create-component@1.1.2) (2021-04-22)
 
 
