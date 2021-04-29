@@ -1,3 +1,13 @@
+## @material-svelte/postcss-plugin [1.3.1](https://github.com/material-svelte/material-svelte/compare/@material-svelte/postcss-plugin@1.3.0...@material-svelte/postcss-plugin@1.3.1) (2021-04-29)
+
+
+
+
+
+### Dependencies
+
+* **@material-svelte/breakpoint-tools:** upgraded to 1.1.0
+
 # @material-svelte/postcss-plugin [1.3.0](https://github.com/material-svelte/material-svelte/compare/@material-svelte/postcss-plugin@1.2.0...@material-svelte/postcss-plugin@1.3.0) (2021-04-22)
 
 
