@@ -1,3 +1,21 @@
+# @material-svelte/button [1.3.0](https://github.com/material-svelte/material-svelte/compare/@material-svelte/button@1.2.1...@material-svelte/button@1.3.0) (2021-04-29)
+
+
+### Features
+
+* **@material-svelte/button:** integrate type-generation ([1325c64](https://github.com/material-svelte/material-svelte/commit/1325c643aeb8c22b9b339ad0e68c563620b335e9))
+
+
+
+
+
+### Dependencies
+
+* **@material-svelte/svelte-actions:** upgraded to 1.3.0
+* **@material-svelte/typography:** upgraded to 1.1.0
+* **@material-svelte/icon:** upgraded to 1.2.0
+* **@material-svelte/svelte-type-generator:** upgraded to 1.0.0
+
 ## @material-svelte/button [1.2.1](https://github.com/material-svelte/material-svelte/compare/@material-svelte/button@1.2.0...@material-svelte/button@1.2.1) (2021-04-22)
 
 
