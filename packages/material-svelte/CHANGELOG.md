@@ -1,3 +1,10 @@
+## material-svelte [1.5.2](https://github.com/material-svelte/material-svelte/compare/material-svelte@1.5.1...material-svelte@1.5.2) (2021-04-29)
+
+
+### Bug Fixes
+
+* **material-svelte:** re-export component-types ([757decf](https://github.com/material-svelte/material-svelte/commit/757decfe9ea52a28c65ec2cf6214b2867a4b48a7))
+
 ## material-svelte [1.5.1](https://github.com/material-svelte/material-svelte/compare/material-svelte@1.5.0...material-svelte@1.5.1) (2021-04-29)
 
 
