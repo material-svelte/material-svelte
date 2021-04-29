@@ -1,3 +1,20 @@
+# @material-svelte/navigation-drawer [1.1.0](https://github.com/material-svelte/material-svelte/compare/@material-svelte/navigation-drawer@1.0.1...@material-svelte/navigation-drawer@1.1.0) (2021-04-29)
+
+
+### Features
+
+* **@material-svelte/navigation-drawer:** integrate type-generation ([8995a81](https://github.com/material-svelte/material-svelte/commit/8995a819a0ec4114fae9d3e496a6358ca1d38878))
+
+
+
+
+
+### Dependencies
+
+* **@material-svelte/button:** upgraded to 1.3.0
+* **@material-svelte/list:** upgraded to 1.1.0
+* **@material-svelte/svelte-type-generator:** upgraded to 1.0.0
+
 ## @material-svelte/navigation-drawer [1.0.1](https://github.com/material-svelte/material-svelte/compare/@material-svelte/navigation-drawer@1.0.0...@material-svelte/navigation-drawer@1.0.1) (2021-04-22)
 
 
