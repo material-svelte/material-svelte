@@ -1,3 +1,24 @@
+## material-svelte [1.5.1](https://github.com/material-svelte/material-svelte/compare/material-svelte@1.5.0...material-svelte@1.5.1) (2021-04-29)
+
+
+
+
+
+### Dependencies
+
+* **@material-svelte/breakpoint:** upgraded to 1.1.0
+* **@material-svelte/button:** upgraded to 1.3.0
+* **@material-svelte/checkbox:** upgraded to 1.1.0
+* **@material-svelte/grid:** upgraded to 1.1.0
+* **@material-svelte/icon:** upgraded to 1.2.0
+* **@material-svelte/layout:** upgraded to 1.1.0
+* **@material-svelte/list:** upgraded to 1.1.0
+* **@material-svelte/navigation-drawer:** upgraded to 1.1.0
+* **@material-svelte/paper:** upgraded to 1.1.0
+* **@material-svelte/switch:** upgraded to 1.1.0
+* **@material-svelte/top-app-bar:** upgraded to 1.1.0
+* **@material-svelte/typography:** upgraded to 1.1.0
+
 # material-svelte [1.5.0](https://github.com/material-svelte/material-svelte/compare/material-svelte@1.4.0...material-svelte@1.5.0) (2021-04-22)
 
 
