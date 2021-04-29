@@ -1,3 +1,10 @@
+# @material-svelte/svelte-actions [1.3.0](https://github.com/material-svelte/material-svelte/compare/@material-svelte/svelte-actions@1.2.0...@material-svelte/svelte-actions@1.3.0) (2021-04-29)
+
+
+### Features
+
+* **@material-svelte/svelte-actions:** integrate type-generation ([01db3ab](https://github.com/material-svelte/material-svelte/commit/01db3ab476aa9d47bcb1b797613f5e2ef487486d))
+
 # @material-svelte/svelte-actions [1.2.0](https://github.com/material-svelte/material-svelte/compare/@material-svelte/svelte-actions@1.1.0...@material-svelte/svelte-actions@1.2.0) (2021-04-22)
 
 
