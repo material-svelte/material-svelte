@@ -1,3 +1,15 @@
+## @material-svelte/button [1.4.2](https://github.com/material-svelte/material-svelte/compare/@material-svelte/button@1.4.1...@material-svelte/button@1.4.2) (2021-04-30)
+
+
+
+
+
+### Dependencies
+
+* **@material-svelte/typography:** upgraded to 1.2.2
+* **@material-svelte/icon:** upgraded to 1.3.2
+* **svelte-type-generator:** upgraded to 1.0.2
+
 ## @material-svelte/button [1.4.1](https://github.com/material-svelte/material-svelte/compare/@material-svelte/button@1.4.0...@material-svelte/button@1.4.1) (2021-04-30)
 
 
