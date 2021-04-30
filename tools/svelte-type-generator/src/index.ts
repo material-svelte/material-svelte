@@ -83,10 +83,7 @@ function postprocessTSX(code: string) {
 }
 
 export function compile() {
-  const {
-    name,
-    version,
-  } = require('@material-svelte/svelte-type-generator/package.json');
+  const { name, version } = require('svelte-type-generator/package.json');
   console.log(`${name} v${version} generating types...`);
 
   const { options: compilerOptions, fileNames } = getConfig();
