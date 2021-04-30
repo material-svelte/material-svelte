@@ -1,3 +1,14 @@
+## @material-svelte/checkbox [1.2.2](https://github.com/material-svelte/material-svelte/compare/@material-svelte/checkbox@1.2.1...@material-svelte/checkbox@1.2.2) (2021-04-30)
+
+
+
+
+
+### Dependencies
+
+* **@material-svelte/icon:** upgraded to 1.3.2
+* **svelte-type-generator:** upgraded to 1.0.2
+
 ## @material-svelte/checkbox [1.2.1](https://github.com/material-svelte/material-svelte/compare/@material-svelte/checkbox@1.2.0...@material-svelte/checkbox@1.2.1) (2021-04-30)
 
 
