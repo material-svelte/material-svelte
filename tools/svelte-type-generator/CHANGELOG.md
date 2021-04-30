@@ -1,3 +1,10 @@
+## svelte-type-generator [1.0.1](https://github.com/material-svelte/material-svelte/compare/svelte-type-generator@1.0.0...svelte-type-generator@1.0.1) (2021-04-30)
+
+
+### Bug Fixes
+
+* **svelte-type-generator:** fix description in package.json ([6d7ad10](https://github.com/material-svelte/material-svelte/commit/6d7ad10ee69b2bf9077a97db233e3a7d005f2abd))
+
 # svelte-type-generator 1.0.0 (2021-04-30)
 
 
