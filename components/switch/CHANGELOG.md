@@ -1,3 +1,13 @@
+## @material-svelte/switch [1.2.2](https://github.com/material-svelte/material-svelte/compare/@material-svelte/switch@1.2.1...@material-svelte/switch@1.2.2) (2021-04-30)
+
+
+
+
+
+### Dependencies
+
+* **svelte-type-generator:** upgraded to 1.0.2
+
 ## @material-svelte/switch [1.2.1](https://github.com/material-svelte/material-svelte/compare/@material-svelte/switch@1.2.0...@material-svelte/switch@1.2.1) (2021-04-30)
 
 
