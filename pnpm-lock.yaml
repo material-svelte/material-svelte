@@ -227,7 +227,7 @@ importers:
     devDependencies:
       '@sveltejs/adapter-node': 1.0.0-next.17
       '@sveltejs/adapter-static': 1.0.0-next.7
-      '@sveltejs/kit': 1.0.0-next.92_svelte@3.37.0+vite@2.1.5
+      '@sveltejs/kit': 1.0.0-next.93_svelte@3.37.0+vite@2.1.5
       postcss: 8.2.10
       svelte: 3.37.0
       svelte-preprocess: 4.7.0_4459c0d51e55f30ed0a441cf9b362a0d
@@ -240,7 +240,6 @@ importers:
       '@material-svelte/breakpoint-tools': workspace:*
       '@material-svelte/postcss-plugin': workspace:*
       '@material-svelte/svelte-preprocessor': workspace:*
-      '@material-svelte/svelte-type-generator': workspace:*
       '@sveltejs/vite-plugin-svelte': ^1.0.0-next.7
       '@testing-library/svelte': ^3.0.3
       '@types/chai': ^4.2.16
@@ -255,6 +254,7 @@ importers:
       svelte-hmr: ^0.14.0
       svelte-htm: ^1.1.1
       svelte-preprocess: ^4.7.0
+      svelte-type-generator: workspace:*
       typescript: ^4.2.4
       vite: ^2.1.5
       vite-web-test-runner-plugin: ^0.0.2
@@ -262,7 +262,6 @@ importers:
       '@material-svelte/breakpoint-tools': link:../../tools/breakpoint-tools
       '@material-svelte/postcss-plugin': link:../../tools/postcss-plugin
       '@material-svelte/svelte-preprocessor': link:../../tools/svelte-preprocessor
-      '@material-svelte/svelte-type-generator': link:../../tools/svelte-type-generator
       '@sveltejs/vite-plugin-svelte': 1.0.0-next.7_svelte@3.37.0+vite@2.1.5
       '@testing-library/svelte': 3.0.3_svelte@3.37.0
       '@types/chai': 4.2.16
@@ -277,6 +276,7 @@ importers:
       svelte-hmr: 0.14.0_svelte@3.37.0
       svelte-htm: 1.1.1_svelte@3.37.0
       svelte-preprocess: 4.7.0_ff7486d6e5a845ff361d36f415eaf31c
+      svelte-type-generator: link:../../tools/svelte-type-generator
       typescript: 4.2.4
       vite: 2.1.5
       vite-web-test-runner-plugin: 0.0.2
@@ -285,7 +285,6 @@ importers:
     specifiers:
       '@material-svelte/icon': workspace:*
       '@material-svelte/svelte-actions': workspace:*
-      '@material-svelte/svelte-type-generator': workspace:*
       '@material-svelte/typography': workspace:*
       '@mdi/js': ^5.9.55
       '@sveltejs/vite-plugin-svelte': ^1.0.0-next.7
@@ -300,6 +299,7 @@ importers:
       svelte-hmr: ^0.14.0
       svelte-htm: ^1.1.1
       svelte-preprocess: ^4.7.0
+      svelte-type-generator: workspace:*
       typescript: ^4.2.4
       vite: ^2.1.5
       vite-web-test-runner-plugin: ^0.0.2
@@ -308,7 +308,6 @@ importers:
       '@material-svelte/typography': link:../typography
     devDependencies:
       '@material-svelte/icon': link:../icon
-      '@material-svelte/svelte-type-generator': link:../../tools/svelte-type-generator
       '@mdi/js': 5.9.55
       '@sveltejs/vite-plugin-svelte': 1.0.0-next.7_svelte@3.37.0+vite@2.1.5
       '@testing-library/svelte': 3.0.3_svelte@3.37.0
@@ -322,6 +321,7 @@ importers:
       svelte-hmr: 0.14.0_svelte@3.37.0
       svelte-htm: 1.1.1_svelte@3.37.0
       svelte-preprocess: 4.7.0_ff7486d6e5a845ff361d36f415eaf31c
+      svelte-type-generator: link:../../tools/svelte-type-generator
       typescript: 4.2.4
       vite: 2.1.5
       vite-web-test-runner-plugin: 0.0.2
@@ -330,7 +330,6 @@ importers:
     specifiers:
       '@material-svelte/icon': workspace:*
       '@material-svelte/svelte-actions': workspace:*
-      '@material-svelte/svelte-type-generator': workspace:*
       '@mdi/js': ^5.9.55
       '@sveltejs/vite-plugin-svelte': ^1.0.0-next.7
       '@testing-library/svelte': ^3.0.3
@@ -345,6 +344,7 @@ importers:
       svelte-hmr: ^0.14.0
       svelte-htm: ^1.1.1
       svelte-preprocess: ^4.7.0
+      svelte-type-generator: workspace:*
       typescript: ^4.2.4
       uid: ^2.0.0
       vite: ^2.1.5
@@ -353,7 +353,6 @@ importers:
       '@material-svelte/svelte-actions': link:../../tools/svelte-actions
     devDependencies:
       '@material-svelte/icon': link:../icon
-      '@material-svelte/svelte-type-generator': link:../../tools/svelte-type-generator
       '@mdi/js': 5.9.55
       '@sveltejs/vite-plugin-svelte': 1.0.0-next.7_svelte@3.37.0+vite@2.1.5
       '@testing-library/svelte': 3.0.3_svelte@3.37.0
@@ -368,6 +367,7 @@ importers:
       svelte-hmr: 0.14.0_svelte@3.37.0
       svelte-htm: 1.1.1_svelte@3.37.0
       svelte-preprocess: 4.7.0_ff7486d6e5a845ff361d36f415eaf31c
+      svelte-type-generator: link:../../tools/svelte-type-generator
       typescript: 4.2.4
       uid: 2.0.0
       vite: 2.1.5
@@ -377,7 +377,6 @@ importers:
     specifiers:
       '@material-svelte/breakpoint-tools': workspace:*
       '@material-svelte/svelte-preprocessor': workspace:*
-      '@material-svelte/svelte-type-generator': workspace:*
       '@sveltejs/vite-plugin-svelte': ^1.0.0-next.7
       '@testing-library/svelte': ^3.0.3
       '@types/chai': ^4.2.16
@@ -391,13 +390,13 @@ importers:
       svelte-hmr: ^0.14.0
       svelte-htm: ^1.1.1
       svelte-preprocess: ^4.7.0
+      svelte-type-generator: workspace:*
       typescript: ^4.2.4
       vite: ^2.1.5
       vite-web-test-runner-plugin: ^0.0.2
     devDependencies:
       '@material-svelte/breakpoint-tools': link:../../tools/breakpoint-tools
       '@material-svelte/svelte-preprocessor': link:../../tools/svelte-preprocessor
-      '@material-svelte/svelte-type-generator': link:../../tools/svelte-type-generator
       '@sveltejs/vite-plugin-svelte': 1.0.0-next.7_svelte@3.37.0+vite@2.1.5
       '@testing-library/svelte': 3.0.3_svelte@3.37.0
       '@types/chai': 4.2.16
@@ -411,13 +410,13 @@ importers:
       svelte-hmr: 0.14.0_svelte@3.37.0
       svelte-htm: 1.1.1_svelte@3.37.0
       svelte-preprocess: 4.7.0_ff7486d6e5a845ff361d36f415eaf31c
+      svelte-type-generator: link:../../tools/svelte-type-generator
       typescript: 4.2.4
       vite: 2.1.5
       vite-web-test-runner-plugin: 0.0.2
 
   components/icon:
     specifiers:
-      '@material-svelte/svelte-type-generator': workspace:*
       '@mdi/js': ^5.9.55
       '@sveltejs/vite-plugin-svelte': ^1.0.0-next.7
       '@testing-library/svelte': ^3.0.3
@@ -431,11 +430,11 @@ importers:
       svelte-hmr: ^0.14.0
       svelte-htm: ^1.1.1
       svelte-preprocess: ^4.7.0
+      svelte-type-generator: workspace:*
       typescript: ^4.2.4
       vite: ^2.1.5
       vite-web-test-runner-plugin: ^0.0.2
     devDependencies:
-      '@material-svelte/svelte-type-generator': link:../../tools/svelte-type-generator
       '@mdi/js': 5.9.55
       '@sveltejs/vite-plugin-svelte': 1.0.0-next.7_svelte@3.37.0+vite@2.1.5
       '@testing-library/svelte': 3.0.3_svelte@3.37.0
@@ -449,13 +448,13 @@ importers:
       svelte-hmr: 0.14.0_svelte@3.37.0
       svelte-htm: 1.1.1_svelte@3.37.0
       svelte-preprocess: 4.7.0_ff7486d6e5a845ff361d36f415eaf31c
+      svelte-type-generator: link:../../tools/svelte-type-generator
       typescript: 4.2.4
       vite: 2.1.5
       vite-web-test-runner-plugin: 0.0.2
 
   components/layout:
     specifiers:
-      '@material-svelte/svelte-type-generator': workspace:*
       '@sveltejs/vite-plugin-svelte': ^1.0.0-next.7
       '@testing-library/svelte': ^3.0.3
       '@types/chai': ^4.2.16
@@ -470,11 +469,11 @@ importers:
       svelte-hmr: ^0.14.0
       svelte-htm: ^1.1.1
       svelte-preprocess: ^4.7.0
+      svelte-type-generator: workspace:*
       typescript: ^4.2.4
       vite: ^2.1.5
       vite-web-test-runner-plugin: ^0.0.2
     devDependencies:
-      '@material-svelte/svelte-type-generator': link:../../tools/svelte-type-generator
       '@sveltejs/vite-plugin-svelte': 1.0.0-next.7_svelte@3.37.0+vite@2.1.5
       '@testing-library/svelte': 3.0.3_svelte@3.37.0
       '@types/chai': 4.2.16
@@ -489,6 +488,7 @@ importers:
       svelte-hmr: 0.14.0_svelte@3.37.0
       svelte-htm: 1.1.1_svelte@3.37.0
       svelte-preprocess: 4.7.0_ff7486d6e5a845ff361d36f415eaf31c
+      svelte-type-generator: link:../../tools/svelte-type-generator
       typescript: 4.2.4
       vite: 2.1.5
       vite-web-test-runner-plugin: 0.0.2
@@ -499,7 +499,6 @@ importers:
       '@material-svelte/checkbox': workspace:*
       '@material-svelte/icon': workspace:*
       '@material-svelte/svelte-actions': workspace:*
-      '@material-svelte/svelte-type-generator': workspace:*
       '@material-svelte/typography': workspace:*
       '@mdi/js': ^5.9.55
       '@sveltejs/vite-plugin-svelte': ^1.0.0-next.7
@@ -515,6 +514,7 @@ importers:
       svelte-hmr: ^0.14.0
       svelte-htm: ^1.1.1
       svelte-preprocess: ^4.7.0
+      svelte-type-generator: workspace:*
       typescript: ^4.2.4
       vite: ^2.1.5
       vite-web-test-runner-plugin: ^0.0.2
@@ -523,7 +523,6 @@ importers:
       '@material-svelte/checkbox': link:../checkbox
       '@material-svelte/icon': link:../icon
       '@material-svelte/svelte-actions': link:../../tools/svelte-actions
-      '@material-svelte/svelte-type-generator': link:../../tools/svelte-type-generator
       '@material-svelte/typography': link:../typography
       '@mdi/js': 5.9.55
       '@sveltejs/vite-plugin-svelte': 1.0.0-next.7_svelte@3.37.0+vite@2.1.5
@@ -539,6 +538,7 @@ importers:
       svelte-hmr: 0.14.0_svelte@3.37.0
       svelte-htm: 1.1.1_svelte@3.37.0
       svelte-preprocess: 4.7.0_ff7486d6e5a845ff361d36f415eaf31c
+      svelte-type-generator: link:../../tools/svelte-type-generator
       typescript: 4.2.4
       vite: 2.1.5
       vite-web-test-runner-plugin: 0.0.2
@@ -547,7 +547,6 @@ importers:
     specifiers:
       '@material-svelte/button': workspace:*
       '@material-svelte/list': workspace:*
-      '@material-svelte/svelte-type-generator': workspace:*
       '@sveltejs/vite-plugin-svelte': ^1.0.0-next.7
       '@testing-library/svelte': ^3.0.3
       '@types/chai': ^4.2.16
@@ -561,13 +560,13 @@ importers:
       svelte-hmr: ^0.14.0
       svelte-htm: ^1.1.1
       svelte-preprocess: ^4.7.0
+      svelte-type-generator: workspace:*
       typescript: ^4.2.4
       vite: ^2.1.5
       vite-web-test-runner-plugin: ^0.0.2
     devDependencies:
       '@material-svelte/button': link:../button
       '@material-svelte/list': link:../list
-      '@material-svelte/svelte-type-generator': link:../../tools/svelte-type-generator
       '@sveltejs/vite-plugin-svelte': 1.0.0-next.7_svelte@3.37.0+vite@2.1.5
       '@testing-library/svelte': 3.0.3_svelte@3.37.0
       '@types/chai': 4.2.16
@@ -581,6 +580,7 @@ importers:
       svelte-hmr: 0.14.0_svelte@3.37.0
       svelte-htm: 1.1.1_svelte@3.37.0
       svelte-preprocess: 4.7.0_ff7486d6e5a845ff361d36f415eaf31c
+      svelte-type-generator: link:../../tools/svelte-type-generator
       typescript: 4.2.4
       vite: 2.1.5
       vite-web-test-runner-plugin: 0.0.2
@@ -590,7 +590,6 @@ importers:
       '@material-svelte/button': workspace:*
       '@material-svelte/icon': workspace:*
       '@material-svelte/svelte-actions': workspace:*
-      '@material-svelte/svelte-type-generator': workspace:*
       '@material-svelte/typography': workspace:*
       '@mdi/js': ^5.9.55
       '@sveltejs/vite-plugin-svelte': ^1.0.0-next.7
@@ -606,6 +605,7 @@ importers:
       svelte-hmr: ^0.14.0
       svelte-htm: ^1.1.1
       svelte-preprocess: ^4.7.0
+      svelte-type-generator: workspace:*
       typescript: ^4.2.4
       vite: ^2.1.5
       vite-web-test-runner-plugin: ^0.0.2
@@ -613,7 +613,6 @@ importers:
       '@material-svelte/button': link:../button
       '@material-svelte/icon': link:../icon
       '@material-svelte/svelte-actions': link:../../tools/svelte-actions
-      '@material-svelte/svelte-type-generator': link:../../tools/svelte-type-generator
       '@material-svelte/typography': link:../typography
       '@mdi/js': 5.9.55
       '@sveltejs/vite-plugin-svelte': 1.0.0-next.7_svelte@3.37.0+vite@2.1.5
@@ -629,13 +628,13 @@ importers:
       svelte-hmr: 0.14.0_svelte@3.37.0
       svelte-htm: 1.1.1_svelte@3.37.0
       svelte-preprocess: 4.7.0_ff7486d6e5a845ff361d36f415eaf31c
+      svelte-type-generator: link:../../tools/svelte-type-generator
       typescript: 4.2.4
       vite: 2.1.5
       vite-web-test-runner-plugin: 0.0.2
 
   components/paper:
     specifiers:
-      '@material-svelte/svelte-type-generator': workspace:*
       '@sveltejs/vite-plugin-svelte': ^1.0.0-next.7
       '@testing-library/svelte': ^3.0.3
       '@types/chai': ^4.2.16
@@ -649,11 +648,11 @@ importers:
       svelte-hmr: ^0.14.0
       svelte-htm: ^1.1.1
       svelte-preprocess: ^4.7.0
+      svelte-type-generator: workspace:*
       typescript: ^4.2.4
       vite: ^2.1.5
       vite-web-test-runner-plugin: ^0.0.2
     devDependencies:
-      '@material-svelte/svelte-type-generator': link:../../tools/svelte-type-generator
       '@sveltejs/vite-plugin-svelte': 1.0.0-next.7_svelte@3.37.0+vite@2.1.5
       '@testing-library/svelte': 3.0.3_svelte@3.37.0
       '@types/chai': 4.2.16
@@ -667,6 +666,7 @@ importers:
       svelte-hmr: 0.14.0_svelte@3.37.0
       svelte-htm: 1.1.1_svelte@3.37.0
       svelte-preprocess: 4.7.0_ff7486d6e5a845ff361d36f415eaf31c
+      svelte-type-generator: link:../../tools/svelte-type-generator
       typescript: 4.2.4
       vite: 2.1.5
       vite-web-test-runner-plugin: 0.0.2
@@ -674,7 +674,6 @@ importers:
   components/switch:
     specifiers:
       '@material-svelte/svelte-actions': workspace:*
-      '@material-svelte/svelte-type-generator': workspace:*
       '@sveltejs/vite-plugin-svelte': ^1.0.0-next.7
       '@testing-library/svelte': ^3.0.3
       '@types/chai': ^4.2.16
@@ -688,6 +687,7 @@ importers:
       svelte-hmr: ^0.14.0
       svelte-htm: ^1.1.1
       svelte-preprocess: ^4.7.0
+      svelte-type-generator: workspace:*
       typescript: ^4.2.4
       uid: ^2.0.0
       vite: ^2.1.5
@@ -696,7 +696,6 @@ importers:
       uid: 2.0.0
     devDependencies:
       '@material-svelte/svelte-actions': link:../../tools/svelte-actions
-      '@material-svelte/svelte-type-generator': link:../../tools/svelte-type-generator
       '@sveltejs/vite-plugin-svelte': 1.0.0-next.7_svelte@3.37.0+vite@2.1.5
       '@testing-library/svelte': 3.0.3_svelte@3.37.0
       '@types/chai': 4.2.16
@@ -710,13 +709,13 @@ importers:
       svelte-hmr: 0.14.0_svelte@3.37.0
       svelte-htm: 1.1.1_svelte@3.37.0
       svelte-preprocess: 4.7.0_ff7486d6e5a845ff361d36f415eaf31c
+      svelte-type-generator: link:../../tools/svelte-type-generator
       typescript: 4.2.4
       vite: 2.1.5
       vite-web-test-runner-plugin: 0.0.2
 
   components/tooltip:
     specifiers:
-      '@material-svelte/svelte-type-generator': workspace:*
       '@material-svelte/typography': workspace:*
       '@popperjs/core': ^2.9.2
       '@sveltejs/vite-plugin-svelte': ^1.0.0-next.7
@@ -732,13 +731,13 @@ importers:
       svelte-hmr: ^0.14.0
       svelte-htm: ^1.1.1
       svelte-preprocess: ^4.7.0
+      svelte-type-generator: workspace:*
       typescript: ^4.2.4
       vite: ^2.1.5
       vite-web-test-runner-plugin: ^0.0.2
     dependencies:
       '@popperjs/core': 2.9.2
     devDependencies:
-      '@material-svelte/svelte-type-generator': link:../../tools/svelte-type-generator
       '@material-svelte/typography': link:../typography
       '@sveltejs/vite-plugin-svelte': 1.0.0-next.7_svelte@3.37.0+vite@2.1.5
       '@testing-library/svelte': 3.0.3_svelte@3.37.0
@@ -753,6 +752,7 @@ importers:
       svelte-hmr: 0.14.0_svelte@3.37.0
       svelte-htm: 1.1.1_svelte@3.37.0
       svelte-preprocess: 4.7.0_ff7486d6e5a845ff361d36f415eaf31c
+      svelte-type-generator: link:../../tools/svelte-type-generator
       typescript: 4.2.4
       vite: 2.1.5
       vite-web-test-runner-plugin: 0.0.2
@@ -761,7 +761,6 @@ importers:
     specifiers:
       '@material-svelte/button': workspace:*
       '@material-svelte/icon': workspace:*
-      '@material-svelte/svelte-type-generator': workspace:*
       '@material-svelte/typography': workspace:*
       '@mdi/js': ^5.9.55
       '@sveltejs/vite-plugin-svelte': ^1.0.0-next.7
@@ -776,13 +775,13 @@ importers:
       svelte-hmr: ^0.14.0
       svelte-htm: ^1.1.1
       svelte-preprocess: 4.7.0
+      svelte-type-generator: workspace:*
       typescript: ^4.2.4
       vite: ^2.1.5
       vite-web-test-runner-plugin: ^0.0.2
     devDependencies:
       '@material-svelte/button': link:../button
       '@material-svelte/icon': link:../icon
-      '@material-svelte/svelte-type-generator': link:../../tools/svelte-type-generator
       '@material-svelte/typography': link:../typography
       '@mdi/js': 5.9.55
       '@sveltejs/vite-plugin-svelte': 1.0.0-next.7_svelte@3.37.0+vite@2.1.5
@@ -797,13 +796,13 @@ importers:
       svelte-hmr: 0.14.0_svelte@3.37.0
       svelte-htm: 1.1.1_svelte@3.37.0
       svelte-preprocess: 4.7.0_ff7486d6e5a845ff361d36f415eaf31c
+      svelte-type-generator: link:../../tools/svelte-type-generator
       typescript: 4.2.4
       vite: 2.1.5
       vite-web-test-runner-plugin: 0.0.2
 
   components/typography:
     specifiers:
-      '@material-svelte/svelte-type-generator': workspace:*
       '@sveltejs/vite-plugin-svelte': ^1.0.0-next.7
       '@testing-library/svelte': ^3.0.3
       '@types/chai': ^4.2.16
@@ -817,11 +816,11 @@ importers:
       svelte-hmr: ^0.14.0
       svelte-htm: ^1.1.1
       svelte-preprocess: ^4.7.0
+      svelte-type-generator: workspace:*
       typescript: ^4.2.4
       vite: ^2.1.5
       vite-web-test-runner-plugin: ^0.0.2
     devDependencies:
-      '@material-svelte/svelte-type-generator': link:../../tools/svelte-type-generator
       '@sveltejs/vite-plugin-svelte': 1.0.0-next.7_svelte@3.37.0+vite@2.1.5
       '@testing-library/svelte': 3.0.3_svelte@3.37.0
       '@types/chai': 4.2.16
@@ -835,6 +834,7 @@ importers:
       svelte-hmr: 0.14.0_svelte@3.37.0
       svelte-htm: 1.1.1_svelte@3.37.0
       svelte-preprocess: 4.7.0_ff7486d6e5a845ff361d36f415eaf31c
+      svelte-type-generator: link:../../tools/svelte-type-generator
       typescript: 4.2.4
       vite: 2.1.5
       vite-web-test-runner-plugin: 0.0.2
@@ -902,7 +902,7 @@ importers:
       '@material-svelte/postcss-plugin': link:../../tools/postcss-plugin
       '@mdi/js': 5.9.55
       '@sveltejs/adapter-node': 1.0.0-next.17
-      '@sveltejs/kit': 1.0.0-next.92_svelte@3.37.0+vite@2.1.5
+      '@sveltejs/kit': 1.0.0-next.93_svelte@3.37.0+vite@2.1.5
       svelte: 3.37.0
       svelte-preprocess: 4.7.0_svelte@3.37.0+typescript@4.2.4
       tslib: 2.2.0
@@ -5072,8 +5072,8 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.92_svelte@3.37.0+vite@2.1.5:
-    resolution: {integrity: sha512-4XZP363L5xol78HMAi6oXlgwM/WO2d/YSc5TQtMNglXCPBlzfc366ouTpizhEkpJW23m4AMGuo5hI+44jd4Aqg==}
+  /@sveltejs/kit/1.0.0-next.93_svelte@3.37.0+vite@2.1.5:
+    resolution: {integrity: sha512-WvmRj1Zk+SCbKYZGXCPlocOvGXRYGFOeZQC/k3C6KWAF11cM3H0i0mGzL0GmwrPmv35AjFtmH2iJ/J100ftUZw==}
     engines: {node: '>= 12.17.0'}
     hasBin: true
     peerDependencies:

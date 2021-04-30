@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const { compile } = require('./dist/index');
 
 try {

@@ -24,7 +24,6 @@
     "@material-svelte/checkbox": "workspace:*",
     "@material-svelte/icon": "workspace:*",
     "@material-svelte/svelte-actions": "workspace:*",
-    "@material-svelte/svelte-type-generator": "workspace:*",
     "@material-svelte/typography": "workspace:*",
     "@mdi/js": "^5.9.55",
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.7",
@@ -40,6 +39,7 @@
     "svelte-hmr": "^0.14.0",
     "svelte-htm": "^1.1.1",
     "svelte-preprocess": "^4.7.0",
+    "svelte-type-generator": "workspace:*",
     "typescript": "^4.2.4",
     "vite": "^2.1.5",
     "vite-web-test-runner-plugin": "^0.0.2"

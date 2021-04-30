@@ -1,10 +1,18 @@
 {
-  "name": "@material-svelte/svelte-type-generator",
+  "name": "svelte-type-generator",
   "version": "0.0.0-semantic-release",
   "publishConfig": {
     "access": "public"
   },
+  "description": "A commitlint rule to discover workspace packages as scopes.",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/material-svelte/material-svelte",
+    "directory": "tools/svelte-type-generator"
+  },
+  "author": "",
+  "homepage": "https://github.com/material-svelte/material-svelte/tree/main/tools/svelte-type-generator#readme",
   "main": "dist/index.js",
   "bin": {
     "svelte-type-generator": "./cli.js"
@@ -16,6 +24,13 @@
   },
   "files": [
     "dist"
+  ],
+  "keywords": [
+    "svelte",
+    "typescript",
+    "ts",
+    "dts",
+    "d.ts"
   ],
   "dependencies": {
     "svelte2tsx": "^0.1.189",
