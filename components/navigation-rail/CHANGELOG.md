@@ -1,3 +1,16 @@
+## @material-svelte/navigation-rail [1.1.1](https://github.com/material-svelte/material-svelte/compare/@material-svelte/navigation-rail@1.1.0...@material-svelte/navigation-rail@1.1.1) (2021-04-30)
+
+
+
+
+
+### Dependencies
+
+* **@material-svelte/button:** upgraded to 1.4.1
+* **@material-svelte/icon:** upgraded to 1.3.1
+* **@material-svelte/typography:** upgraded to 1.2.1
+* **svelte-type-generator:** upgraded to 1.0.1
+
 # @material-svelte/navigation-rail [1.1.0](https://github.com/material-svelte/material-svelte/compare/@material-svelte/navigation-rail@1.0.0...@material-svelte/navigation-rail@1.1.0) (2021-04-30)
 
 
