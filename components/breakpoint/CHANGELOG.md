@@ -1,3 +1,13 @@
+## @material-svelte/breakpoint [1.2.1](https://github.com/material-svelte/material-svelte/compare/@material-svelte/breakpoint@1.2.0...@material-svelte/breakpoint@1.2.1) (2021-04-30)
+
+
+
+
+
+### Dependencies
+
+* **svelte-type-generator:** upgraded to 1.0.1
+
 # @material-svelte/breakpoint [1.2.0](https://github.com/material-svelte/material-svelte/compare/@material-svelte/breakpoint@1.1.0...@material-svelte/breakpoint@1.2.0) (2021-04-30)
 
 
