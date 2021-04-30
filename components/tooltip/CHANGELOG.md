@@ -1,3 +1,14 @@
+## @material-svelte/tooltip [1.2.2](https://github.com/material-svelte/material-svelte/compare/@material-svelte/tooltip@1.2.1...@material-svelte/tooltip@1.2.2) (2021-04-30)
+
+
+
+
+
+### Dependencies
+
+* **@material-svelte/typography:** upgraded to 1.2.2
+* **svelte-type-generator:** upgraded to 1.0.2
+
 ## @material-svelte/tooltip [1.2.1](https://github.com/material-svelte/material-svelte/compare/@material-svelte/tooltip@1.2.0...@material-svelte/tooltip@1.2.1) (2021-04-30)
 
 
