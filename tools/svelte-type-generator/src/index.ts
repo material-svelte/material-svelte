@@ -48,8 +48,14 @@ function createCompilerHost(options: ts.CompilerOptions) {
     return originalReadFile(fileName);
   };
 
+  let exportedTypes: { [key: string]: string[] } = {};
   const originalWriteFile = host.writeFile;
   host.writeFile = (fileName, data, writeByteOrderMark) => {
+    if (path.basename(fileName) === 'index.d.ts') {
+      data = postprocessIndexDTS(fileName, data, exportedTypes);
+    } else if (fileName.endsWith('.d.ts')) {
+      exportedTypes[fileName] = extractExportedTypesFromDTS(data);
+    }
     originalWriteFile(fileName, data, writeByteOrderMark);
     console.log(path.relative(process.cwd(), fileName));
   };
@@ -79,6 +85,64 @@ function postprocessTSX(code: string) {
       `export type ${componentName}Slots = typeof propDef.slots;`
     );
   }
+  return code;
+}
+
+function extractExportedTypesFromDTS(code: string) {
+  const regex = /export declare type (?<typeName>\S+)/g;
+  const exports: string[] = [];
+  let match;
+  while ((match = regex.exec(code))) {
+    if (match.groups) {
+      exports.push(match.groups.typeName);
+    }
+  }
+  return exports;
+}
+
+function postprocessIndexDTS(
+  fileName: string,
+  code: string,
+  typesOfImports: { [key: string]: string[] }
+) {
+  const injectExports = (exportStatement: string, exportedTypes: string[]) => {
+    if (exportedTypes.length === 0) {
+      return exportStatement;
+    }
+    const curlyExportRegex = /{\s*(?<exports>.+)\s*}/g;
+    const match = curlyExportRegex.exec(exportStatement);
+    if (match && match.groups) {
+      // case: `export { foo as Bar }`
+      exportedTypes.unshift(match.groups.exports.trim());
+    } else {
+      // case: `export Foo`
+      exportedTypes.unshift(`default as ${exportStatement}`);
+    }
+    return `{ ${exportedTypes.join(', ')} }`;
+  };
+
+  const exportFileRegex = /export (?<exportStatement>.+) from ["'](?<exportFile>[^"']+)/g;
+  let match;
+  while ((match = exportFileRegex.exec(code))) {
+    if (match.groups) {
+      const { exportStatement, exportFile } = match.groups;
+      const absoluteExportFile = path.resolve(
+        path.dirname(fileName),
+        `${exportFile}.d.ts`
+      );
+      const injectTypes = typesOfImports[absoluteExportFile] || [];
+      const injectedExportStatement = injectExports(
+        exportStatement,
+        injectTypes
+      );
+      const injected = match[0].replace(
+        exportStatement,
+        injectedExportStatement
+      );
+      code = code.replace(match[0], injected);
+    }
+  }
+
   return code;
 }
 
