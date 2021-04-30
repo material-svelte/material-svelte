@@ -4,7 +4,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "description": "A commitlint rule to discover workspace packages as scopes.",
+  "description": "A tool to generate Typescript-Declarations for your svelte-components.",
   "license": "MIT",
   "repository": {
     "type": "git",
