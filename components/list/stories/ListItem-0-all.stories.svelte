@@ -1,6 +1,8 @@
 <script>
   import { Meta, Story } from '@storybook/addon-svelte-csf';
   import { Checkbox } from '@material-svelte/checkbox';
+  import { Switch } from '@material-svelte/switch';
+  import { Radio } from '@material-svelte/radio';
   import { Icon } from '@material-svelte/icon';
   import { IconButton } from '@material-svelte/button';
   import {
@@ -101,7 +103,17 @@
 
     <ListItem>
       Primary Text
-      <IconButton slot="meta" path={mdiInformation} round />
+      <Switch slot="meta" />
+    </ListItem>
+
+    <ListItem>
+      Primary Text
+      <Radio slot="meta" />
+    </ListItem>
+
+    <ListItem>
+      Primary Text
+      <IconButton slot="meta" path={mdiInformation} />
     </ListItem>
 
     <ListItem>
@@ -119,6 +131,11 @@
 
     <ListItem>
       <Checkbox slot="visual" />
+      Primary Text
+    </ListItem>
+
+    <ListItem>
+      <Radio slot="visual" />
       Primary Text
     </ListItem>
 
