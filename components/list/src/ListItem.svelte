@@ -240,8 +240,6 @@
 
   li.navigation {
     border-radius: 4px;
-
-    /* background-color: red; */
     margin: 4px 8px;
     min-height: 40px !important;
   }
@@ -284,8 +282,10 @@
   }
 
   li.meta-icon > .meta {
-    display: block;
+    align-items: center;
+    display: flex;
     height: 24px;
+    justify-content: center;
     margin-left: 16px;
     min-width: 24px;
   }
