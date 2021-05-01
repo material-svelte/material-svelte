@@ -245,7 +245,9 @@
   }
 
   .visual {
-    display: block;
+    align-items: center;
+    display: flex;
+    justify-content: center;
   }
 
   .text {
