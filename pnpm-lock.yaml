@@ -87,6 +87,7 @@ importers:
       '@material-svelte/navigation-drawer': workspace:*
       '@material-svelte/navigation-rail': workspace:*
       '@material-svelte/postcss-plugin': workspace:*
+      '@material-svelte/radio': workspace:*
       '@material-svelte/svelte-actions': workspace:*
       '@material-svelte/svelte-preprocessor': workspace:*
       '@material-svelte/switch': workspace:*
@@ -113,6 +114,7 @@ importers:
       '@material-svelte/list': link:../../components/list
       '@material-svelte/navigation-drawer': link:../../components/navigation-drawer
       '@material-svelte/navigation-rail': link:../../components/navigation-rail
+      '@material-svelte/radio': link:../../components/radio
       '@material-svelte/svelte-actions': link:../../tools/svelte-actions
       '@material-svelte/switch': link:../../components/switch
       '@material-svelte/top-app-bar': link:../../components/top-app-bar
