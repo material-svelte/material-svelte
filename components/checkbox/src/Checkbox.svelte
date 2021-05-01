@@ -95,6 +95,7 @@
 
   .disabled {
     opacity: 0.6;
+    pointer-events: none;
   }
 
   .wrap::after,
