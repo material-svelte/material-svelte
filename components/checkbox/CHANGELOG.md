@@ -1,3 +1,19 @@
+## @material-svelte/checkbox [1.2.3](https://github.com/material-svelte/material-svelte/compare/@material-svelte/checkbox@1.2.2...@material-svelte/checkbox@1.2.3) (2021-05-02)
+
+
+### Bug Fixes
+
+* **@material-svelte/checkbox:** missing pointer-events: none in disabled-state ([8107529](https://github.com/material-svelte/material-svelte/commit/8107529e2569257ed23d31adbb5ff0c85a76da65))
+
+
+
+
+
+### Dependencies
+
+* **@material-svelte/icon:** upgraded to 1.3.3
+* **svelte-type-generator:** upgraded to 1.1.0
+
 ## @material-svelte/checkbox [1.2.2](https://github.com/material-svelte/material-svelte/compare/@material-svelte/checkbox@1.2.1...@material-svelte/checkbox@1.2.2) (2021-04-30)
 
 
