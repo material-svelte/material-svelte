@@ -1,3 +1,18 @@
+## @material-svelte/icon [1.3.3](https://github.com/material-svelte/material-svelte/compare/@material-svelte/icon@1.3.2...@material-svelte/icon@1.3.3) (2021-05-02)
+
+
+### Bug Fixes
+
+* **@material-svelte/icon:** fix default-sizes ([e76f984](https://github.com/material-svelte/material-svelte/commit/e76f984293aa1e27ae5b86b388bed096e1571449))
+
+
+
+
+
+### Dependencies
+
+* **svelte-type-generator:** upgraded to 1.1.0
+
 ## @material-svelte/icon [1.3.2](https://github.com/material-svelte/material-svelte/compare/@material-svelte/icon@1.3.1...@material-svelte/icon@1.3.2) (2021-04-30)
 
 
