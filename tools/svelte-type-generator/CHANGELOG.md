@@ -1,3 +1,10 @@
+# svelte-type-generator [1.1.0](https://github.com/material-svelte/material-svelte/compare/svelte-type-generator@1.0.2...svelte-type-generator@1.1.0) (2021-05-02)
+
+
+### Features
+
+* **svelte-type-generator:** inject inline-defined types into index.d.ts ([d258404](https://github.com/material-svelte/material-svelte/commit/d25840479fd666db9cfe53b3a1261c06a69ee594))
+
 ## svelte-type-generator [1.0.2](https://github.com/material-svelte/material-svelte/compare/svelte-type-generator@1.0.1...svelte-type-generator@1.0.2) (2021-04-30)
 
 
