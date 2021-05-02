@@ -23,6 +23,7 @@
     "lint:js": "eslint --ext .js,.svelte .",
     "lint:js:fix": "eslint --ext .js,.svelte --fix .",
     "preinstall": "npx only-allow pnpm",
+    "prepare": "husky install",
     "storybook": "pnpm start --filter material-svelte-storybook"
   },
   "keywords": [],
@@ -47,7 +48,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-svelte3": "^3.1.2",
-    "husky": "^4.3.8",
+    "husky": "^6.0.0",
     "lint-staged": "^10.5.4",
     "multi-semantic-release": "^2.8.0",
     "postcss": "^8.2.10",
