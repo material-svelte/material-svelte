@@ -1,3 +1,31 @@
+# material-svelte [1.7.0](https://github.com/material-svelte/material-svelte/compare/material-svelte@1.6.3...material-svelte@1.7.0) (2021-05-02)
+
+
+### Features
+
+* **@material-svelte/radio:** initial implementation ([855932a](https://github.com/material-svelte/material-svelte/commit/855932a71be841a97fb7af4665576155a7f06743))
+
+
+
+
+
+### Dependencies
+
+* **@material-svelte/breakpoint:** upgraded to 1.2.3
+* **@material-svelte/button:** upgraded to 1.4.3
+* **@material-svelte/checkbox:** upgraded to 1.2.3
+* **@material-svelte/grid:** upgraded to 1.2.3
+* **@material-svelte/icon:** upgraded to 1.3.3
+* **@material-svelte/layout:** upgraded to 1.2.3
+* **@material-svelte/list:** upgraded to 1.2.3
+* **@material-svelte/navigation-drawer:** upgraded to 1.2.3
+* **@material-svelte/navigation-rail:** upgraded to 1.1.3
+* **@material-svelte/paper:** upgraded to 1.2.3
+* **@material-svelte/radio:** upgraded to 1.0.0
+* **@material-svelte/switch:** upgraded to 1.2.3
+* **@material-svelte/top-app-bar:** upgraded to 1.2.3
+* **@material-svelte/typography:** upgraded to 1.2.3
+
 ## material-svelte [1.6.3](https://github.com/material-svelte/material-svelte/compare/material-svelte@1.6.2...material-svelte@1.6.3) (2021-04-30)
 
 
