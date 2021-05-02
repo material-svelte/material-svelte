@@ -1,3 +1,10 @@
+## @material-svelte/create-component [1.2.2](https://github.com/material-svelte/material-svelte/compare/@material-svelte/create-component@1.2.1...@material-svelte/create-component@1.2.2) (2021-05-02)
+
+
+### Bug Fixes
+
+* **@material-svelte/create-component:** fix type-generator package-name ([5d42175](https://github.com/material-svelte/material-svelte/commit/5d42175cba62e7a4fc891ee626106a343f5018fd))
+
 ## @material-svelte/create-component [1.2.1](https://github.com/material-svelte/material-svelte/compare/@material-svelte/create-component@1.2.0...@material-svelte/create-component@1.2.1) (2021-04-29)
 
 
