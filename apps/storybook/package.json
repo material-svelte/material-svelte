@@ -25,6 +25,7 @@
     "@material-svelte/navigation-drawer": "workspace:*",
     "@material-svelte/navigation-rail": "workspace:*",
     "@material-svelte/paper": "workspace:*",
+    "@material-svelte/radio": "workspace:*",
     "@material-svelte/svelte-preprocessor": "workspace:*",
     "@material-svelte/switch": "workspace:*",
     "@material-svelte/tooltip": "workspace:*",

@@ -7,6 +7,7 @@
     NavigationRailItem,
   } from '@material-svelte/navigation-rail';
   import { FloatingActionButton } from '@material-svelte/button';
+  import type { NavigationRailAlign } from '@material-svelte/navigation-rail';
   import { Icon } from '@material-svelte/icon';
   import { mdiFolder, mdiPlus } from '@mdi/js';
 
@@ -15,7 +16,7 @@
 
   const divider = writable(true);
   const compact = writable(false);
-  const align = writable('start');
+  const align = writable('start' as NavigationRailAlign);
 
   setContext('$rail', {
     divider,
@@ -25,7 +26,7 @@
 </script>
 
 <div>
-  <NavigationRail divider={$divider} compact={$compact}>
+  <NavigationRail divider={$divider} compact={$compact} align={$align}>
     <FloatingActionButton slot="fab">
       <Icon slot="icon" path={mdiPlus} />
     </FloatingActionButton>

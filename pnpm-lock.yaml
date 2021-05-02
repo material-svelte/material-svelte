@@ -87,6 +87,7 @@ importers:
       '@material-svelte/navigation-drawer': workspace:*
       '@material-svelte/navigation-rail': workspace:*
       '@material-svelte/postcss-plugin': workspace:*
+      '@material-svelte/radio': workspace:*
       '@material-svelte/svelte-actions': workspace:*
       '@material-svelte/svelte-preprocessor': workspace:*
       '@material-svelte/switch': workspace:*
@@ -113,6 +114,7 @@ importers:
       '@material-svelte/list': link:../../components/list
       '@material-svelte/navigation-drawer': link:../../components/navigation-drawer
       '@material-svelte/navigation-rail': link:../../components/navigation-rail
+      '@material-svelte/radio': link:../../components/radio
       '@material-svelte/svelte-actions': link:../../tools/svelte-actions
       '@material-svelte/switch': link:../../components/switch
       '@material-svelte/top-app-bar': link:../../components/top-app-bar
@@ -145,6 +147,7 @@ importers:
       '@material-svelte/navigation-drawer': workspace:*
       '@material-svelte/navigation-rail': workspace:*
       '@material-svelte/paper': workspace:*
+      '@material-svelte/radio': workspace:*
       '@material-svelte/svelte-preprocessor': workspace:*
       '@material-svelte/switch': workspace:*
       '@material-svelte/tooltip': workspace:*
@@ -185,6 +188,7 @@ importers:
       '@material-svelte/navigation-drawer': link:../../components/navigation-drawer
       '@material-svelte/navigation-rail': link:../../components/navigation-rail
       '@material-svelte/paper': link:../../components/paper
+      '@material-svelte/radio': link:../../components/radio
       '@material-svelte/svelte-preprocessor': link:../../tools/svelte-preprocessor
       '@material-svelte/switch': link:../../components/switch
       '@material-svelte/tooltip': link:../../components/tooltip
@@ -227,7 +231,7 @@ importers:
     devDependencies:
       '@sveltejs/adapter-node': 1.0.0-next.17
       '@sveltejs/adapter-static': 1.0.0-next.7
-      '@sveltejs/kit': 1.0.0-next.93_svelte@3.37.0+vite@2.1.5
+      '@sveltejs/kit': 1.0.0-next.94_svelte@3.37.0+vite@2.1.5
       postcss: 8.2.10
       svelte: 3.37.0
       svelte-preprocess: 4.7.0_4459c0d51e55f30ed0a441cf9b362a0d
@@ -671,6 +675,52 @@ importers:
       vite: 2.1.5
       vite-web-test-runner-plugin: 0.0.2
 
+  components/radio:
+    specifiers:
+      '@material-svelte/icon': workspace:*
+      '@material-svelte/svelte-actions': workspace:*
+      '@mdi/js': ^5.9.55
+      '@sveltejs/vite-plugin-svelte': ^1.0.0-next.7
+      '@testing-library/svelte': ^3.0.3
+      '@types/chai': ^4.2.16
+      '@types/mocha': ^8.2.2
+      '@web/test-runner': ^0.12.19
+      chai: ^4.3.4
+      chai-dom: ^1.9.0
+      postcss: ^8.2.10
+      postcss-load-config: ^3.0.1
+      svelte: ^3.33.0
+      svelte-hmr: ^0.14.0
+      svelte-htm: ^1.1.1
+      svelte-preprocess: ^4.7.0
+      svelte-type-generator: workspace:*
+      typescript: ^4.2.4
+      uid: ^2.0.0
+      vite: ^2.1.5
+      vite-web-test-runner-plugin: ^0.0.2
+    devDependencies:
+      '@material-svelte/icon': link:../icon
+      '@material-svelte/svelte-actions': link:../../tools/svelte-actions
+      '@mdi/js': 5.9.55
+      '@sveltejs/vite-plugin-svelte': 1.0.0-next.7_svelte@3.37.0+vite@2.1.5
+      '@testing-library/svelte': 3.0.3_svelte@3.37.0
+      '@types/chai': 4.2.16
+      '@types/mocha': 8.2.2
+      '@web/test-runner': 0.12.19
+      chai: 4.3.4
+      chai-dom: 1.9.0_chai@4.3.4
+      postcss: 8.2.10
+      postcss-load-config: 3.0.1
+      svelte: 3.37.0
+      svelte-hmr: 0.14.0_svelte@3.37.0
+      svelte-htm: 1.1.1_svelte@3.37.0
+      svelte-preprocess: 4.7.0_ff7486d6e5a845ff361d36f415eaf31c
+      svelte-type-generator: link:../../tools/svelte-type-generator
+      typescript: 4.2.4
+      uid: 2.0.0
+      vite: 2.1.5
+      vite-web-test-runner-plugin: 0.0.2
+
   components/switch:
     specifiers:
       '@material-svelte/svelte-actions': workspace:*
@@ -902,7 +952,7 @@ importers:
       '@material-svelte/postcss-plugin': link:../../tools/postcss-plugin
       '@mdi/js': 5.9.55
       '@sveltejs/adapter-node': 1.0.0-next.17
-      '@sveltejs/kit': 1.0.0-next.93_svelte@3.37.0+vite@2.1.5
+      '@sveltejs/kit': 1.0.0-next.94_svelte@3.37.0+vite@2.1.5
       svelte: 3.37.0
       svelte-preprocess: 4.7.0_svelte@3.37.0+typescript@4.2.4
       tslib: 2.2.0
@@ -943,6 +993,7 @@ importers:
       '@material-svelte/navigation-drawer': workspace:*
       '@material-svelte/navigation-rail': workspace:*
       '@material-svelte/paper': workspace:*
+      '@material-svelte/radio': workspace:*
       '@material-svelte/switch': workspace:*
       '@material-svelte/top-app-bar': workspace:*
       '@material-svelte/typography': workspace:*
@@ -958,6 +1009,7 @@ importers:
       '@material-svelte/navigation-drawer': link:../../components/navigation-drawer
       '@material-svelte/navigation-rail': link:../../components/navigation-rail
       '@material-svelte/paper': link:../../components/paper
+      '@material-svelte/radio': link:../../components/radio
       '@material-svelte/switch': link:../../components/switch
       '@material-svelte/top-app-bar': link:../../components/top-app-bar
       '@material-svelte/typography': link:../../components/typography
@@ -5072,15 +5124,15 @@ packages:
       - supports-color
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.93_svelte@3.37.0+vite@2.1.5:
-    resolution: {integrity: sha512-WvmRj1Zk+SCbKYZGXCPlocOvGXRYGFOeZQC/k3C6KWAF11cM3H0i0mGzL0GmwrPmv35AjFtmH2iJ/J100ftUZw==}
+  /@sveltejs/kit/1.0.0-next.94_svelte@3.37.0+vite@2.1.5:
+    resolution: {integrity: sha512-2HkW+LqijRAHjKzKur3uLNblV8Ea1Vsju7LPVNYfMarJAk/mJrLTTm+29Qw6VSgaQsezlKfrgv3i+ZwgxZM1BQ==}
     engines: {node: '>= 12.17.0'}
     hasBin: true
     peerDependencies:
       svelte: ^3.32.1
       vite: ^2.2.3
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 1.0.0-next.7_svelte@3.37.0+vite@2.1.5
+      '@sveltejs/vite-plugin-svelte': 1.0.0-next.9_svelte@3.37.0+vite@2.1.5
       cheap-watch: 1.0.3
       sade: 1.7.4
       svelte: 3.37.0
@@ -5128,6 +5180,28 @@ packages:
       source-map: 0.7.3
       svelte: 3.37.0
       svelte-hmr: 0.14.0_svelte@3.37.0
+      vite: 2.1.5
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
+    dev: true
+
+  /@sveltejs/vite-plugin-svelte/1.0.0-next.9_svelte@3.37.0+vite@2.1.5:
+    resolution: {integrity: sha512-ySB/GJsZV3h3jqjq5WIiaxVFkJK6vqtG9gS7Iw6SfUH9ZiFNw5JjQF69g68j9cNep3q4yRIYiG5/pI3YIdXEuA==}
+    engines: {node: '>=12.0.0'}
+    peerDependencies:
+      svelte: ^3.37.0
+      vite: ^2.2.3
+    dependencies:
+      '@rollup/pluginutils': 4.1.0
+      chalk: 4.1.1
+      debug: 4.3.2
+      hash-sum: 2.0.0
+      require-relative: 0.8.7
+      slash: 4.0.0
+      source-map: 0.7.3
+      svelte: 3.37.0
+      svelte-hmr: 0.14.3_svelte@3.37.0
       vite: 2.1.5
     transitivePeerDependencies:
       - rollup
@@ -7384,6 +7458,14 @@ packages:
     dependencies:
       ansi-styles: 4.3.0
       supports-color: 7.2.0
+
+  /chalk/4.1.1:
+    resolution: {integrity: sha512-diHzdDKxcU+bAsUboHLPEDQiw0qEe0qd7SYUn3HgcFlWgbDcfLGswOHYeGrHKzG9z6UYf01d9VFMfZxPM1xZSg==}
+    engines: {node: '>=10'}
+    dependencies:
+      ansi-styles: 4.3.0
+      supports-color: 7.2.0
+    dev: true
 
   /character-entities-legacy/1.1.4:
     resolution: {integrity: sha512-3Xnr+7ZFS1uxeiUDvV02wQ+QDbc55o97tIV5zHScSPJpcLm/r0DFPcoY3tYRp+VZukxuMeKgXYmsXQHO05zQeA==}
@@ -15953,6 +16035,11 @@ packages:
     resolution: {integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==}
     engines: {node: '>=8'}
 
+  /slash/4.0.0:
+    resolution: {integrity: sha512-3dOsAHXXUkQTpOYcoAxLIorMTp4gIQr5IW3iVb7A7lFIp0VHhnynm9izx6TssdrIcVIESAlVjtnO2K8bg+Coew==}
+    engines: {node: '>=12'}
+    dev: true
+
   /slice-ansi/2.1.0:
     resolution: {integrity: sha512-Qu+VC3EwYLldKa1fCxuuvULvSJOKEgk9pi8dZeCVK7TqBfUNTH4sFkk4joj8afVSfAYgJoSOetjx9QWOJ5mYoQ==}
     engines: {node: '>=6'}
@@ -16646,6 +16733,14 @@ packages:
 
   /svelte-hmr/0.14.0_svelte@3.37.0:
     resolution: {integrity: sha512-Rc4w11U+U30m/cHqOJ/xioFSEAY5fd5muiQC7FL6XJuJAuB2OIJoEZl3KEJR2uO1/f4Bw0PdrugtbxcngSsOtQ==}
+    peerDependencies:
+      svelte: '>=3.19.0'
+    dependencies:
+      svelte: 3.37.0
+    dev: true
+
+  /svelte-hmr/0.14.3_svelte@3.37.0:
+    resolution: {integrity: sha512-N56xX405zLMw2tpGHKRx5h+kmdeZwxI21pvyC6OyBHJDCF6DlwWBm9TifdQmSD4dloWSmpDPzHWYa3CSjfopUg==}
     peerDependencies:
       svelte: '>=3.19.0'
     dependencies:
