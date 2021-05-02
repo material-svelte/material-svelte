@@ -1,3 +1,23 @@
+## @material-svelte/list [1.2.3](https://github.com/material-svelte/material-svelte/compare/@material-svelte/list@1.2.2...@material-svelte/list@1.2.3) (2021-05-02)
+
+
+### Bug Fixes
+
+* **@material-svelte/list:** center content in icon-meta-slot ([f0c3224](https://github.com/material-svelte/material-svelte/commit/f0c32241666c622deb1729d394837d6e3a38651a))
+* **@material-svelte/list:** center content in visual-slot ([49eeb1c](https://github.com/material-svelte/material-svelte/commit/49eeb1c18e0dabdc46583002db09e36e951068fc))
+
+
+
+
+
+### Dependencies
+
+* **@material-svelte/button:** upgraded to 1.4.3
+* **@material-svelte/checkbox:** upgraded to 1.2.3
+* **@material-svelte/icon:** upgraded to 1.3.3
+* **@material-svelte/typography:** upgraded to 1.2.3
+* **svelte-type-generator:** upgraded to 1.1.0
+
 ## @material-svelte/list [1.2.2](https://github.com/material-svelte/material-svelte/compare/@material-svelte/list@1.2.1...@material-svelte/list@1.2.2) (2021-04-30)
 
 
