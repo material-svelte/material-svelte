@@ -1,3 +1,16 @@
+## @material-svelte/top-app-bar [1.2.3](https://github.com/material-svelte/material-svelte/compare/@material-svelte/top-app-bar@1.2.2...@material-svelte/top-app-bar@1.2.3) (2021-05-02)
+
+
+
+
+
+### Dependencies
+
+* **@material-svelte/button:** upgraded to 1.4.3
+* **@material-svelte/icon:** upgraded to 1.3.3
+* **@material-svelte/typography:** upgraded to 1.2.3
+* **svelte-type-generator:** upgraded to 1.1.0
+
 ## @material-svelte/top-app-bar [1.2.2](https://github.com/material-svelte/material-svelte/compare/@material-svelte/top-app-bar@1.2.1...@material-svelte/top-app-bar@1.2.2) (2021-04-30)
 
 
