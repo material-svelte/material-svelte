@@ -28,6 +28,7 @@
     "@material-svelte/radio": "workspace:*",
     "@material-svelte/svelte-preprocessor": "workspace:*",
     "@material-svelte/switch": "workspace:*",
+    "@material-svelte/text-field": "workspace:*",
     "@material-svelte/tooltip": "workspace:*",
     "@material-svelte/top-app-bar": "workspace:*",
     "@material-svelte/typography": "workspace:*",

@@ -23,6 +23,7 @@
     "@material-svelte/paper": "workspace:*",
     "@material-svelte/radio": "workspace:*",
     "@material-svelte/switch": "workspace:*",
+    "@material-svelte/text-field": "workspace:*",
     "@material-svelte/top-app-bar": "workspace:*",
     "@material-svelte/typography": "workspace:*"
   },

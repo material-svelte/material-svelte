@@ -10,5 +10,6 @@ export * from '@material-svelte/navigation-rail';
 export * from '@material-svelte/paper';
 export * from '@material-svelte/radio';
 export * from '@material-svelte/switch';
+export * from '@material-svelte/text-field';
 export * from '@material-svelte/top-app-bar';
 export * from '@material-svelte/typography';
