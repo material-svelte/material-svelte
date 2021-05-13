@@ -26,6 +26,6 @@
     "postcss-simple-vars": "^6.0.3"
   },
   "devDependencies": {
-    "postcss": "^8.2.10"
+    "postcss": "^8.2.13"
   }
 }

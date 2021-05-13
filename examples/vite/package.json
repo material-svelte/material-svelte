@@ -12,10 +12,10 @@
     "@material-svelte/icon": "workspace:*",
     "@material-svelte/postcss-plugin": "workspace:*",
     "@mdi/js": "^5.9.55",
-    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.7",
-    "svelte": "^3.37.0",
-    "svelte-preprocess": "^4.7.0",
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.9",
+    "svelte": "^3.38.1",
+    "svelte-preprocess": "^4.7.2",
     "typescript": "^4.2.4",
-    "vite": "^2.1.5"
+    "vite": "^2.2.3"
   }
 }

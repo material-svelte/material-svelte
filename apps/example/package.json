@@ -33,13 +33,13 @@
     "@material-svelte/postcss-plugin": "workspace:*",
     "@material-svelte/svelte-preprocessor": "workspace:*",
     "@mdi/js": "^5.9.55",
-    "@sveltejs/adapter-static": "^1.0.0-next.4",
-    "@sveltejs/kit": "^1.0.0-next.76",
-    "ress": "^3.0.0",
-    "svelte": "^3.37.0",
-    "svelte-preprocess": "^4.7.0",
+    "@sveltejs/adapter-static": "^1.0.0-next.7",
+    "@sveltejs/kit": "^1.0.0-next.94",
+    "ress": "^4.0.0",
+    "svelte": "^3.38.1",
+    "svelte-preprocess": "^4.7.2",
     "tslib": "^2.2.0",
     "typescript": "^4.2.4",
-    "vite": "^2.1.5"
+    "vite": "^2.2.3"
   }
 }

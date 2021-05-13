@@ -1,11 +1,11 @@
 {
-  "name": "@material-svelte/grid",
+  "name": "@material-svelte/text-field",
   "version": "0.0.0-semantic-release",
   "publishConfig": {
     "access": "public"
   },
-  "main": "dist/grid.umd.js",
-  "module": "dist/grid.es.js",
+  "main": "dist/text-field.umd.js",
+  "module": "dist/text-field.es.js",
   "scripts": {
     "build": "vite build && pnpm build:types",
     "build:types": "svelte-type-generator",
@@ -19,14 +19,18 @@
     "dist",
     "src"
   ],
+  "dependencies": {
+    "uid": "^2.0.0"
+  },
   "devDependencies": {
-    "@material-svelte/breakpoint-tools": "workspace:*",
-    "@material-svelte/svelte-preprocessor": "workspace:*",
+    "@material-svelte/button": "workspace:*",
+    "@material-svelte/icon": "workspace:*",
+    "@mdi/js": "^5.9.55",
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.9",
     "@testing-library/svelte": "^3.0.3",
     "@types/chai": "^4.2.17",
     "@types/mocha": "^8.2.2",
-    "@web/test-runner": "^0.13.3",
+    "@web/test-runner": "^0.12.20",
     "chai": "^4.3.4",
     "chai-dom": "^1.9.0",
     "postcss": "^8.2.13",
@@ -38,7 +42,7 @@
     "svelte-type-generator": "workspace:*",
     "typescript": "^4.2.4",
     "vite": "^2.2.3",
-    "vite-web-test-runner-plugin": "^0.0.3"
+    "vite-web-test-runner-plugin": "^0.0.2"
   },
   "types": "dist/types",
   "svelte": "src/index.js"
