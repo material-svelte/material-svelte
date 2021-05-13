@@ -1,3 +1,18 @@
+# material-svelte [1.8.0](https://github.com/material-svelte/material-svelte/compare/material-svelte@1.7.0...material-svelte@1.8.0) (2021-05-13)
+
+
+### Features
+
+* **@material-svelte/text-field:** initial implementation ([1666f86](https://github.com/material-svelte/material-svelte/commit/1666f86858a390997e40f710a75bfd37a695ab1a))
+
+
+
+
+
+### Dependencies
+
+* **@material-svelte/text-field:** upgraded to 1.0.0
+
 # material-svelte [1.7.0](https://github.com/material-svelte/material-svelte/compare/material-svelte@1.6.3...material-svelte@1.7.0) (2021-05-02)
 
 
