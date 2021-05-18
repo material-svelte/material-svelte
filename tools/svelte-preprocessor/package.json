@@ -8,5 +8,8 @@
   "license": "MIT",
   "author": "",
   "main": "src/index.js",
-  "keywords": []
+  "keywords": [],
+  "dependencies": {
+    "cosmiconfig": "^7.0.0"
+  }
 }
