@@ -995,29 +995,30 @@ importers:
   examples/sveltekit:
     specifiers:
       '@material-svelte/button': workspace:*
-      '@material-svelte/icon': workspace:*
+      '@material-svelte/layout': workspace:*
       '@material-svelte/postcss-plugin': workspace:*
+      '@material-svelte/top-app-bar': workspace:*
+      '@material-svelte/typography': workspace:*
       '@mdi/js': ^5.9.55
-      '@sveltejs/adapter-node': next
-      '@sveltejs/kit': ^1.0.0-next.94
-      svelte: ^3.38.1
-      svelte-preprocess: ^4.7.2
-      tslib: ^2.2.0
-      typescript: ^4.2.4
-      vite: ^2.2.3
-    dependencies:
-      '@material-svelte/button': link:../../components/button
-      '@material-svelte/icon': link:../../components/icon
+      '@sveltejs/kit': next
+      ress: ^4.0.0
+      svelte: ^3.34.0
+      svelte-preprocess: ^4.0.0
+      tslib: ^2.0.0
+      typescript: ^4.0.0
     devDependencies:
+      '@material-svelte/button': link:../../components/button
+      '@material-svelte/layout': link:../../components/layout
       '@material-svelte/postcss-plugin': link:../../tools/postcss-plugin
+      '@material-svelte/top-app-bar': link:../../components/top-app-bar
+      '@material-svelte/typography': link:../../components/typography
       '@mdi/js': 5.9.55
-      '@sveltejs/adapter-node': 1.0.0-next.20
-      '@sveltejs/kit': 1.0.0-next.94_svelte@3.38.1+vite@2.2.3
-      svelte: 3.38.1
-      svelte-preprocess: 4.7.2_svelte@3.38.1+typescript@4.2.4
+      '@sveltejs/kit': 1.0.0-next.107_svelte@3.38.2
+      ress: 4.0.0
+      svelte: 3.38.2
+      svelte-preprocess: 4.7.3_svelte@3.38.2+typescript@4.2.4
       tslib: 2.2.0
       typescript: 4.2.4
-      vite: 2.2.3
 
   examples/vite:
     specifiers:
@@ -5018,24 +5019,6 @@ packages:
       sade: 1.7.4
       svelte: 3.38.2
       vite: 2.3.3
-    transitivePeerDependencies:
-      - rollup
-      - supports-color
-    dev: true
-
-  /@sveltejs/kit/1.0.0-next.94_svelte@3.38.1+vite@2.2.3:
-    resolution: {integrity: sha512-2HkW+LqijRAHjKzKur3uLNblV8Ea1Vsju7LPVNYfMarJAk/mJrLTTm+29Qw6VSgaQsezlKfrgv3i+ZwgxZM1BQ==}
-    engines: {node: '>= 12.17.0'}
-    hasBin: true
-    peerDependencies:
-      svelte: ^3.32.1
-      vite: ^2.2.3
-    dependencies:
-      '@sveltejs/vite-plugin-svelte': 1.0.0-next.9_svelte@3.38.1+vite@2.2.3
-      cheap-watch: 1.0.3
-      sade: 1.7.4
-      svelte: 3.38.1
-      vite: 2.2.3
     transitivePeerDependencies:
       - rollup
       - supports-color
