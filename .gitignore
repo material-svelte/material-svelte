@@ -1,4 +1,6 @@
 .svelte
+.svelte-kit
+.pnpm-debug.log
 build
 dist
 node_modules
