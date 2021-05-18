@@ -13,6 +13,8 @@
 
   /** variable to bind button-element to */
   export let buttonElement: HTMLButtonElement | null = null;
+  /** variable to bind a-element to */
+  export let anchorElement: HTMLAnchorElement | null = null;
   /** The button variant */
   export let variant: ButtonVariant = 'contained';
   /** The buttons font-color */
@@ -29,40 +31,77 @@
   export let mini = false;
   /** whether the button is round */
   export let round = false;
+  /** render the list-item as <a href> if specified */
+  export let href: string | null = null;
 </script>
 
-<button
-  bind:this={buttonElement}
-  on:click
-  use:ripple
-  class:contained={variant === 'contained'}
-  class:outlined={variant === 'outlined'}
-  class:text={variant === 'text'}
-  class:fab={variant === 'fab'}
-  class:icon={variant === 'icon'}
-  class:mini
-  class:round
-  class:disabled
-  class:unelevated
-  class:full-width={fullWidth}
-  class:has-content={$$slots.default}
-  class:has-icon={$$slots.icon}
-  style="--font-color: {fontColor}; --background-color: {backgroundColor};"
->
-  {#if $$slots.icon}
-    <span class="icon">
-      <slot name="icon" />
-    </span>
-  {/if}
-  {#if $$slots.default}
-    <span class="content">
-      <Typography variant="button"><slot /></Typography>
-    </span>
-  {/if}
-</button>
+{#if href}
+  <a
+    bind:this={anchorElement}
+    on:click
+    use:ripple
+    class="button"
+    class:contained={variant === 'contained'}
+    class:outlined={variant === 'outlined'}
+    class:text={variant === 'text'}
+    class:fab={variant === 'fab'}
+    class:icon={variant === 'icon'}
+    class:mini
+    class:round
+    class:disabled
+    class:unelevated
+    class:full-width={fullWidth}
+    class:has-content={$$slots.default}
+    class:has-icon={$$slots.icon}
+    style="--font-color: {fontColor}; --background-color: {backgroundColor};"
+    {href}
+  >
+    {#if $$slots.icon}
+      <span class="icon">
+        <slot name="icon" />
+      </span>
+    {/if}
+    {#if $$slots.default}
+      <span class="content">
+        <Typography variant="button"><slot /></Typography>
+      </span>
+    {/if}
+  </a>
+{:else}
+  <button
+    bind:this={buttonElement}
+    on:click
+    use:ripple
+    class="button"
+    class:contained={variant === 'contained'}
+    class:outlined={variant === 'outlined'}
+    class:text={variant === 'text'}
+    class:fab={variant === 'fab'}
+    class:icon={variant === 'icon'}
+    class:mini
+    class:round
+    class:disabled
+    class:unelevated
+    class:full-width={fullWidth}
+    class:has-content={$$slots.default}
+    class:has-icon={$$slots.icon}
+    style="--font-color: {fontColor}; --background-color: {backgroundColor};"
+  >
+    {#if $$slots.icon}
+      <span class="icon">
+        <slot name="icon" />
+      </span>
+    {/if}
+    {#if $$slots.default}
+      <span class="content">
+        <Typography variant="button"><slot /></Typography>
+      </span>
+    {/if}
+  </button>
+{/if}
 
 <style lang="postcss">
-  button {
+  .button {
     /* variables that can be configured using preprocessor */
     --background-color-disabled: rgba(#000, 0.26);
     --border-radius: 4px;
@@ -135,7 +174,7 @@
     }
   }
 
-  button:not(.icon).has-icon {
+  .button:not(.icon).has-icon {
     &.has-content {
       padding-left: 12px !important;
     }
@@ -150,13 +189,13 @@
     }
   }
 
-  button.contained {
+  .button.contained {
     &.has-content {
       padding: 0 16px;
     }
   }
 
-  button.fab {
+  .button.fab {
     > .icon {
       height: 24px;
       width: 24px;
@@ -189,7 +228,7 @@
     }
   }
 
-  button.icon {
+  .button.icon {
     box-sizing: content-box;
     position: relative;
 
@@ -213,11 +252,11 @@
     }
   }
 
-  button.contained,
-  button.fab {
+  .button.contained,
+  .button.fab {
     &:not(.disabled) {
       background-color: var(--background-color);
-      color: #fff;
+      color: var(--font-color);
 
       &:not(.unelevated) {
         @mixin elevation 4;
@@ -233,7 +272,7 @@
     }
   }
 
-  button.outlined {
+  .button.outlined {
     border: 1px solid currentColor;
 
     &.has-content {
@@ -241,7 +280,7 @@
     }
   }
 
-  button.text {
+  .button.text {
     border: unset;
 
     &.has-content {
@@ -249,8 +288,8 @@
     }
   }
 
-  button.outlined,
-  button.text {
+  .button.outlined,
+  .button.text {
     background-color: transparent;
 
     &:not(.disabled) {
@@ -258,13 +297,22 @@
     }
   }
 
-  button.contained,
-  button.outlined,
-  button.text {
+  .button.contained,
+  .button.outlined,
+  .button.text {
     height: 36px;
 
     &:not(.has-content).has-icon {
       padding: 0 9px;
     }
+  }
+
+  a,
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: inherit;
+    text-decoration: none;
   }
 </style>

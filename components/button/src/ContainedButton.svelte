@@ -3,6 +3,8 @@
 
   /** variable to bind button-element to */
   export let buttonElement: HTMLButtonElement | null = null;
+  /** variable to bind a-element to */
+  export let anchorElement: HTMLAnchorElement | null = null;
   /** The buttons font-color */
   export let fontColor = '#fff';
   /** The buttons background-color */
@@ -13,15 +15,19 @@
   export let unelevated = false;
   /** whether the button should be full-width */
   export let fullWidth = false;
+  /** render the list-item as <a href> if specified */
+  export let href: string | null = null;
 
   const props = {
     variant: 'contained',
     buttonElement,
+    anchorElement,
     fontColor,
     backgroundColor,
     disabled,
     unelevated,
     fullWidth,
+    href,
   };
 </script>
 
