@@ -1,25 +1,27 @@
-<div>
-  <img src="/logo.svg" alt="Material Svelte logo" />
-  <h1>under construction</h1>
+<script lang="ts">
+  import { Button } from '@material-svelte/button';
+  import { Typography } from '@material-svelte/typography';
+  import logo from '../../static/logo.svg';
+</script>
+
+<img src={logo} alt="material-svelte logo" />
+<Typography variant="h4">Welcome to material-svelte</Typography>
+<Typography variant="body1">A Component-Library for Svelte.</Typography>
+<div class="links">
+  <Button href="https://example.material-svelte.dev">See it in action</Button>
+  <Button href="https://storybook.material-svelte.dev">
+    See the storybook
+  </Button>
 </div>
 
 <style>
-  div {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-  }
-
   img {
-    width: 180px;
+    height: 50%;
   }
 
-  h1 {
-    color: #ff3e00;
-    font-size: 3rem;
-    font-weight: 100;
-    line-height: 1.1;
-    margin: 3rem auto;
-    text-transform: uppercase;
+  .links {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
   }
 </style>
