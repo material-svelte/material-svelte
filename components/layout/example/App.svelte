@@ -11,8 +11,8 @@
 </svelte:head>
 
 <Layout>
-  <div slot="header" class="bar" />
-  <div slot="navigation" class="drawer">
+  <div slot="header" class="header" />
+  <div slot="navigation" class="navigation">
     <ul>
       {#each Array(50) as _, i}
         <li>{i}</li>
@@ -26,6 +26,7 @@
       {/each}
     </ul>
   </main>
+  <div slot="footer" class="footer" />
 </Layout>
 
 <style>
@@ -33,7 +34,8 @@
     height: 100vh;
   }
 
-  .bar {
+  .header {
+    background-color: #f00;
     height: 50px;
   }
 
@@ -41,8 +43,18 @@
     overflow: auto;
   }
 
-  .drawer {
+  .navigation {
+    background-color: #0f0;
     display: flex;
     width: 200px;
+  }
+
+  main {
+    background-color: #00f;
+  }
+
+  .footer {
+    background-color: #ff0;
+    height: 50px;
   }
 </style>

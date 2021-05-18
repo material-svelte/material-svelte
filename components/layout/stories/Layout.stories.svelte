@@ -154,3 +154,37 @@
     </Layout>
   </div>
 </Story>
+
+<Story name="footer" parameters={disableAddons}>
+  <style>
+    .wrap {
+      height: 500px;
+      width: 400px;
+    }
+    header {
+      background-color: #880;
+      height: 50px;
+    }
+    nav {
+      background-color: #088;
+      height: 100%;
+      width: 100px;
+    }
+    main {
+      background-color: #808;
+      height: 100%;
+    }
+    footer {
+      background-color: #888;
+      height: 50px;
+    }
+  </style>
+  <div class="wrap">
+    <Layout clippedNavigation>
+      <header slot="header" />
+      <nav slot="navigation" />
+      <main />
+      <footer slot="footer" />
+    </Layout>
+  </div>
+</Story>
