@@ -1023,24 +1023,30 @@ importers:
   examples/vite:
     specifiers:
       '@material-svelte/button': workspace:*
-      '@material-svelte/icon': workspace:*
+      '@material-svelte/layout': workspace:*
       '@material-svelte/postcss-plugin': workspace:*
+      '@material-svelte/top-app-bar': workspace:*
+      '@material-svelte/typography': workspace:*
       '@mdi/js': ^5.9.55
-      '@sveltejs/vite-plugin-svelte': ^1.0.0-next.9
-      svelte: ^3.38.1
+      '@sveltejs/vite-plugin-svelte': ^1.0.0-next.7
+      ress: ^4.0.0
+      svelte: ^3.37.0
       svelte-preprocess: ^4.7.2
       typescript: ^4.2.4
-      vite: ^2.2.3
+      vite: ^2.3.0
     devDependencies:
       '@material-svelte/button': link:../../components/button
-      '@material-svelte/icon': link:../../components/icon
+      '@material-svelte/layout': link:../../components/layout
       '@material-svelte/postcss-plugin': link:../../tools/postcss-plugin
+      '@material-svelte/top-app-bar': link:../../components/top-app-bar
+      '@material-svelte/typography': link:../../components/typography
       '@mdi/js': 5.9.55
-      '@sveltejs/vite-plugin-svelte': 1.0.0-next.9_svelte@3.38.1+vite@2.2.3
-      svelte: 3.38.1
-      svelte-preprocess: 4.7.2_svelte@3.38.1+typescript@4.2.4
+      '@sveltejs/vite-plugin-svelte': 1.0.0-next.10_svelte@3.38.2+vite@2.3.3
+      ress: 4.0.0
+      svelte: 3.38.2
+      svelte-preprocess: 4.7.2_svelte@3.38.2+typescript@4.2.4
       typescript: 4.2.4
-      vite: 2.2.3
+      vite: 2.3.3
 
   packages/material-svelte:
     specifiers:
@@ -16499,6 +16505,55 @@ packages:
       detect-indent: 6.0.0
       strip-indent: 3.0.0
       svelte: 3.38.1
+      typescript: 4.2.4
+    dev: true
+
+  /svelte-preprocess/4.7.2_svelte@3.38.2+typescript@4.2.4:
+    resolution: {integrity: sha512-EToG+08rEsA33btv+C5g2qnRArwpTc5AoU0QBB3ZEkYagxAb2yPNsy0qsmtvbJOTBMy6o3oyijDdl3DMpMvpEg==}
+    engines: {node: '>= 9.11.2'}
+    requiresBuild: true
+    peerDependencies:
+      '@babel/core': ^7.10.2
+      coffeescript: ^2.5.1
+      less: ^3.11.3
+      node-sass: '*'
+      postcss: ^7 || ^8
+      postcss-load-config: ^2.1.0 || ^3.0.0
+      pug: ^3.0.0
+      sass: ^1.26.8
+      stylus: ^0.54.7
+      sugarss: ^2.0.0
+      svelte: ^3.23.0
+      typescript: ^3.9.5 || ^4.0.0
+    peerDependenciesMeta:
+      '@babel/core':
+        optional: true
+      coffeescript:
+        optional: true
+      less:
+        optional: true
+      node-sass:
+        optional: true
+      postcss:
+        optional: true
+      postcss-load-config:
+        optional: true
+      pug:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@types/pug': 2.0.4
+      '@types/sass': 1.16.0
+      detect-indent: 6.0.0
+      strip-indent: 3.0.0
+      svelte: 3.38.2
       typescript: 4.2.4
     dev: true
 

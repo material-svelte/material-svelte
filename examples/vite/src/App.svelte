@@ -1,72 +1,65 @@
 <script lang="ts">
-  import logo from './assets/svelte.png';
-  import Counter from './lib/Counter.svelte';
-  import Button from '@material-svelte/button';
-  import Icon from '@material-svelte/icon';
-  import { mdiHome } from '@mdi/js';
+  import { Button, IconButton } from '@material-svelte/button';
+  import { TopAppBar } from '@material-svelte/top-app-bar';
+  import { Typography } from '@material-svelte/typography';
+  import { Layout } from '@material-svelte/layout';
+  import { mdiDiscord, mdiGithub } from '@mdi/js';
+
+  import 'ress/dist/ress.min.css';
+
+  const title = 'Vite + Svelte + Material-Svelte';
 </script>
 
-<main>
-  <img src={logo} alt="Svelte Logo" />
-  <h1>Hello Typescript!</h1>
+<svelte:head>
+  <title>{title}</title>
+</svelte:head>
 
-  <Counter />
-  <Button>
-    <Icon slot="icon" path={mdiHome} />
-    Button
-  </Button>
-
-  <p>
-    Visit <a href="https://svelte.dev">svelte.dev</a> to learn how to build Svelte
-    apps.
-  </p>
-
-  <p>
-    Check out <a href="https://github.com/sveltejs/kit#readme">SvelteKit</a> for
-    the officially supported framework, also powered by Vite!
-  </p>
-</main>
+<Layout>
+  <TopAppBar slot="header">
+    <Typography slot="title" variant="h6">{title}</Typography>
+    <svelte:fragment slot="actions">
+      <IconButton
+        path={mdiGithub}
+        href="https://github.com/material-svelte/material-svelte"
+      />
+      <IconButton path={mdiDiscord} href="https://material-svelte.dev/chat" />
+    </svelte:fragment>
+  </TopAppBar>
+  <main>
+    <img src="/logo_512.svg" alt="material-svelte logo" />
+    <Typography variant="h4">Welcome to material-svelte</Typography>
+    <div class="links">
+      <Button href="https://example.material-svelte.dev">
+        See it in action
+      </Button>
+      <Button href="https://storybook.material-svelte.dev">
+        See the storybook
+      </Button>
+      <Button href="https://material-svelte.dev">Learn more</Button>
+    </div>
+  </main>
+</Layout>
 
 <style>
-  :root {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  :global(#app) {
+    height: 100vh;
   }
 
   main {
-    margin: 0 auto;
-    padding: 1em;
-    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
   }
 
   img {
-    height: 16rem;
-    width: 16rem;
+    height: 50%;
   }
 
-  h1 {
-    color: #ff3e00;
-    font-size: 4rem;
-    font-weight: 100;
-    line-height: 1.1;
-    margin: 2rem auto;
-    max-width: 14rem;
-    text-transform: uppercase;
-  }
-
-  p {
-    line-height: 1.35;
-    margin: 1rem auto;
-    max-width: 14rem;
-  }
-
-  @media (min-width: 480px) {
-    h1 {
-      max-width: none;
-    }
-
-    p {
-      max-width: none;
-    }
+  .links {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
   }
 </style>
