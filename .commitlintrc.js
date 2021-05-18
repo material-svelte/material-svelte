@@ -16,6 +16,7 @@ module.exports = {
         'release',
         'repo',
         'revert',
+        'test',
       ],
     ],
     'scope-empty': [2, 'never', ['ci', 'repo']],
