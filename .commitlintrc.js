@@ -19,7 +19,7 @@ module.exports = {
         'test',
       ],
     ],
-    'scope-empty': [2, 'never', ['ci', 'repo']],
+    'scope-empty': [2, 'never', ['ci', 'repo', 'docs']],
     'scope-enum': [
       2,
       'always',
