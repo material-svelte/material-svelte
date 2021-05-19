@@ -4,6 +4,16 @@
   "publishConfig": {
     "access": "public"
   },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/material-svelte/material-svelte.git"
+  },
+  "author": "",
+  "homepage": "https://material-svelte.dev",
+  "bugs": {
+    "url": "https://github.com/material-svelte/material-svelte/issues"
+  },
   "main": "dist/button.umd.js",
   "module": "dist/button.es.js",
   "scripts": {

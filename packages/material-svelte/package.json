@@ -1,9 +1,16 @@
 {
   "name": "material-svelte",
   "version": "0.0.0-semantic-release",
-  "description": "",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/material-svelte/material-svelte.git"
+  },
   "author": "",
+  "homepage": "https://material-svelte.dev",
+  "bugs": {
+    "url": "https://github.com/material-svelte/material-svelte/issues"
+  },
   "main": "src/index.js",
   "scripts": {
     "build": "cpy src/index.js dist --rename index.d.ts",
