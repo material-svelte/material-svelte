@@ -1,3 +1,20 @@
+## @material-svelte/breakpoint [1.2.4](https://github.com/material-svelte/material-svelte/compare/@material-svelte/breakpoint@1.2.3...@material-svelte/breakpoint@1.2.4) (2021-05-20)
+
+
+### Bug Fixes
+
+* **repo-wide:** add license, url etc to package.json ([80db9e6](https://github.com/material-svelte/material-svelte/commit/80db9e6d4258331e5847d5d30f9252b4d972fd9b))
+
+
+
+
+
+### Dependencies
+
+* **@material-svelte/breakpoint-tools:** upgraded to 1.1.1
+* **@material-svelte/postcss-plugin:** upgraded to 1.3.2
+* **@material-svelte/svelte-preprocessor:** upgraded to 1.0.1
+
 ## @material-svelte/breakpoint [1.2.3](https://github.com/material-svelte/material-svelte/compare/@material-svelte/breakpoint@1.2.2...@material-svelte/breakpoint@1.2.3) (2021-05-02)
 
 
