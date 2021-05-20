@@ -5,7 +5,7 @@
 </script>
 
 <img src={logo} alt="material-svelte logo" />
-<Typography variant="h4">Welcome to material-svelte</Typography>
+<Typography variant="h5">Welcome to material-svelte</Typography>
 <Typography variant="body1">A Component-Library for Svelte.</Typography>
 <div class="links">
   <Button href="https://example.material-svelte.dev">See it in action</Button>
