@@ -1,3 +1,32 @@
+## material-svelte [1.8.1](https://github.com/material-svelte/material-svelte/compare/material-svelte@1.8.0...material-svelte@1.8.1) (2021-05-20)
+
+
+### Bug Fixes
+
+* **repo-wide:** add license, url etc to package.json ([80db9e6](https://github.com/material-svelte/material-svelte/commit/80db9e6d4258331e5847d5d30f9252b4d972fd9b))
+
+
+
+
+
+### Dependencies
+
+* **@material-svelte/breakpoint:** upgraded to 1.2.4
+* **@material-svelte/button:** upgraded to 1.5.0
+* **@material-svelte/checkbox:** upgraded to 1.2.4
+* **@material-svelte/grid:** upgraded to 1.2.4
+* **@material-svelte/icon:** upgraded to 1.3.4
+* **@material-svelte/layout:** upgraded to 1.3.0
+* **@material-svelte/list:** upgraded to 1.2.4
+* **@material-svelte/navigation-drawer:** upgraded to 1.2.4
+* **@material-svelte/navigation-rail:** upgraded to 1.1.4
+* **@material-svelte/paper:** upgraded to 1.2.4
+* **@material-svelte/radio:** upgraded to 1.0.1
+* **@material-svelte/switch:** upgraded to 1.2.4
+* **@material-svelte/text-field:** upgraded to 1.0.1
+* **@material-svelte/top-app-bar:** upgraded to 1.2.4
+* **@material-svelte/typography:** upgraded to 1.2.4
+
 # material-svelte [1.8.0](https://github.com/material-svelte/material-svelte/compare/material-svelte@1.7.0...material-svelte@1.8.0) (2021-05-13)
 
 
