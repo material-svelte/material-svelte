@@ -1,3 +1,15 @@
+# @material-svelte/layout [1.3.0](https://github.com/material-svelte/material-svelte/compare/@material-svelte/layout@1.2.3...@material-svelte/layout@1.3.0) (2021-05-20)
+
+
+### Bug Fixes
+
+* **repo-wide:** add license, url etc to package.json ([80db9e6](https://github.com/material-svelte/material-svelte/commit/80db9e6d4258331e5847d5d30f9252b4d972fd9b))
+
+
+### Features
+
+* **@material-svelte/layout:** add footer-slot ([f8e17bc](https://github.com/material-svelte/material-svelte/commit/f8e17bc7f7a3e7c6201ba3f882d9c6be82250594))
+
 ## @material-svelte/layout [1.2.3](https://github.com/material-svelte/material-svelte/compare/@material-svelte/layout@1.2.2...@material-svelte/layout@1.2.3) (2021-05-02)
 
 
