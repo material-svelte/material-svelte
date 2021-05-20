@@ -1,3 +1,19 @@
+## @material-svelte/postcss-plugin [1.3.2](https://github.com/material-svelte/material-svelte/compare/@material-svelte/postcss-plugin@1.3.1...@material-svelte/postcss-plugin@1.3.2) (2021-05-20)
+
+
+### Bug Fixes
+
+* **repo-wide:** add license, url etc to package.json ([80db9e6](https://github.com/material-svelte/material-svelte/commit/80db9e6d4258331e5847d5d30f9252b4d972fd9b))
+
+
+
+
+
+### Dependencies
+
+* **@material-svelte/breakpoint-tools:** upgraded to 1.1.1
+* **@material-svelte/postcss-mixins:** upgraded to 1.1.1
+
 ## @material-svelte/postcss-plugin [1.3.1](https://github.com/material-svelte/material-svelte/compare/@material-svelte/postcss-plugin@1.3.0...@material-svelte/postcss-plugin@1.3.1) (2021-04-29)
 
 
