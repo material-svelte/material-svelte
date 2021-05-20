@@ -6,9 +6,11 @@
 
   let navigation: HTMLElement;
   let header: HTMLElement;
+  let footer: HTMLElement;
 
   let navigationWidth: number;
   let headerHeight: number;
+  let footerHeight: number;
   let style: string;
 
   let transition = false;
@@ -37,6 +39,9 @@
     if (headerHeight) {
       styles.push(`--header-height: ${headerHeight}px`);
     }
+    if (footerHeight) {
+      styles.push(`--footer-height: ${footerHeight}px`);
+    }
     style = styles.join(';');
   }
 
@@ -47,6 +52,8 @@
           navigationWidth = entry.contentRect.width;
         } else if (entry.target === header) {
           headerHeight = entry.contentRect.height;
+        } else if (entry.target === footer) {
+          footerHeight = entry.contentRect.height;
         }
       }
     });
@@ -55,6 +62,9 @@
     }
     if (header) {
       ro.observe(header);
+    }
+    if (footer) {
+      ro.observe(footer);
     }
   });
 </script>
@@ -76,6 +86,11 @@
       <slot />
     </div>
   </div>
+  {#if $$slots.footer}
+    <div bind:this={footer} class="footer">
+      <slot name="footer" />
+    </div>
+  {/if}
 </div>
 
 <style lang="postcss">
@@ -92,7 +107,12 @@
       margin-left: var(--navigation-width, 0);
     }
     .content {
+      margin-bottom: var(--footer-height, 0);
       margin-top: var(--header-height, 0);
+    }
+    .footer {
+      margin-left: var(--navigation-width, 0);
+      margin-top: calc(-1 * var(--footer-height, 0));
     }
   }
 
@@ -115,6 +135,10 @@
   }
 
   .header {
+    z-index: 1;
+  }
+
+  .footer {
     z-index: 1;
   }
 

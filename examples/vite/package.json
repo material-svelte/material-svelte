@@ -9,13 +9,16 @@
   },
   "devDependencies": {
     "@material-svelte/button": "workspace:*",
-    "@material-svelte/icon": "workspace:*",
+    "@material-svelte/layout": "workspace:*",
     "@material-svelte/postcss-plugin": "workspace:*",
+    "@material-svelte/top-app-bar": "workspace:*",
+    "@material-svelte/typography": "workspace:*",
     "@mdi/js": "^5.9.55",
-    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.9",
-    "svelte": "^3.38.1",
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.7",
+    "ress": "^4.0.0",
+    "svelte": "^3.37.0",
     "svelte-preprocess": "^4.7.2",
     "typescript": "^4.2.4",
-    "vite": "^2.2.3"
+    "vite": "^2.3.0"
   }
 }

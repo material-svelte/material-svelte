@@ -1,5 +1,5 @@
 const autoPreprocess = require('svelte-preprocess');
-const materialSvelte = require('@material-svelte/postcss-plugin');
+const materialPostcss = require('@material-svelte/postcss-plugin');
 
 module.exports = {
   preprocess: autoPreprocess({
@@ -7,7 +7,7 @@ module.exports = {
       script: 'typescript',
     },
     postcss: {
-      plugins: [materialSvelte()],
+      plugins: [materialPostcss()],
     },
   }),
 };

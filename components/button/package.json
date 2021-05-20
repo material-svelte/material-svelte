@@ -4,6 +4,16 @@
   "publishConfig": {
     "access": "public"
   },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/material-svelte/material-svelte.git"
+  },
+  "author": "",
+  "homepage": "https://material-svelte.dev",
+  "bugs": {
+    "url": "https://github.com/material-svelte/material-svelte/issues"
+  },
   "main": "dist/button.umd.js",
   "module": "dist/button.es.js",
   "scripts": {
@@ -26,11 +36,11 @@
     "material-svelte"
   ],
   "dependencies": {
+    "@material-svelte/icon": "workspace:*",
     "@material-svelte/svelte-actions": "workspace:*",
     "@material-svelte/typography": "workspace:*"
   },
   "devDependencies": {
-    "@material-svelte/icon": "workspace:*",
     "@mdi/js": "^5.9.55",
     "@sveltejs/vite-plugin-svelte": "^1.0.0-next.9",
     "@testing-library/svelte": "^3.0.3",

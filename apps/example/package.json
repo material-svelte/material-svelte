@@ -9,9 +9,9 @@
   "scripts": {
     "build": "svelte-kit build",
     "dev": "svelte-kit dev",
-    "start": "svelte-kit start"
+    "preview": "svelte-kit preview"
   },
-  "dependencies": {
+  "devDependencies": {
     "@material-svelte/breakpoint": "workspace:*",
     "@material-svelte/breakpoint-tools": "workspace:*",
     "@material-svelte/button": "workspace:*",
@@ -22,24 +22,21 @@
     "@material-svelte/list": "workspace:*",
     "@material-svelte/navigation-drawer": "workspace:*",
     "@material-svelte/navigation-rail": "workspace:*",
+    "@material-svelte/postcss-plugin": "workspace:*",
     "@material-svelte/radio": "workspace:*",
     "@material-svelte/svelte-actions": "workspace:*",
+    "@material-svelte/svelte-preprocessor": "workspace:*",
     "@material-svelte/switch": "workspace:*",
     "@material-svelte/top-app-bar": "workspace:*",
     "@material-svelte/typography": "workspace:*",
-    "uid": "^2.0.0"
-  },
-  "devDependencies": {
-    "@material-svelte/postcss-plugin": "workspace:*",
-    "@material-svelte/svelte-preprocessor": "workspace:*",
     "@mdi/js": "^5.9.55",
-    "@sveltejs/adapter-static": "^1.0.0-next.7",
-    "@sveltejs/kit": "^1.0.0-next.94",
+    "@sveltejs/adapter-static": "^1.0.0-next.9",
+    "@sveltejs/kit": "^1.0.0-next.107",
     "ress": "^4.0.0",
-    "svelte": "^3.38.1",
-    "svelte-preprocess": "^4.7.2",
+    "svelte": "^3.38.2",
+    "svelte-preprocess": "^4.7.3",
     "tslib": "^2.2.0",
     "typescript": "^4.2.4",
-    "vite": "^2.2.3"
+    "vite": "^2.3.2"
   }
 }

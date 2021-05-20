@@ -4,9 +4,19 @@
   "publishConfig": {
     "access": "public"
   },
-  "description": "",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/material-svelte/material-svelte.git"
+  },
   "author": "",
+  "homepage": "https://material-svelte.dev",
+  "bugs": {
+    "url": "https://github.com/material-svelte/material-svelte/issues"
+  },
   "main": "src/index.js",
-  "keywords": []
+  "keywords": [],
+  "dependencies": {
+    "cosmiconfig": "^7.0.0"
+  }
 }

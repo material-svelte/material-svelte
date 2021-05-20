@@ -1,16 +1,20 @@
-<script>
-  const utm = '?utm_source=material-svelte&utm_campaign=oss';
+<script lang="ts">
+  import { Typography } from '@material-svelte/typography';
 </script>
 
 <footer>
-  <a href="https://vercel.com{utm}" target="_blank">
+  <Typography variant="h6">Sponsors:</Typography>
+  <a
+    href="https://vercel.com?utm_source=material-svelte&utm_campaign=oss"
+    target="_blank"
+  >
     <img
       class="vercel-logo"
       src="powered-by-vercel.svg"
       alt="Powered by Vercel"
     />
   </a>
-  <a href="https://happo.io{utm}" target="_blank">
+  <a href="https://happo.io?_aid=667" target="_blank">
     <img
       class="happo-logo"
       src="happo-io-logo.svg"
@@ -19,15 +23,14 @@
   </a>
 </footer>
 
-<style>
+<style lang="postcss">
   footer {
     align-items: center;
-    bottom: 0;
+    background-color: #6200ee;
+    color: #fff;
     display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+    justify-content: flex-end;
+    padding: 5px;
     width: 100%;
   }
 
@@ -41,7 +44,12 @@
     margin: 0 10px;
   }
 
+  .vercel-logo {
+    height: 30px;
+  }
+
   .happo-logo {
-    height: 40px;
+    height: 30px;
+    margin-top: 10px;
   }
 </style>

@@ -12,14 +12,22 @@
     "start": "svelte-kit start"
   },
   "devDependencies": {
+    "@material-svelte/button": "workspace:*",
+    "@material-svelte/icon": "workspace:*",
+    "@material-svelte/layout": "workspace:*",
+    "@material-svelte/postcss-plugin": "workspace:*",
+    "@material-svelte/top-app-bar": "workspace:*",
+    "@material-svelte/typography": "workspace:*",
+    "@mdi/js": "^5.9.55",
     "@sveltejs/adapter-node": "next",
-    "@sveltejs/adapter-static": "^1.0.0-next.7",
-    "@sveltejs/kit": "^1.0.0-next.94",
-    "postcss": "^8.2.13",
-    "svelte": "^3.38.1",
-    "svelte-preprocess": "^4.7.2",
+    "@sveltejs/adapter-static": "^1.0.0-next.9",
+    "@sveltejs/kit": "^1.0.0-next.107",
+    "postcss": "^8.2.15",
+    "ress": "^4.0.0",
+    "svelte": "^3.38.2",
+    "svelte-preprocess": "^4.7.3",
     "tslib": "^2.2.0",
     "typescript": "^4.2.4",
-    "vite": "^2.2.3"
+    "vite": "^2.3.2"
   }
 }
