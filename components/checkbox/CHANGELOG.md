@@ -1,3 +1,19 @@
+## @material-svelte/checkbox [1.2.4](https://github.com/material-svelte/material-svelte/compare/@material-svelte/checkbox@1.2.3...@material-svelte/checkbox@1.2.4) (2021-05-20)
+
+
+### Bug Fixes
+
+* **repo-wide:** add license, url etc to package.json ([80db9e6](https://github.com/material-svelte/material-svelte/commit/80db9e6d4258331e5847d5d30f9252b4d972fd9b))
+
+
+
+
+
+### Dependencies
+
+* **@material-svelte/svelte-actions:** upgraded to 1.3.1
+* **@material-svelte/icon:** upgraded to 1.3.4
+
 ## @material-svelte/checkbox [1.2.3](https://github.com/material-svelte/material-svelte/compare/@material-svelte/checkbox@1.2.2...@material-svelte/checkbox@1.2.3) (2021-05-02)
 
 
