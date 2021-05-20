@@ -57,6 +57,8 @@ See what the components can do in our [storybook](https://storybook.material-sve
 
 ### Setup SvelteKit-project
 
+(A full example is available [here](./examples/sveltekit))
+
 To get started: Create a SvelteKit-project.
 
 :exclamation: Make sure to enable TypeScript-Support.
@@ -123,6 +125,8 @@ export default config;
 
 ### Setup Vite-project
 
+(A full example is available [here](./examples/vite))
+
 To get started: Create a Vite-Svelte-project.
 
 :exclamation: Make sure to enable TypeScript-Support.
@@ -175,6 +179,8 @@ module.exports = {
 ## Snowpack
 
 ### Setup Snowpack-Svelte-project
+
+(A full example is available [here](./examples/snowpack))
 
 To get started: Create a Snowpack-Svelte-project.
 
