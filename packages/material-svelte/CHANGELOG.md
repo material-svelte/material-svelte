@@ -1,3 +1,10 @@
+## material-svelte [1.8.2](https://github.com/material-svelte/material-svelte/compare/material-svelte@1.8.1...material-svelte@1.8.2) (2021-05-20)
+
+
+### Bug Fixes
+
+* **material-svelte:** move README to meta-package, symlink to root ([9c5a6b2](https://github.com/material-svelte/material-svelte/commit/9c5a6b2acb645571722ee282624c3992f115dc97))
+
 ## material-svelte [1.8.1](https://github.com/material-svelte/material-svelte/compare/material-svelte@1.8.0...material-svelte@1.8.1) (2021-05-20)
 
 
