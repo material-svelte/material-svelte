@@ -52,7 +52,10 @@
         type="text"
         bind:this={inputElement}
         bind:value
+        on:input
         on:change
+        on:focus
+        on:blur
         {id}
         {disabled}
         placeholder={placeholder || ' '}
