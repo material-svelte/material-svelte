@@ -1,3 +1,13 @@
+## material-svelte [1.8.3](https://github.com/material-svelte/material-svelte/compare/material-svelte@1.8.2...material-svelte@1.8.3) (2021-11-02)
+
+
+
+
+
+### Dependencies
+
+* **@material-svelte/text-field:** upgraded to 1.0.2
+
 ## material-svelte [1.8.2](https://github.com/material-svelte/material-svelte/compare/material-svelte@1.8.1...material-svelte@1.8.2) (2021-05-20)
 
 
