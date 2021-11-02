@@ -1,3 +1,10 @@
+## @material-svelte/text-field [1.0.2](https://github.com/material-svelte/material-svelte/compare/@material-svelte/text-field@1.0.1...@material-svelte/text-field@1.0.2) (2021-11-02)
+
+
+### Bug Fixes
+
+* **@material-svelte/text-field:** forward input-, focus-, blur-events ([c79aa9a](https://github.com/material-svelte/material-svelte/commit/c79aa9ad6ae268e30a3164912ce3c8bef156eb7a))
+
 ## @material-svelte/text-field [1.0.1](https://github.com/material-svelte/material-svelte/compare/@material-svelte/text-field@1.0.0...@material-svelte/text-field@1.0.1) (2021-05-20)
 
 
